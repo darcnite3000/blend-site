@@ -1,0 +1,11 @@
+{
+  "name": "blend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Tristan Smith <darcnite3000@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "poi": "^9.6.13",
+    "poi-preset-prerender-spa": "^0.1.1"
+  }
+}
