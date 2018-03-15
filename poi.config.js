@@ -1,5 +1,5 @@
 module.exports = {
-  entry: './index.jsx'
+  entry: './src/index.jsx'
   // presets: [
   //   require('poi-preset-prerender-spa')(
   //     {},

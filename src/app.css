@@ -3,7 +3,9 @@
 *::after {
   box-sizing: border-box;
 }
-
+a {
+  color: inherit;
+}
 body {
   padding: 0;
   margin: 0;
@@ -20,6 +22,16 @@ body {
   background-color: blue;
   &:nth-child(even) {
     background-color: green;
+  }
+}
+.navbar {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  & a {
+    &.active {
+      background: black;
+    }
   }
 }
 .viewport {
