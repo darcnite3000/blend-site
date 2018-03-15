@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "ks-vue-scrollmagic": "^1.0.2",
-    "particles.js": "^2.0.0"
+    "particles.js": "^2.0.0",
+    "smoothscroll-polyfill": "^0.4.3"
   }
 }

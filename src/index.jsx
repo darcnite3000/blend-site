@@ -1,8 +1,11 @@
 import Vue from 'vue'
 import KsVueScrollmagic from 'ks-vue-scrollmagic'
 import particles from './particles.json'
+import smoothscroll from 'smoothscroll-polyfill'
 import 'particles.js'
 import './app.css'
+
+smoothscroll.polyfill()
 
 Vue.use(KsVueScrollmagic)
 Vue.prototype.$particles = window.particlesJS
@@ -22,17 +25,24 @@ new Vue({
           <div key={i} class="page" id={`page-${page}`}>
             <div>
               <h1>Page {page}</h1>
-              <a href="#">To Top</a>
+              <a href="#" on-click={this.smoothScrollTo}>
+                To Top
+              </a>
             </div>
           </div>
         ))}
         <div class="viewport">
-          <a href="#" class="findOut">
+          <a href="#" class="findOut" on-click={this.smoothScrollTo}>
             Find Out More
           </a>
           <div class="navbar">
             {this.pages.map((page, i) => (
-              <a href={`#page-${page}`} id={`nav-page-${page}`} key={i}>
+              <a
+                href={`#page-${page}`}
+                id={`nav-page-${page}`}
+                key={i}
+                on-click={this.smoothScrollTo}
+              >
                 {page.toString().toUpperCase()[0]}
               </a>
             ))}
@@ -47,6 +57,20 @@ new Vue({
     this.$nextTick(this.addParticles)
   },
   methods: {
+    smoothScrollTo(e) {
+      event.preventDefault()
+      let hash = e.target.hash
+      const to = document.getElementById(hash.substr(1))
+      if (to) {
+        to.scrollIntoView({ behavior: 'smooth' })
+      } else {
+        window.scroll({ top: 0, behavior: 'smooth' })
+        hash = '#'
+      }
+      if (window.location.hash !== hash) {
+        history.pushState(null, null, hash)
+      }
+    },
     addParticles() {
       this.$particles('particles', particles)
     },
