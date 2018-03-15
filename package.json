@@ -4,11 +4,17 @@
   "main": "index.js",
   "author": "Tristan Smith <darcnite3000@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "dev": "poi",
+    "build": "poi build",
+    "deploy": "yarn build && gh-pages -d dist"
+  },
   "devDependencies": {
     "babel-eslint": "^8.2.2",
     "eslint": "^4.18.2",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-react": "^7.7.0",
+    "gh-pages": "^1.1.0",
     "poi": "^9.6.13",
     "poi-preset-prerender-spa": "^0.1.1",
     "postcss-cssnext": "^3.1.0",
