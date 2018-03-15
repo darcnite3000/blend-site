@@ -13,5 +13,8 @@
     "poi-preset-prerender-spa": "^0.1.1",
     "postcss-cssnext": "^3.1.0",
     "postcss-font-magician": "^2.1.0"
+  },
+  "dependencies": {
+    "ks-vue-scrollmagic": "^1.0.2"
   }
 }
