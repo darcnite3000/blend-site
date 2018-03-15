@@ -15,6 +15,7 @@
     "postcss-font-magician": "^2.1.0"
   },
   "dependencies": {
-    "ks-vue-scrollmagic": "^1.0.2"
+    "ks-vue-scrollmagic": "^1.0.2",
+    "particles.js": "^2.0.0"
   }
 }
