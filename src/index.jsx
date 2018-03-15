@@ -33,7 +33,7 @@ new Vue({
           <div class="navbar">
             {this.pages.map((page, i) => (
               <a href={`#page-${page}`} id={`nav-page-${page}`} key={i}>
-                {page}
+                {page.toString().toUpperCase()[0]}
               </a>
             ))}
           </div>
