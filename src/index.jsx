@@ -67,8 +67,10 @@ new Vue({
         window.scroll({ top: 0, behavior: 'smooth' })
         hash = '#'
       }
-      if (window.location.hash !== hash) {
-        history.pushState(null, null, hash)
+      if (history) {
+        if (window.location.hash !== hash) {
+          history.pushState(null, null, hash)
+        }
       }
     },
     addParticles() {
