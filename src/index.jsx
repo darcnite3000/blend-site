@@ -41,22 +41,21 @@ new Vue({
             <h1>Page Footer</h1>
           </div>
         </div>
-        <div class="viewport">
-          <a href="#" class="sitehelp" on-click={this.smoothScrollTo}>
-            talk to us
-          </a>
-          <div class="navbar">
-            {this.pages.map((page, i) => (
-              <a
-                href={`#page-${page}`}
-                id={`nav-page-${page}`}
-                key={i}
-                on-click={this.smoothScrollTo}
-              >
-                {page.toString().toUpperCase()[0]}
-              </a>
-            ))}
-          </div>
+
+        <a href="#" class="sitehelp" on-click={this.smoothScrollTo}>
+          talk to us
+        </a>
+        <div class="navbar">
+          {this.pages.map((page, i) => (
+            <a
+              href={`#page-${page}`}
+              id={`nav-page-${page}`}
+              key={i}
+              on-click={this.smoothScrollTo}
+            >
+              {page.toString().toUpperCase()[0]}
+            </a>
+          ))}
         </div>
       </div>
     )

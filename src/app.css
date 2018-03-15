@@ -51,7 +51,7 @@ body {
   z-index: 0;
 }
 .navbar {
-  position: absolute;
+  position: fixed;
   top: 1em;
   bottom: 1em;
   right: 1em;
@@ -68,7 +68,7 @@ body {
   }
 }
 .sitehelp {
-  position: absolute;
+  position: fixed;
   font-size: 18px;
   font-weight: bold;
   left: 50px;
@@ -80,15 +80,4 @@ body {
   color: #ffffff;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-}
-.viewport {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
-  pointer-events: none;
-  & * {
-    pointer-events: initial;
-  }
 }
