@@ -16,6 +16,15 @@ body {
 }
 #app {
   position: relative;
+  background: linear-gradient(
+    #ee3d7f,
+    #f3693d 100vh,
+    #f5981d 200vh,
+    #f3be1d 300vh,
+    #b6c62e 400vh,
+    #5bb963 500vh,
+    #0099ad 600vh
+  );
 }
 
 .page {
@@ -24,12 +33,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 255, 0.5);
   z-index: 0;
   position: relative;
-  &:nth-child(even) {
-    background-color: rgba(0, 255, 0, 0.5);
-  }
+}
+.foot {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 0;
+  position: relative;
 }
 #particles {
   position: fixed;
@@ -54,20 +67,19 @@ body {
     }
   }
 }
-.findOut {
+.sitehelp {
   position: absolute;
-  left: 1em;
+  font-size: 18px;
+  font-weight: bold;
+  left: 50px;
   bottom: 0;
-  padding: 0.5em;
+  padding: 13px 24px 11px;
+  text-decoration: none;
   border: 2px solid;
   border-bottom: none;
-  color: rgba(255, 255, 255, 0.3);
-  background: linear-gradient(
-    rgba(255, 255, 255, 0.1),
-    rgba(255, 255, 255, 0.2)
-  );
-  border-top-left-radius: 0.5em;
-  border-top-right-radius: 0.5em;
+  color: #ffffff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 .viewport {
   position: fixed;
@@ -75,7 +87,6 @@ body {
   left: 0;
   height: 100vh;
   width: 100%;
-  border: 2px solid rgba(255, 255, 255, 0.3);
   pointer-events: none;
   & * {
     pointer-events: initial;

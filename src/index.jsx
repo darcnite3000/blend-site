@@ -14,13 +14,18 @@ new Vue({
   el: '#app',
   data() {
     return {
-      pages: ['header', 1, 2, 3, 4]
+      pages: [1, 2, 3, 4, 5, 6]
     }
   },
   render() {
     return (
       <div id="app">
         <div id="particles" />
+        <div class="page" id="page-header">
+          <div>
+            <h1>Page Header</h1>
+          </div>
+        </div>
         {this.pages.map((page, i) => (
           <div key={i} class="page" id={`page-${page}`}>
             <div>
@@ -31,9 +36,14 @@ new Vue({
             </div>
           </div>
         ))}
+        <div class="foot" id="page-header">
+          <div>
+            <h1>Page Footer</h1>
+          </div>
+        </div>
         <div class="viewport">
-          <a href="#" class="findOut" on-click={this.smoothScrollTo}>
-            Find Out More
+          <a href="#" class="sitehelp" on-click={this.smoothScrollTo}>
+            talk to us
           </a>
           <div class="navbar">
             {this.pages.map((page, i) => (
