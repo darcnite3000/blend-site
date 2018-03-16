@@ -11,13 +11,13 @@ a {
 body {
   padding: 0;
   margin: 0;
-  font-size: 16px;
-  font-family: 'filson-soft', sans-serif;
-  background: #0099ad;
-  color: white;
 }
 #app {
   position: relative;
+  background-color: #ee3d7f;
+  color: white;
+  font-size: 16px;
+  font-family: 'filson-soft', sans-serif;
   background: linear-gradient(
     #ee3d7f,
     #f3693d 100vh,
@@ -56,6 +56,7 @@ h1 {
   align-items: center;
   z-index: 0;
   position: relative;
+  overflow: hidden;
 }
 #particles {
   position: fixed;
