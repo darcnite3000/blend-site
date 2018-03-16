@@ -53,10 +53,10 @@ new Vue({
   },
   mounted() {
     document.dispatchEvent(new Event('render-event'))
-    this.$nextTick(this.linkNavToggle)
+    this.$nextTick(this.setupScenes)
   },
   methods: {
-    linkNavToggle() {
+    setupScenes() {
       this.pages.forEach(page => {
         const scene = new this.$scrollmagic.Scene({
           triggerElement: `#page-${page}`,
