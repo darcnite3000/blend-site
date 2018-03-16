@@ -26,7 +26,8 @@ new Vue({
         <Particles />
         <BlendLogo />
         <div class="page" id="page-header">
-          <h1 style={{ marginTop: '25.888888889%' }}>
+          <div style={{ width: '164px', height: '182px' }} />
+          <h1>
             powerfully simple. simply powerful.<br />
             we’re making it easier to feel connected to your insurance.
           </h1>

@@ -229,19 +229,35 @@ export default {
   mounted() {
     if (this.animated) {
       this.$nextTick(() => {
-        const logoTween = new this.$gsap.TweenMax('.logo .logo-b', 0.8, {
-          top: 61,
-          left: 50,
-          width: 47.4,
-          height: 58.98
-        })
-        const textTween = new this.$gsap.TweenMax('.logo .logo-text', 0.8, {
-          top: 61,
-          left: 125.35,
-          width: 134,
-          height: 59
-        })
-        const borderTween = new this.$gsap.TweenMax('.logo .logo-border', 0.2, {
+        const logoTween = this.$gsap.TweenMax.fromTo(
+          '.logo .logo-b',
+          0.8,
+          {
+            top: '21.888888889%',
+            left: '50%'
+          },
+          {
+            top: 61,
+            left: 73.7,
+            width: 47.4,
+            height: 58.98
+          }
+        )
+        const textTween = this.$gsap.TweenMax.fromTo(
+          '.logo .logo-text',
+          0.8,
+          {
+            top: '33.965555556%',
+            left: '50%'
+          },
+          {
+            top: 61,
+            left: 192.35,
+            width: 134,
+            height: 59
+          }
+        )
+        const borderTween = this.$gsap.TweenMax.to('.logo .logo-border', 0.2, {
           height: 58.98,
           delay: 0.7
         })
