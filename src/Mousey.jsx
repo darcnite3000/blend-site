@@ -98,9 +98,8 @@ export default {
       const scene = new this.$scrollmagic.Scene({
         duration: '40%'
       }).setTween('.mousey', {
-        opacity: 0,
-        y: '-=100px',
-        display: 'none'
+        autoAlpha: 0,
+        y: '-=100px'
       })
       this.$ksvuescr.$emit('addScene', 'mouseyVisible', scene)
     })
