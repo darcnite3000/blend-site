@@ -3,6 +3,7 @@ import KsVueScrollmagic from 'ks-vue-scrollmagic'
 import smoothscroll from 'smoothscroll-polyfill'
 import ScrollTo from './ScrollTo'
 import Particles from './Particles'
+import Mousey from './Mousey'
 import 'particles.js'
 import './app.css'
 
@@ -23,22 +24,19 @@ new Vue({
       <div id="app">
         <Particles />
         <div class="page" id="page-header">
-          <div>
-            <h1>Page Header</h1>
-          </div>
+          <h1>
+            powerfully simple. simply powerful.<br />
+            we’re making it easier to feel connected to your insurance.
+          </h1>
         </div>
         {this.pages.map((page, i) => (
           <div key={i} class="page" id={`page-${page}`}>
-            <div>
-              <h1>Page {page}</h1>
-              <ScrollTo>To Top</ScrollTo>
-            </div>
+            <h1>Page {page}</h1>
+            <ScrollTo>To Top</ScrollTo>
           </div>
         ))}
         <div class="foot" id="page-header">
-          <div>
-            <h1>Page Footer</h1>
-          </div>
+          <h1>Page Footer</h1>
         </div>
         <ScrollTo class="sitehelp">talk to us</ScrollTo>
         <div class="navbar">
@@ -48,6 +46,7 @@ new Vue({
             </ScrollTo>
           ))}
         </div>
+        <Mousey />
       </div>
     )
   },

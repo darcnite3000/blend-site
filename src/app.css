@@ -1,3 +1,5 @@
+@import url('https://use.typekit.net/hxt6ogm.css');
+
 *,
 *::before,
 *::after {
@@ -10,7 +12,7 @@ body {
   padding: 0;
   margin: 0;
   font-size: 16px;
-  font-family: sans-serif;
+  font-family: 'filson-soft', sans-serif;
   background: black;
   color: white;
 }
@@ -26,15 +28,26 @@ body {
     #0099ad 600vh
   );
 }
-
+h1 {
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 50px;
+  line-height: 58px;
+  font-weight: bold;
+}
 .page {
   min-height: 100vh;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 0;
   position: relative;
+  & h1 {
+    width: 66.5625%;
+  }
 }
 .foot {
   width: 100%;
@@ -52,18 +65,22 @@ body {
 }
 .navbar {
   position: fixed;
-  top: 1em;
-  bottom: 1em;
-  right: 1em;
+  top: 50px;
+  bottom: 50px;
+  right: 5.8125%;
   width: 1em;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   color: white;
   & a {
-    &.active {
-      background: black;
+    text-decoration: none;
+    &.active,
+    &:hover {
+      font-weight: bold;
     }
   }
 }
@@ -80,4 +97,28 @@ body {
   color: #ffffff;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+}
+.mousey {
+  position: fixed;
+  bottom: 36px;
+  left: calc(50% - 24px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & .mouse {
+    margin-bottom: 5px;
+  }
+  & .chevron {
+    margin-bottom: 2px;
+    animation: point-down 0.5s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes point-down {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(3px);
+  }
 }
