@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import KsVueScrollmagic from 'ks-vue-scrollmagic'
-import particles from './particles.json'
 import smoothscroll from 'smoothscroll-polyfill'
 import ScrollTo from './ScrollTo'
+import Particles from './Particles'
 import 'particles.js'
 import './app.css'
 
@@ -13,7 +13,6 @@ Vue.prototype.$particles = window.particlesJS
 
 new Vue({
   el: '#app',
-  components: { ScrollTo },
   data() {
     return {
       pages: [1, 2, 3, 4, 5, 6]
@@ -22,7 +21,7 @@ new Vue({
   render() {
     return (
       <div id="app">
-        <div id="particles" />
+        <Particles />
         <div class="page" id="page-header">
           <div>
             <h1>Page Header</h1>
@@ -32,7 +31,7 @@ new Vue({
           <div key={i} class="page" id={`page-${page}`}>
             <div>
               <h1>Page {page}</h1>
-              <scroll-to>To Top</scroll-to>
+              <ScrollTo>To Top</ScrollTo>
             </div>
           </div>
         ))}
@@ -41,12 +40,12 @@ new Vue({
             <h1>Page Footer</h1>
           </div>
         </div>
-        <scroll-to class="sitehelp">talk to us</scroll-to>
+        <ScrollTo class="sitehelp">talk to us</ScrollTo>
         <div class="navbar">
           {this.pages.map((page, i) => (
-            <scroll-to href={`#page-${page}`} id={`nav-page-${page}`} key={i}>
+            <ScrollTo href={`#page-${page}`} id={`nav-page-${page}`} key={i}>
               {page.toString().toUpperCase()[0]}
-            </scroll-to>
+            </ScrollTo>
           ))}
         </div>
       </div>
@@ -55,12 +54,8 @@ new Vue({
   mounted() {
     document.dispatchEvent(new Event('render-event'))
     this.$nextTick(this.linkNavToggle)
-    this.$nextTick(this.addParticles)
   },
   methods: {
-    addParticles() {
-      this.$particles('particles', particles)
-    },
     linkNavToggle() {
       this.pages.forEach(page => {
         const scene = new this.$scrollmagic.Scene({
