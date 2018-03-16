@@ -13,7 +13,7 @@ body {
   margin: 0;
   font-size: 16px;
   font-family: 'filson-soft', sans-serif;
-  background: black;
+  background: #0099ad;
   color: white;
 }
 #app {
@@ -103,6 +103,15 @@ h1 {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
+  & .logo-button {
+    position: fixed;
+    top: 45px;
+    left: 45px;
+    width: 218px;
+    display: block;
+    height: 90px;
+  }
   & .logo-b {
     position: fixed;
     top: 21.888888889%;

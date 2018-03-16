@@ -1,3 +1,5 @@
+import ScrollTo from './ScrollTo'
+
 export const LogoBorder = {
   render() {
     return (
@@ -223,12 +225,14 @@ export default {
         <B class="logo-b" />
         <LogoBorder class="logo-border" />
         <LogoText class="logo-text" />
+        <ScrollTo class="logo-button"/>
       </div>
     )
   },
   mounted() {
     if (this.animated) {
       this.$nextTick(() => {
+        const buttonTween = this.$gsap.TweenMax.fromTo('.logo .logo-button',0.1,{autoAlpha:0},{autoAlpha:1,delay:0.6})
         const logoTween = this.$gsap.TweenMax.fromTo(
           '.logo .logo-b',
           0.8,
@@ -264,7 +268,8 @@ export default {
         const tl = new this.$gsap.TimelineMax().add([
           logoTween,
           textTween,
-          borderTween
+          borderTween,
+          buttonTween
         ])
         const logoScene = new this.$scrollmagic.Scene({
           duration: '30%'
