@@ -57,6 +57,9 @@ h1 {
   z-index: 0;
   position: relative;
 }
+#page-header {
+  justify-content: flex-start;
+}
 #particles {
   position: fixed;
   width: 100%;
@@ -98,6 +101,29 @@ h1 {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
+
+.logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  & .logo-b {
+    position: fixed;
+    top: 21.888888889%;
+    left: calc(50% - 39.435px);
+  }
+  & .logo-border {
+    position: fixed;
+    top: 60.47px;
+    left: 107.63px;
+    height: 0;
+  }
+  & .logo-text {
+    position: fixed;
+    top: 33.965555556%;
+    left: calc(50% - 82px);
+  }
+}
+
 .mousey {
   position: fixed;
   bottom: 36px;

@@ -4,6 +4,7 @@ import smoothscroll from 'smoothscroll-polyfill'
 import ScrollTo from './ScrollTo'
 import Particles from './Particles'
 import Mousey from './Mousey'
+import BlendLogo from './BlendLogo'
 import 'particles.js'
 import './app.css'
 
@@ -23,8 +24,9 @@ new Vue({
     return (
       <div id="app">
         <Particles />
+        <BlendLogo />
         <div class="page" id="page-header">
-          <h1>
+          <h1 style={{ marginTop: '25.888888889%' }}>
             powerfully simple. simply powerful.<br />
             we’re making it easier to feel connected to your insurance.
           </h1>
