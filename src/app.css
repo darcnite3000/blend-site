@@ -96,48 +96,51 @@ h1 {
   border: 2px solid;
   border-bottom: none;
   color: #ffffff;
+  background-color: rgba(255, 255, 255, 0);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  transition: 0.5s;
+  &:hover {
+    padding-bottom: 16px;
+  }
+  &:active {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  &.slide-in-enter-active {
+    transform: translateY(50px);
+  }
 }
-
 .logo {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  & .logo-button {
+  align-items: center;
+  justify-content: space-between;
+  &.logo-nav {
+    display: flex;
     position: fixed;
-    top: 45px;
-    left: 45px;
-    width: 218px;
-    display: block;
-    height: 90px;
+    width: 210px;
+    top: 60px;
+    left: 50px;
+    & .logo-b {
+      width: 47px;
+      height: 59px;
+    }
+    & .logo-text {
+      width: 134px;
+      height: 59px;
+    }
   }
-  & .logo-b {
-    position: fixed;
-    top: 21.888888889%;
-    width: 79px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  & .logo-border {
-    position: fixed;
-    top: 60.47px;
-    left: 107.63px;
-    height: 0;
-  }
-  & .logo-text {
-    position: fixed;
-    top: 33.965555556%;
-    width: 164px;
-    left: 50%;
-    transform: translateX(-50%);
+  &.logo-main {
+    display: flex;
+    flex-direction: column;
+    height: 183px;
+    & .logo-border {
+      display: none;
+    }
   }
 }
 
 .mousey {
   position: fixed;
-  bottom: 36px;
+  bottom: 20px;
   left: calc(50% - 24px);
   display: flex;
   flex-direction: column;
@@ -145,17 +148,22 @@ h1 {
   & .mouse {
     margin-bottom: 5px;
   }
+  & .chevrons {
+    display: flex;
+    flex-direction: column;
+    height: 41px;
+    overflow: hidden;
+  }
   & .chevron {
     margin-bottom: 2px;
-    animation: point-down 0.5s ease-in-out infinite alternate;
+    animation: scroll-around linear 1s infinite;
   }
 }
-
-@keyframes point-down {
+@keyframes scroll-around {
   from {
-    transform: translateY(0);
+    transform: translateY(-20px);
   }
   to {
-    transform: translateY(3px);
+    transform: translateY(30px);
   }
 }

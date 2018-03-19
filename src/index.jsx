@@ -17,12 +17,47 @@ const Page = {
   props: {
     label: { type: [String, Number], default: 0 }
   },
+  data() {
+    const pageId = `page-${this.label}`
+    const navClass = `nav-${pageId}`
+    return {
+      showName: `pageShow${this.label}`,
+      visibleName: `pageVisible${this.label}`,
+      pageId,
+      navClass
+    }
+  },
   render() {
     return (
-      <div class="page" id={`page-${this.label}`}>
+      <div class="page" id={this.pageId}>
         {this.$slots.default || <h1>Page {this.label}</h1>}
       </div>
     )
+  },
+  mounted() {
+    this.$nextTick(() => {
+      const tweenIn = this.$gsap.TweenMax.staggerFrom(
+        `#${this.pageId} > *`,
+        1,
+        { y: '+=150', autoAlpha: 0 },
+        0.2
+      )
+      const onShow = new this.$scrollmagic.Scene({
+        triggerElement: `#${this.pageId}`
+      }).setTween(tweenIn)
+      this.$ksvuescr.$emit('addScene', this.showName, onShow)
+      if (document.getElementsByClassName(this.navClass).length) {
+        const isVisible = new this.$scrollmagic.Scene({
+          triggerElement: `#${this.pageId}`,
+          duration: '100%'
+        }).setClassToggle(`.${this.navClass}`, 'active')
+        this.$ksvuescr.$emit('addScene', this.visibleName, isVisible)
+      }
+    })
+  },
+  beforeDestroy() {
+    this.$ksvuescr.$emit('destroyScene', this.visibleName)
+    this.$ksvuescr.$emit('destroyScene', this.showName)
   }
 }
 
@@ -30,22 +65,21 @@ new Vue({
   el: '#app',
   data() {
     return {
-      pages: [1, 2, 3, 4, 5, 6]
+      pages: ['insurance', 2, 3, 4, 5, 6]
     }
   },
   render() {
     return (
       <div id="app">
         <Particles />
-        <BlendLogo />
         <Page label="header">
-          <div style={{ width: '164px', height: '182px' }} />
+          <BlendLogo class="logo-main" />
           <h1>
             powerfully simple. simply powerful.<br />
             we’re making it easier to feel connected to your insurance.
           </h1>
         </Page>
-        <Page label="1">
+        <Page label="insurance">
           <h1>who’d have thought insurance could be beautiful?</h1>
           <h2>when it’s as simple as blend, it can be.</h2>
           <p>
@@ -77,10 +111,17 @@ new Vue({
         <div class="foot" id="page-header">
           <h1>Page Footer</h1>
         </div>
-        <ScrollTo class="sitehelp">talk to us</ScrollTo>
+        <BlendLogo class="logo-nav" linked animated />
+        <transition name="slide-in" appear>
+          <ScrollTo class="sitehelp">talk to us</ScrollTo>
+        </transition>
         <div class="navbar">
           {this.pages.map((page, i) => (
-            <ScrollTo href={`#page-${page}`} id={`nav-page-${page}`} key={page}>
+            <ScrollTo
+              href={`#page-${page}`}
+              class={`nav-page-${page}`}
+              key={page}
+            >
               {i + 1}
             </ScrollTo>
           ))}
@@ -91,17 +132,6 @@ new Vue({
   },
   mounted() {
     document.dispatchEvent(new Event('render-event'))
-    this.$nextTick(this.setupScenes)
   },
-  methods: {
-    setupScenes() {
-      this.pages.forEach(page => {
-        const scene = new this.$scrollmagic.Scene({
-          triggerElement: `#page-${page}`,
-          duration: '100%'
-        }).setClassToggle(`#nav-page-${page}`, 'active')
-        this.$ksvuescr.$emit('addScene', 'linkNavToggle', scene)
-      })
-    }
-  }
+  methods: {}
 })

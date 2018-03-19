@@ -214,67 +214,37 @@ export const B = {
 
 export default {
   props: {
-    animated: {
-      type: Boolean,
-      default: true
-    }
+    animated: { type: Boolean, default: false },
+    linked: { type: Boolean, default: false }
   },
   render() {
-    return (
+    return this.linked ? (
+      <ScrollTo class="logo logo-button">
+        <B class="logo-b" />
+        <LogoBorder class="logo-border" />
+        <LogoText class="logo-text" />
+      </ScrollTo>
+    ) : (
       <div class="logo">
         <B class="logo-b" />
         <LogoBorder class="logo-border" />
         <LogoText class="logo-text" />
-        <ScrollTo class="logo-button"/>
       </div>
     )
   },
   mounted() {
     if (this.animated) {
       this.$nextTick(() => {
-        const buttonTween = this.$gsap.TweenMax.fromTo('.logo .logo-button',0.1,{autoAlpha:0},{autoAlpha:1,delay:0.6})
         const logoTween = this.$gsap.TweenMax.fromTo(
-          '.logo .logo-b',
-          0.8,
-          {
-            top: '21.888888889%',
-            left: '50%'
-          },
-          {
-            top: 61,
-            left: 73.7,
-            width: 47.4,
-            height: 58.98
-          }
+          '.logo.logo-button',
+          0.6,
+          { autoAlpha: 0 },
+          { autoAlpha: 1, delay: 0.6 }
         )
-        const textTween = this.$gsap.TweenMax.fromTo(
-          '.logo .logo-text',
-          0.8,
-          {
-            top: '33.965555556%',
-            left: '50%'
-          },
-          {
-            top: 61,
-            left: 192.35,
-            width: 134,
-            height: 59
-          }
-        )
-        const borderTween = this.$gsap.TweenMax.to('.logo .logo-border', 0.2, {
-          height: 58.98,
-          delay: 0.7
-        })
-        const tl = new this.$gsap.TimelineMax().add([
-          logoTween,
-          textTween,
-          borderTween,
-          buttonTween
-        ])
-        const logoScene = new this.$scrollmagic.Scene({
-          duration: '30%'
-        }).setTween(tl)
 
+        const logoScene = new this.$scrollmagic.Scene({
+          duration: '100%'
+        }).setTween(logoTween)
         this.$ksvuescr.$emit('addScene', 'logoAnimate', logoScene)
       })
     }

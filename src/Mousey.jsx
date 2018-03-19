@@ -88,15 +88,17 @@ export default {
     return (
       <ScrollTo to={window.innerHeight} class="mousey">
         <Mouse />
-        <ChevronDown />
-        <ChevronDown />
+        <div class="chevrons">
+          <ChevronDown />
+          <ChevronDown />
+        </div>
       </ScrollTo>
     )
   },
   mounted() {
     this.$nextTick(() => {
       const scene = new this.$scrollmagic.Scene({
-        duration: '40%'
+        duration: '20%'
       }).setTween('.mousey', {
         autoAlpha: 0,
         y: '-=100px'
