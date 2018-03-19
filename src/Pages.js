@@ -1,6 +1,21 @@
-export { default as ContactPage } from './ContactPage'
-export { default as CoverPage } from './CoverPage'
-export { default as FocusPage } from './FocusPage'
-export { default as HomePage } from './HomePage'
-export { default as AboutPage } from './AboutPage'
-export { default as TechPage } from './TechPage'
+import ContactPage from './ContactPage'
+export { ContactPage }
+import CoverPage from './CoverPage'
+export { CoverPage }
+import FocusPage from './FocusPage'
+export { FocusPage }
+import HomePage from './HomePage'
+export { HomePage }
+import AboutPage from './AboutPage'
+export { AboutPage }
+import TechPage from './TechPage'
+export { TechPage }
+
+export const pageList = [
+  { id: 'home', component: HomePage },
+  { id: 'about', component: AboutPage },
+  { id: 'cover', component: CoverPage },
+  { id: 'focus', component: FocusPage },
+  { id: 'tech', component: TechPage },
+  { id: 'contact', component: ContactPage }
+]

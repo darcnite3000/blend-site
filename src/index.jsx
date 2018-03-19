@@ -6,14 +6,7 @@ import Particles from './Particles'
 import Mousey from './Mousey'
 import BlendLogo from './BlendLogo'
 import { LinkedIn } from './Icons'
-import {
-  HomePage,
-  AboutPage,
-  CoverPage,
-  ContactPage,
-  FocusPage,
-  TechPage
-} from './Pages'
+import { pageList as pages } from './Pages'
 import 'particles.js'
 import './app.css'
 
@@ -26,14 +19,7 @@ new Vue({
   el: '#app',
   data() {
     return {
-      pages: [
-        { id: 'home', component: HomePage },
-        { id: 'about', component: AboutPage },
-        { id: 'cover', component: CoverPage },
-        { id: 'focus', component: FocusPage },
-        { id: 'tech', component: TechPage },
-        { id: 'contact', component: ContactPage }
-      ]
+      pages
     }
   },
   render() {
