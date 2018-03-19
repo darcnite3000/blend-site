@@ -11,6 +11,7 @@ import IconVoluntary from './IconVoluntary'
 import IconJourney from './IconJourney'
 import IconBusiness from './IconBusiness'
 import IconBespoke from './IconBespoke'
+import LinkedIn from './LinkedIn'
 import Page from './Page'
 import 'particles.js'
 import './app.css'
@@ -199,7 +200,9 @@ new Vue({
                   <textarea placeholder="write your message here" />
                 </div>
               </div>
-              <input type="submit" value="submit" />
+              <div class="button-group">
+                <input type="submit" value="submit" class="button" />
+              </div>
             </form>
           </Page>
 
@@ -236,8 +239,10 @@ new Vue({
             blend.
           </p>
           <div class="bottom-links">
-            Collection Statement | Financial Services Guide | Terms and
-            Conditions of Trade
+            <a href="#">Collection Statement</a>|<a href="#">
+              Financial Services Guide
+            </a>|<a href="#">Terms and Conditions of Trade</a>
+            <a href="#"><LinkedIn /></a>
           </div>
         </div>
       </div>
