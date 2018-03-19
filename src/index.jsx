@@ -5,6 +5,12 @@ import ScrollTo from './ScrollTo'
 import Particles from './Particles'
 import Mousey from './Mousey'
 import BlendLogo from './BlendLogo'
+import IconGroupPersonal from './IconGroupPersonal'
+import IconPersonal from './IconPersonal'
+import IconVoluntary from './IconVoluntary'
+import IconJourney from './IconJourney'
+import IconBusiness from './IconBusiness'
+import IconBespoke from './IconBespoke'
 import Page from './Page'
 import 'particles.js'
 import './app.css'
@@ -71,7 +77,7 @@ new Vue({
             </p>
             <div class="sections">
               <div class="section">
-                <div class="icon" />
+                <IconGroupPersonal />
                 <div class="title">
                   group personal<br />accident
                 </div>
@@ -80,7 +86,7 @@ new Vue({
                 </a>
               </div>
               <div class="section">
-                <div class="icon" />
+                <IconPersonal />
                 <div class="title">
                   individual<br />accident
                 </div>
@@ -89,7 +95,7 @@ new Vue({
                 </a>
               </div>
               <div class="section">
-                <div class="icon" />
+                <IconVoluntary />
                 <div class="title">
                   voluntary<br />workers
                 </div>
@@ -98,14 +104,14 @@ new Vue({
                 </a>
               </div>
               <div class="section">
-                <div class="icon" />
+                <IconJourney />
                 <div class="title">journey</div>
                 <a href="#" class="button">
                   find out more
                 </a>
               </div>
               <div class="section">
-                <div class="icon" />
+                <IconBusiness />
                 <div class="title">
                   business<br />travel
                 </div>
@@ -114,7 +120,7 @@ new Vue({
                 </a>
               </div>
               <div class="section">
-                <div class="icon" />
+                <IconBespoke />
                 <div class="title">bespoke</div>
                 <a href="#" class="button">
                   find out more
