@@ -1,7 +1,13 @@
 export default {
   render() {
     return (
-      <svg width="132px" height="132px" viewBox="0 0 132 132" version="1.1">
+      <svg
+        class="icon icon-group"
+        width="132px"
+        height="132px"
+        viewBox="0 0 132 132"
+        version="1.1"
+      >
         <g
           id="Home-1600w"
           stroke="none"
