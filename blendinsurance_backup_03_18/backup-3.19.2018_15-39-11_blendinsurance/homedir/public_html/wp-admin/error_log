@@ -1,0 +1,17 @@
+[30-Mar-2017 02:20:19 UTC] PHP Fatal error:  Call to undefined function apply_filters() in /home/blendinsurance/public_html/wp-includes/load.php on line 316
+[30-Mar-2017 05:04:16 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /home/blendinsurance/public_html/wp-content/themes/x/framework/functions/global/admin/meta/setup.php on line 246
+[30-Mar-2017 05:04:16 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /home/blendinsurance/public_html/wp-content/themes/x/framework/functions/global/admin/meta/setup.php on line 246
+[30-Mar-2017 05:04:16 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /home/blendinsurance/public_html/wp-content/themes/x/framework/functions/global/admin/meta/setup.php on line 246
+[30-Mar-2017 05:06:11 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /home/blendinsurance/public_html/wp-content/themes/x/framework/functions/global/admin/meta/setup.php on line 246
+[30-Mar-2017 05:06:11 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /home/blendinsurance/public_html/wp-content/themes/x/framework/functions/global/admin/meta/setup.php on line 246
+[30-Mar-2017 05:06:11 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /home/blendinsurance/public_html/wp-content/themes/x/framework/functions/global/admin/meta/setup.php on line 246
+[30-Mar-2017 23:56:59 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /home/blendinsurance/public_html/wp-content/themes/x/framework/functions/global/admin/meta/setup.php on line 246
+[30-Mar-2017 23:56:59 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /home/blendinsurance/public_html/wp-content/themes/x/framework/functions/global/admin/meta/setup.php on line 246
+[30-Mar-2017 23:56:59 UTC] PHP Warning:  in_array() expects parameter 2 to be array, string given in /home/blendinsurance/public_html/wp-content/themes/x/framework/functions/global/admin/meta/setup.php on line 246
+[31-Mar-2017 03:32:41 UTC] PHP Warning:  max(): Array must contain at least one element in /home/blendinsurance/public_html/wp-content/plugins/contact-form-7-mailchimp-extension/lib/tools.php on line 119
+[31-Mar-2017 03:32:41 UTC] PHP Warning:  max(): Array must contain at least one element in /home/blendinsurance/public_html/wp-content/plugins/contact-form-7-mailchimp-extension/lib/tools.php on line 119
+[31-Mar-2017 03:32:45 UTC] PHP Warning:  max(): Array must contain at least one element in /home/blendinsurance/public_html/wp-content/plugins/contact-form-7-mailchimp-extension/lib/tools.php on line 119
+[31-Mar-2017 03:32:50 UTC] PHP Warning:  max(): Array must contain at least one element in /home/blendinsurance/public_html/wp-content/plugins/contact-form-7-mailchimp-extension/lib/tools.php on line 119
+[31-Mar-2017 03:32:50 UTC] PHP Warning:  max(): Array must contain at least one element in /home/blendinsurance/public_html/wp-content/plugins/contact-form-7-mailchimp-extension/lib/tools.php on line 119
+[31-Mar-2017 03:33:12 UTC] PHP Warning:  max(): Array must contain at least one element in /home/blendinsurance/public_html/wp-content/plugins/contact-form-7-mailchimp-extension/lib/tools.php on line 119
+[31-Mar-2017 03:33:18 UTC] PHP Warning:  max(): Array must contain at least one element in /home/blendinsurance/public_html/wp-content/plugins/contact-form-7-mailchimp-extension/lib/tools.php on line 119

@@ -1,0 +1,753 @@
+AWSTATS DATA FILE 7.4 (build 20140726)
+# If you remove this file, all statistics for date 201801 will be lost/reset.
+# Last config file used to build this data file was /home/blendinsurance/tmp/awstats/awstats.blendinsurancesolutions.com.au.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2033                
+POS_TIME 2710                
+POS_VISITOR 16688               
+POS_DAY 20908               
+POS_DOMAIN 3456                
+POS_LOGIN 4007                
+POS_ROBOT 4162                
+POS_WORMS 4499                
+POS_EMAILSENDER 4630                
+POS_EMAILRECEIVER 4773                
+POS_SESSION 21658               
+POS_SIDER 21816               
+POS_FILETYPES 4908                
+POS_DOWNLOADS 5043                
+POS_OS 5209                
+POS_BROWSER 5544                
+POS_SCREENSIZE 6543                
+POS_UNKNOWNREFERER 6617                
+POS_UNKNOWNREFERERBROWSER 6945                
+POS_ORIGIN 7490                
+POS_SEREFERRALS 7626                
+POS_PAGEREFS 7770                
+POS_SEARCHWORDS 7918                
+POS_KEYWORDS 8070                
+POS_MISC 2374                
+POS_ERRORS 8129                
+POS_CLUSTER 3863                
+POS_SIDER_404 8264                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20180201014234 31 5251 7596371137229
+FirstTime 20180101014145
+LastTime 20180131221343
+LastUpdate 20180201051214 31 0 30 0 0
+TotalVisits 169                 
+TotalUnique 84                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 132                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+FlashSupport 0 0 0
+TotalMisc 0 0 0
+PDFSupport 0 0 0
+QuickTimeSupport 0 0 0
+AddToFavourites 0 2 0
+DirectorSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+RealPlayerSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 0 8 48496 11 18 11909
+1 63 67 519827 12 19 12949
+2 9 12 47039 84 85 1307087
+3 15 20 59165 86 97 1329730
+4 10 11 6092 55 56 952579
+5 2 2 0 10 14 276
+6 20 21 6075 36 38 515370
+7 10 13 53364 38 44 366916
+8 9 10 6068 62 66 665496
+9 0 2 12124 11 14 33782
+10 5 8 47034 56 62 830668
+11 5 6 71191 68 72 927062
+12 2 2 1 19 22 177429
+13 3 6 36542 11 17 37568
+14 10 17 42444 66 81 1045446
+15 3 26 139426 12 36 181284
+16 4 15 129837 18 22 22429
+17 3 26 139426 21 27 272
+18 5 39 127302 18 21 207
+19 18 28 156149 9 11 138
+20 2 21 115178 11 13 138
+21 3 24 184857 17 23 155410
+22 7 25 104300 33 41 223594
+23 12 19 42445 66 72 848500
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 32
+us 153 295 1539832
+cn 13 13 13
+fr 8 9 93653
+ru 7 7 7
+th 6 6 6
+br 4 4 28848
+de 3 3 3
+in 2 2 2
+kr 2 2 2
+id 2 2 2
+dk 1 1 1
+nz 1 1 1
+it 1 1 1
+se 1 1 1
+ar 1 1 1
+pk 1 1 28845
+pl 1 1 1
+gb 1 1 1
+mx 1 1 1
+ec 1 1 28845
+co 1 1 28845
+hk 1 1 21
+af 1 1 1
+nl 1 1 1
+hu 1 1 1
+au 0 15 6062
+ie 0 50 303100
+es 1 1 1
+tw 1 1 1
+dz 1 1 1
+ke 1 1 28845
+ua 1 1 7437
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 6
+googlebot 57 270092 20180130001418 23
+bot[\s_+:,\.\;\/\\-] 56 142331 20180131144511 52
+unknown 8 548 20180128165600 8
+slurp 4 268 20180112170744 4
+robot 2 138 20180118034215 2
+crawl 2 136 20180130141956 2
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 4
+png 207 1169966 0 0
+php 216 849727 0 0
+html 4 67381 0 0
+txt 1 7308 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 2
+/license.txt 1 0 7308
+/wp-content/uploads/2017/11/Blend-Financial-Services-Guide-Blend.FSG_.1117-final.pdf 1 0 110007
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 23
+winlong 3 3
+macosx6 4 4
+win95 1 1
+winme 2 2
+winxp 3 3
+win98 2 2
+win8 1 1
+wince 2 2
+macosx8 6 6
+win7 236 43
+win2003 4 4
+macosx7 6 6
+ios_ipad 1 1
+blackberry 2 2
+macintosh 2 2
+Unknown 97 97
+unix 1 1
+winnt 24 9
+linux 19 19
+win8.1 1 1
+win2000 7 7
+macosx5 2 2
+ios_iphone 2 2
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 56
+safari4.0.5 1 1
+opera9.42 4 4
+msie5.0 1 1
+chrome36.0.894.0 1 1
+opera9.29 1 1
+chrome50.0.2661.75 1 1
+chrome36.0.861.0 1 1
+chrome34.0.1847.137 1 1
+firefox37.0 5 5
+chrome40.0.874.0 1 1
+blackberry 1 1
+msie9.0 194 2
+safari3.0.5 1 1
+chrome40.0.820.0 2 2
+Unknown 102 102
+opera9.72 1 1
+chrome39.0.822.0 1 1
+chrome37.0.895.0 1 1
+firefox35.0 2 2
+safari 1 1
+chrome40.0.846.0 1 1
+opera9.61 1 1
+msie6.0 2 2
+firefox20.5 1 1
+opera8.15 1 1
+chrome36.0.893.0 1 1
+chrome40.0.853.0 2 2
+firefox17.0 40 40
+opera9.68 1 1
+msie10.0 2 2
+chrome38.0.878.0 1 1
+chrome37.0.828.0 1 1
+chrome40.0.807.0 1 1
+firefox2.2 1 1
+safari4.0 2 2
+flock 1 1
+chrome42.0.2311.152 1 0
+opera8.16 1 1
+msie7.0 16 2
+iphone 1 1
+firefox36.0 3 3
+safari4.0.2 2 2
+chrome37.0.859.0 1 1
+seamonkey 2 2
+safari5.1 2 2
+opera9.87 1 1
+safari5.0.5 1 1
+opera8.26 1 1
+chrome36.0.855.0 2 2
+safari5.0.4 2 2
+safari5.0 2 2
+safari5.0.3 2 2
+opera9.88 1 1
+opera36.0.2130.32 3 3
+chrome52.0.2743.116 1 0
+chrome39.0.842.0 1 1
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 5
+Dragon/7.4_(OS_10.5_5.9;_zh_CN;) 20180106083633
+Python-urllib/2.7 20180117164854
+Flock/4.15_(Ubuntu_6.6;_fi_FI;) 20180107104356
+WordPress/4.7.5;_https://blendinsurancesolutions.com.au 20180131221343
+Installatron_Plugin/9.1.36 20180131194311
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 9
+Internet_Explorer/13.2_(Macintosh_4.5;_ar_QA;) 20180106083658
+CriOS/8.5_(Windows_2000_4.0;_et;) 20180109113051
+Installatron_Plugin/9.1.36 20180131194311
+WordPress/4.7.5;_https://blendinsurancesolutions.com.au 20180131221343
+Python-urllib/2.7 20180117164854
+Dragon/7.4_(OS_10.5_5.9;_zh_CN;) 20180106083633
+Mobile/9.16_(Windows_NT_3.4;_nl;) 20180109112842
+Internet_Explorer/11.19_(BigLinux_1.7;_ar_DZ;) 20180107104341
+Dragon/12.1_(BigLinux_6.5;_da;) 20180109112849
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 166 373
+From1 1 1
+From2 0 0
+From3 0 0
+From4 53 54
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 5
+404 363 7482579
+500 151 1750087
+302 3 0
+405 1 60
+301 322 0
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 141
+/wp-content/plugins/simple-ads-manager/js/slider/tmpl.js 1 -
+/.vscode/ftp-sync.json 1 -
+/wp-content/plugins/gallery-plugin/upload/files/KcPgu.php.png 1 -
+/wp-content/plugins/cherry-plugin/admin/import-export/2EGce.php 1 -
+/wp-content/uploads/user_uploads/uZfwA.php.png 1 -
+/wp-content/plugins/showbiz/temp/update_extract/idp36.php 1 -
+/wp-content/uploads/user_uploads/x14xN.php.png 1 -
+/wp-content/plugins/gallery-plugin/upload/php.php 9 -
+/modules/homepageadvertise2/uploadimage.php 3 -
+/wp-content/plugins/wp-property/third-party/uploadify/uploadify.php 3 -
+/wp-content/uploads/catalog_enquiry/YOKyI.php 1 -
+/wp-content/plugins/wp-property/third-party/uploadify/nJk9i.php 1 -
+/wp-content/plugins/simple-ads-manager/sam-ajax-admin.php 5 -
+//wp-content/plugins/dzs-portfolio/admin/upload.php 1 -
+/pma/scripts/setup.php 1 -
+/wp-content/uploads/wysija/themes/ok/ok.php 3 -
+/wp-content/jssor-slider/jssor-uploads/txYhl.php 1 -
+/xx2.php 1 http://blendinsurancesolutions.com.au/xx2.php
+/wp-content/plugins/cherry-plugin/admin/import-export/00EIZ.php 1 -
+/wp-content/plugins/revslider/temp/update_extract/revslider/db.php 1 -
+/wp-content/plugins/dzs-portfolio/upload.php 12 -
+/wp-content/plugins/page-google-maps/pr.php 10 -
+/wp-content/plugins/real3d-flipbook/includes/process.php 9 -
+/Z5Bp8.php.jpg 1 -
+/modules/vtemslideshow/uploadimage.php 5 -
+/wp-content/plugins/dzs-portfolio/admin/upload.php 11 -
+/wp-content/plugins/showbiz/temp/update_extract/6nqUX.php 1 -
+/wp-content/jssor-slider/jssor-uploads/8pWRG.php 1 -
+/wp-content/plugins/showbiz/temp/update_extract/i48UA.php 1 -
+http://blendinsurancesolutions.com.au/wp-content/plugins/codecanyon-157782-video-gallery-wordpress-plugin-w-youtube-vimeo-/admin/upload.php 1 -
+/phpinfo.php 1 -
+/wp-content/plugins/mm-forms-community/includes/doajaxfileupload.php 5 -
+/wp-content/uploads/catalog_enquiry/RF2AA.php 1 -
+/wp-content/plugins/dzs-videogallery/admin/upload.php 12 -
+/KlfhsYYs 1 http://www.blendinsurancesolutions.com.au/KlfhsYYs
+/wp-content/uploads/catalog_enquiry/DY34g.php 1 -
+/wp-content/plugins/wp-mobile-detector/cache/db.php 1 -
+/aboutt-us/ 2 -
+http://blendinsurancesolutions.com.au/wp-content/plugins/gallery-plugin/upload/php.php 1 -
+/wp-content/plugins/gallery-plugin/upload/files/2tts9.php.png 1 -
+http://blendinsurancesolutions.com.au/wp-content/plugins/cherry-plugin/admin/import-export/upload.php 1 -
+/modules/pk_vertflexmenu/ajax/upload.php 2 -
+/modx.php 1 http://blendinsurancesolutions.com.au/modx.php
+/modules/pk_flexmenu/ajax/upload.php 1 -
+/wp-content/plugins/Tevolution/tmplconnector/monetize/templatic-custom_fields/single-upload.php 3 -
+/wp-content/uploads/AAPL/loaders/NHAV9.php 2 -
+/.remote-sync.json 1 -
+/modules/homepageadvertise/uploadimage.php 2 -
+/components/com_sexycontactform/fileupload/index.php 2 -
+/admin/scripts/setup.php 1 -
+/wp-content/plugins/wp-symposium/server/php/vLoFWRAkpQhNTv.php 1 -
+//modules/pk_flexmenu/ajax/upload.php 2 -
+/wp-content/plugins/wp-handy-lightbox/install.php 2 -
+/phpmyadmin/scripts/setup.php 1 -
+/wp-content/plugins/wp-handy-lightbox/begin.php 8 -
+/wp-content/plugins/cherry-plugin/admin/import-export/upload.php 6 -
+/wp-content/jssor-slider/jssor-uploads/r93DA.php 1 -
+/wp-content/jssor-slider/jssor-uploads/N0w1a.php 1 -
+/wp-content/plugins/uploader/uploadify/uploadify.php 5 -
+/wp-link.php 1 http://blendinsurancesolutions.com.au/wp-link.php
+http://blendinsurancesolutions.com.au/modules/pk_flexmenu/ajax/upload.php 1 -
+/wp-content/uploads/catalog_enquiry/NJjF0.php 1 -
+//wp-content/plugins/mm-forms-community/includes/doajaxfileupload.php 1 -
+/wp-content/plugins/reflex-gallery/admin/scripts/FileUploader/php.php 10 -
+/wp-content/uploads/user_uploads/ecrBN.php.png 1 -
+/wp-content/plugins/font-uploader/font-upload.php 5 -
+/wp-content/uploads/wpstorecart/1ibY6.php 1 -
+/wp-content/plugins/showbiz/temp/update_extract/HW2yv.php 1 -
+/wp-content/plugins/wp-mobile-detector/resize.php 1 -
+/wp-content/plugins/codecanyon-157782-video-gallery-wordpress-plugin-w-youtube-vimeo-/upload.php 5 -
+/wp-content/uploader.php 1 http://blendinsurancesolutions.com.au/wp-content/uploader.php
+/wp-content/plugins/gallery-plugin/upload/files/l384v.php.png 1 -
+/components/com_adsmanager/js/noconflict.js 2 -
+/wp-content/plugins/php-event-calendar/server/file-uploader/ 5 -
+/wp-content/plugins/codecanyon-157782-video-gallery-wordpress-plugin-w-youtube-vimeo-/admin/upload.php 5 -
+/PMA/scripts/setup.php 1 -
+/wp-content/uploads/catalog_enquiry/TcVNL.php 1 -
+/.ftpconfig 1 -
+/wp-content/plugins/dzs-videogallery/upload.php 13 -
+/wp-content/jssor-slider/jssor-uploads/4VICI.php 1 -
+/wp-content/plugins/gallery-plugin/upload/files/07LBt.php.png 1 -
+http://blendinsurancesolutions.com.au/wp-content/plugins/reflex-gallery/admin/scripts/FileUploader/php.php 1 -
+/wp-content/uploads/AAPL/loaders/qywow.php 1 -
+/wp-content/plugins/cherry-plugin/admin/import-export/CaVE6.php 1 -
+//wp-content/plugins/simple-ads-manager/sam-ajax-admin.php 1 -
+//modules/homepageadvertise/uploadimage.php 1 -
+//wp-content/plugins/cherry-plugin/admin/import-export/upload.php 1 -
+/wp-content/plugins/cardoza-facebook-like-box/custom-css/xo.php 2 -
+/mysqladmin/scripts/setup.php 1 -
+/dbadmin/scripts/setup.php 1 -
+/wp-content/plugins/sharexy/ajaxresponder.php 7 -
+/wp-content/plugins/cardoza-facebook-like-box/cardoza_facebook_like_box.php 6 -
+/wp-content/uploads/catalog_enquiry/EQOHv.php 1 -
+/wp-content/plugins/contus-hd-flv-player/uploadVideo.php 11 -
+/wp-content/wp-object-cache.php 1 http://blendinsurancesolutions.com.au/wp-content/wp-object-cache.php
+/wp-content/plugins/gallery-slider/register.php 7 -
+http://blendinsurancesolutions.com.au/wp-content/plugins/wp-property/third-party/uploadify/uploadify.php 1 -
+/deployment-config.json 1 -
+/modules/attributewizardpro/file_upload.php 5 -
+/blendinsurancesolutions.com.au/ 2 -
+/modules/wdoptionpanel/wdoptionpanel_ajax.php 3 -
+/wp-content/plugins/wpstorecart/php/upload.php 5 -
+/modules/columnadverts/uploadimage.php 4 -
+/phpMyAdmin/scripts/setup.php 1 -
+/mysql/scripts/setup.php 1 -
+/275m4.php.jpg 1 -
+http://blendinsurancesolutions.com.au/modules/homepageadvertise/uploadimage.php 2 -
+/sql/scripts/setup.php 1 -
+/modules/fieldvmegamenu/uploads/15mnj.php 1 -
+//wp-content/plugins/dzs-portfolio/upload.php 1 -
+/wp-content/jssor-slider/jssor-uploads/64pah.php 1 -
+/wp-content/plugins/simple-dropbox-upload-form/dragup/ 4 -
+/wp-content/plugins/formcraft/file-upload/server/content/upload.php 10 -
+/wp-content/plugins/wp-symposium/server/php/index.php 8 -
+//wp-content/plugins/dzs-videogallery/admin/upload.php 1 -
+/wp-content/plugins/showbiz/temp/update_extract/j8XDO.php 1 -
+/wp-content/plugins/google-maps-by-daniel-martyn/inuse.php 9 -
+/myadmin/scripts/setup.php 1 -
+/sitemap.xml 2 -
+/wp-content/plugins/index.lib.php 1 http://blendinsurancesolutions.com.au/wp-content/plugins/index.lib.php
+/wp-content/plugins/formcraft/file-upload/server/php/upload.php 1 -
+/modules/pk_flexmenu/uploads/TJzvu.php 1 -
+/modules/advancedslider/ajax_advancedsliderUpload.php 2 -
+/wp-content/plugins/mailpress/mp-includes/action.php 7 -
+http://blendinsurancesolutions.com.au/modules/attributewizardpro/file_upload.php 1 -
+/wp-content/uploader.php.suspected 1 http://blendinsurancesolutions.com.au/wp-content/uploader.php.suspected
+/modules/fieldvmegamenu/ajax/upload.php 2 -
+/wp-content/uploads/user_uploads/eF0oy.php.png 1 -
+/wp-content/uploads/AAPL/loaders/wRmHM.php 1 -
+/modules/megamenu/uploadify/uploadify.php 3 -
+/wp-content/plugins/ubh/up.php 1 http://blendinsurancesolutions.com.au/wp-content/plugins/ubh/up.php
+/wp-info.php 1 http://blendinsurancesolutions.com.au/wp-info.php
+/modules/pk_vertflexmenu/uploads/13lGN.php 1 -
+/wp-content/uploads/AAPL/loaders/jBGFx.php 1 -
+/readme.html 1 http://blendinsurancesolutions.com.au/readme.html
+/wp-content/plugins/linklove/linklove.php 2 http://blendinsurancesolutions.com.au/wp-content/plugins/linklove/linklove.php
+/modules/simpleslideshow/uploadimage.php 2 -
+/wp-content/jssor-slider/jssor-uploads/nwRKF.php 2 -
+/wp-content/uploads/catalog_enquiry/H9lve.php 1 -
+/sftp-config.json 1 -
+/wp-content/plugins/cherry-plugin/admin/import-export/izlV0.php 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 132
+107.180.12.120 134 134 642252 20180131221343
+188.165.229.28 3 3 57555 20180122211355
+186.227.8.21 2 2 2 20180130232203
+118.212.135.108 1 1 1 20180106083658
+193.41.76.14 1 1 1 20180126042630
+210.101.131.231 1 1 1 20180122023038
+212.231.65.8 1 1 1 20180126042605
+195.22.125.144 1 1 1 20180127142049
+181.48.140.234 1 1 28845 20180124033133
+58.181.39.182 1 1 1 20180129065514
+148.251.211.123 1 1 1 20180127142055
+191.248.167.127 1 1 1 20180127142205
+97.102.1.202 1 1 1 20180106083639
+200.63.29.91 1 1 1 20180124032625
+34.206.207.120 1 1 1 20180127142126
+115.29.192.43 1 1 1 20180130232245
+96.9.90.124 1 1 1 20180127142211
+120.132.101.207 1 1 1 20180124032604
+41.110.24.32 1 1 1 20180129065528
+197.232.17.83 1 1 28845 20180107104336
+171.101.212.229 1 1 1 20180129065500
+178.170.86.79 1 1 1 20180124032545
+122.192.32.74 1 1 1 20180130232222
+201.72.43.195 1 1 28845 20180109112849
+122.192.32.77 1 1 1 20180129065448
+173.205.33.19 0 8 48496 
+77.67.54.7 0 5 30310 
+173.205.33.24 0 8 48496 
+4.53.111.70 0 1 6062 
+173.205.33.16 0 1 6062 
+77.67.54.11 0 2 12124 
+4.53.111.64 0 3 18186 
+173.205.33.22 0 6 36372 
+77.67.54.14 0 3 18186 
+77.67.54.4 0 4 24248 
+173.205.33.26 0 4 24248 
+4.53.111.69 0 6 36372 
+103.87.16.254 1 1 1 20180127142239
+173.205.33.18 0 4 24248 
+184.178.217.66 1 1 1 20180106083633
+14.142.7.62 1 1 1 20180107104341
+79.136.70.250 1 1 1 20180130232257
+118.193.107.210 1 1 1 20180106083652
+4.53.111.65 0 5 30310 
+91.224.133.121 1 1 1 20180127142041
+4.53.111.76 0 4 24248 
+148.240.227.100 1 1 1 20180129065527
+174.75.238.76 1 1 1 20180126042610
+173.205.33.28 0 7 42434 
+173.205.33.17 0 7 42434 
+14.202.204.14 0 15 6062 
+163.172.27.213 1 1 1 20180109112839
+104.199.249.247 1 1 1 20180127142113
+62.182.207.26 1 1 1 20180124032835
+71.13.112.152 1 1 1 20180129065609
+37.187.132.5 1 1 28786 20180117164854
+208.83.106.105 1 1 1 20180122023026
+60.208.44.228 1 1 1 20180130232354
+128.73.133.228 1 1 1 20180122023133
+77.67.54.1 0 2 12124 
+4.53.111.72 0 1 6062 
+147.135.210.114 1 1 1 20180124032715
+101.255.17.34 1 1 1 20180129065549
+195.154.168.130 0 1 7308 
+77.67.54.6 0 5 30310 
+185.190.40.146 1 1 1 20180122023025
+202.142.149.77 1 1 28845 20180109112842
+185.111.44.73 1 1 1 20180122023115
+184.176.166.8 1 1 1 20180124032547
+180.183.118.126 1 1 1 20180130232254
+61.7.168.109 1 1 1 20180107121645
+220.181.165.6 1 1 1 20180129065456
+108.161.139.77 1 1 34369 20180117165211
+40.87.66.157 1 1 1 20180129065614
+183.240.92.136 1 1 1 20180124032522
+75.151.213.85 1 1 1 20180130232220
+4.53.111.75 0 4 24248 
+188.163.108.217 1 1 7437 20180121114705
+173.205.33.27 0 9 54558 
+212.83.164.85 1 1 1 20180126042619
+77.67.54.12 0 6 36372 
+149.202.180.55 1 1 1 20180106083714
+183.88.113.218 1 1 1 20180129065640
+69.164.195.188 1 1 1 20180130232421
+103.14.27.174 1 1 1 20180127142104
+95.110.229.182 1 1 1 20180126042601
+83.167.62.183 1 1 1 20180130232322
+221.231.109.40 1 1 1 20180122023008
+77.67.54.2 0 2 12124 
+103.251.164.4 1 1 21 20180126042715
+24.174.198.85 1 1 1 20180130232223
+24.249.199.14 1 1 1 20180126042618
+77.67.54.0 0 1 6062 
+77.67.54.3 0 3 18186 
+173.205.33.21 0 11 66682 
+4.53.111.71 0 1 6062 
+5.189.135.164 1 1 1 20180109113051
+4.53.111.77 0 2 12124 
+173.205.33.29 0 7 42434 
+173.205.33.20 0 6 36372 
+4.53.111.67 0 2 12124 
+46.146.220.74 1 1 1 20180122022959
+77.67.54.9 0 4 24248 
+4.53.111.79 0 3 18186 
+14.117.233.79 1 1 1 20180126042656
+89.248.172.234 1 1 1 20180124032732
+4.53.111.73 0 3 18186 
+77.67.54.5 0 3 18186 
+46.4.141.168 1 1 1 20180126042736
+4.53.111.74 0 3 18186 
+173.205.33.30 0 3 18186 
+4.53.111.78 0 2 12124 
+54.90.189.192 1 1 2390 20180125130958
+80.211.240.206 1 1 1 20180122023058
+110.77.242.232 1 1 1 20180107104339
+173.205.33.23 0 2 12124 
+66.70.160.178 1 1 1 20180127142045
+36.83.83.219 1 1 1 20180126042749
+77.67.54.10 0 4 24248 
+14.1.41.201 1 1 1 20180106083634
+106.48.54.10 1 1 1 20180130232340
+164.52.44.42 1 1 1 20180129065718
+116.58.251.142 1 1 1 20180107104356
+173.205.33.31 0 7 42434 
+4.53.111.66 0 4 24248 
+190.12.20.242 1 1 28845 20180122023549
+185.51.189.43 1 1 1 20180124032551
+171.37.141.105 1 1 1 20180124032544
+4.53.111.68 0 2 12124 
+77.67.54.15 0 6 36372 
+210.209.197.24 1 1 1 20180129065537
+173.205.33.25 0 6 36372 
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 31
+20180101 4 8 40211 3
+20180102 4 14 76583 3
+20180103 5 13 64459 4
+20180104 7 16 86487 4
+20180105 4 5 22028 3
+20180106 10 10 15972 9
+20180107 8 24 141807 6
+20180108 3 12 70524 2
+20180109 6 16 134278 5
+20180110 6 13 74366 3
+20180111 3 14 83550 2
+20180112 6 7 37994 3
+20180113 3 4 22028 2
+20180114 3 21 126328 2
+20180115 4 14 76586 3
+20180116 5 11 52338 4
+20180117 6 13 121555 5
+20180118 3 10 58400 2
+20180119 8 10 63268 2
+20180120 2 2 15966 1
+20180121 5 14 71899 4
+20180122 17 25 166836 13
+20180123 7 11 56182 4
+20180124 15 21 81195 14
+20180125 5 6 24420 4
+20180126 15 16 22060 14
+20180127 16 16 31946 13
+20180128 3 8 46278 2
+20180129 17 35 46291 16
+20180130 14 23 70537 13
+20180131 6 16 92010 4
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 2
+0s-30s 168
+2mn-5mn 1
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 88
+/wp-admin/admin-ajax.php 73 93 73 72
+/wp-cron.php 52 0 46 51
+/index.php 7 207380 7 7
+/ 3 64991 1 2
+http://blendinsurancesolutions.com.au/wp-admin/admin-ajax.php 2 2 2 2
+/deleteme.chaqdmkk.php 1 1623 1 0
+/deleteme.wpyrie.php 1 14343 0 1
+/deleteme.wphbpo.php 1 14343 0 1
+/deleteme.wpbuaj.php 1 14343 0 1
+/deleteme.wpnocr.php 1 14345 0 1
+/deleteme.chake25h.php 1 1623 1 0
+/deleteme.wpchvi.php 1 14340 0 1
+/deleteme.chaiyxft.php 1 1623 1 0
+/deleteme.chamgt0e.php 1 1623 1 0
+/deleteme.chaj5dqb.php 1 1623 1 0
+/deleteme.wptuh8.php 1 15245 0 1
+/deleteme.wpr5cp.php 1 14343 0 0
+/deleteme.wpmhk2.php 1 14343 0 1
+/deleteme.chazxgkk.php 1 1623 1 0
+/deleteme.wplwsc.php 1 14345 0 1
+/deleteme.wp2g85.php 1 14343 0 1
+/deleteme.cha7kiiv.php 1 1623 1 0
+/deleteme.chahqlqu.php 1 1623 1 0
+/deleteme.wpto8n.php 1 14343 0 0
+/deleteme.wpbwgn.php 1 14343 0 1
+/deleteme.wp7cs9.php 1 14345 0 1
+/deleteme.chamuvee.php 1 1623 1 0
+/deleteme.wpc6xq.php 1 14343 0 0
+/deleteme.chanvqxj.php 1 1623 1 0
+/deleteme.wph79e.php 1 14345 0 1
+/deleteme.wpcolr.php 1 14343 0 0
+/deleteme.wppfa5.php 1 14345 0 1
+/deleteme.wpeqn0.php 1 14340 0 1
+/deleteme.wpzvzv.php 1 14340 0 1
+/deleteme.wprjwo.php 1 14343 0 1
+/deleteme.wphhcc.php 1 14345 0 0
+/deleteme.chakljew.php 1 1623 1 0
+/deleteme.wpahkp.php 1 14343 0 1
+/deleteme.cha3phwb.php 1 1623 0 1
+/deleteme.chaawauh.php 1 1623 1 0
+/deleteme.wp1ncr.php 1 14343 0 1
+/deleteme.chasdysd.php 1 1623 1 0
+/deleteme.chahry05.php 1 1623 1 0
+/deleteme.chaaysng.php 1 1623 1 0
+/deleteme.chay1yba.php 1 1623 1 0
+/feed/ 1 2390 1 1
+/deleteme.chanqm9h.php 1 1623 0 0
+/deleteme.cha9svtk.php 1 1623 1 0
+/deleteme.chaij0ws.php 1 1623 1 0
+/deleteme.wpnvqr.php 1 14343 0 1
+/deleteme.cha6vciw.php 1 1623 1 0
+/deleteme.chaid2zg.php 1 1623 1 0
+/deleteme.wpacit.php 1 14340 0 1
+/deleteme.chatlill.php 1 1623 1 0
+/deleteme.chacqnhg.php 1 1623 1 0
+/deleteme.chaqhlaj.php 1 1623 1 0
+/deleteme.wpfr2m.php 1 14072 0 1
+/deleteme.wpfgsp.php 1 14345 0 1
+/deleteme.wptaxa.php 1 14343 0 1
+/deleteme.wpdeeq.php 1 14072 0 1
+/deleteme.wpdr7s.php 1 14343 0 1
+/deleteme.chafjwmy.php 1 1623 1 0
+/deleteme.chaetk9g.php 1 1623 0 0
+/deleteme.chavfriv.php 1 1623 1 0
+/deleteme.chaezcao.php 1 1623 1 0
+/deleteme.chaflygl.php 1 1623 1 0
+/deleteme.chaqwd1x.php 1 1623 1 0
+/deleteme.wpkkyp.php 1 14343 0 0
+/deleteme.chays59r.php 1 1623 1 0
+/deleteme.wplpcf.php 1 14345 0 0
+/deleteme.chaopxnx.php 1 1623 1 0
+/deleteme.chayhxto.php 1 1623 1 0
+/deleteme.wpflln.php 1 14343 0 1
+/deleteme.wp9naw.php 1 14343 0 1
+/deleteme.chabljmg.php 1 1623 1 0
+/deleteme.wpbtkr.php 1 14343 0 1
+/deleteme.wp9s1f.php 1 14343 0 1
+/deleteme.chaf0pke.php 1 1623 1 0
+/deleteme.cha2ggpb.php 1 1623 1 0
+/deleteme.wp7me4.php 1 14345 0 1
+/deleteme.wptqlx.php 1 14343 0 1
+/deleteme.chaqycbj.php 1 1623 1 0
+/deleteme.wpsgk5.php 1 14343 0 1
+/deleteme.chayio6e.php 1 1623 1 0
+/deleteme.chaichmm.php 1 1623 1 0
+/deleteme.cha9vknb.php 1 1623 1 0
+/deleteme.chadgdti.php 1 1623 1 0
+/deleteme.wp1fhd.php 1 14343 0 1
+END_SIDER

@@ -1,0 +1,51 @@
+Return-Path: <noreply@a2plcpnl0914.prod.iad2.secureserver.net>
+Delivered-To: blendinsurance@a2plcpnl0914.prod.iad2.secureserver.net
+Received: from a2plcpnl0914.prod.iad2.secureserver.net
+	by a2plcpnl0914.prod.iad2.secureserver.net (Dovecot) with LMTP id KSNdCow5wlla4gIAkCzJvQ
+	for <blendinsurance@a2plcpnl0914.prod.iad2.secureserver.net>; Wed, 20 Sep 2017 02:49:00 -0700
+Return-path: <noreply@a2plcpnl0914.prod.iad2.secureserver.net>
+Envelope-to: blendinsurance@a2plcpnl0914.prod.iad2.secureserver.net
+Delivery-date: Wed, 20 Sep 2017 02:49:00 -0700
+Received: from root by a2plcpnl0914.prod.iad2.secureserver.net with local (Exim 4.88)
+	(envelope-from <noreply@a2plcpnl0914.prod.iad2.secureserver.net>)
+	id 1dubcq-000nIT-Hi
+	for blendinsurance@a2plcpnl0914.prod.iad2.secureserver.net; Wed, 20 Sep 2017 02:49:00 -0700
+To: blendinsurance@a2plcpnl0914.prod.iad2.secureserver.net
+Subject: [Installatron] WordPress 4.8.2 now available (security release)
+Date: Wed, 20 Sep 2017 03:49:00 -0600
+From: noreply@a2plcpnl0914.prod.iad2.secureserver.net
+Message-ID: <aa48a7eeef32ef077ed1e8c739dee11b@a2plcpnl0914.prod.iad2.secureserver.net>
+X-Mailer: Installatron Plugin 9.1.33
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+This is an automated email from Installatron. To unsubscribe from these emails or to change notification settings, login to your web hosting control panel, navigate to the Installatron tool, and select the installed applications you wish to modify.
+
+An update to WordPress 4.8.2 (security release) is now available for the WordPress installations you are managing using Installatron. The following can be updated:
+
+- http://blendinsurancesolutions.com.au
+
+
+The changes for this version are:
+
+This is a security release for all previous versions and we strongly encourage you to update your sites immediately.
+
+WordPress versions 4.8.1 and earlier are affected by these security issues:
+
+* $wpdb->prepare() can create unexpected and unsafe queries leading to potential SQL injection (SQLi). WordPress core is not directly vulnerable to this issue, but we’ve added hardening to prevent plugins and themes from accidentally causing a vulnerability. Reported by Slavco
+* A cross-site scripting (XSS) vulnerability was discovered in the oEmbed discovery. Reported by xknown of the WordPress Security Team.
+* A cross-site scripting (XSS) vulnerability was discovered in the visual editor. Reported by Rodolfo Assis (@brutelogic) of Sucuri Security.
+* A path traversal vulnerability was discovered in the file unzipping code. Reported by Alex Chapman (noxrnet).
+* A cross-site scripting (XSS) vulnerability was discovered in the plugin editor. Reported by 陈瑞琦 (Chen Ruiqi).
+* An open redirect was discovered on the user and term edit screens. Reported by Yasin Soliman (ysx).
+* A path traversal vulnerability was discovered in the customizer. Reported by Weston Ruter of the WordPress Security Team.
+* A cross-site scripting (XSS) vulnerability was discovered in template names. Reported by Luka (sikic).
+* A cross-site scripting (XSS) vulnerability was discovered in the link modal. Reported by Anas Roubi (qasuar).
+
+In addition to the security issues above, WordPress 4.8.2 contains 6 maintenance fixes to the 4.8 release series.
+
+Login to your web hosting control panel and navigate to the Installatron tool to update your installed applications.
+
+End of report.
+

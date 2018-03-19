@@ -1,0 +1,31 @@
+Return-Path: <noreply@a2plcpnl0914.prod.iad2.secureserver.net>
+Delivered-To: blendinsurance@a2plcpnl0914.prod.iad2.secureserver.net
+Received: from a2plcpnl0914.prod.iad2.secureserver.net
+	by a2plcpnl0914.prod.iad2.secureserver.net (Dovecot) with LMTP id Kb8sHtF4xFmJTgcAkCzJvQ
+	for <blendinsurance@a2plcpnl0914.prod.iad2.secureserver.net>; Thu, 21 Sep 2017 19:43:29 -0700
+Return-path: <noreply@a2plcpnl0914.prod.iad2.secureserver.net>
+Envelope-to: blendinsurance@a2plcpnl0914.prod.iad2.secureserver.net
+Delivery-date: Thu, 21 Sep 2017 19:43:29 -0700
+Received: from root by a2plcpnl0914.prod.iad2.secureserver.net with local (Exim 4.88)
+	(envelope-from <noreply@a2plcpnl0914.prod.iad2.secureserver.net>)
+	id 1dvDw9-00231J-EO
+	for blendinsurance@a2plcpnl0914.prod.iad2.secureserver.net; Thu, 21 Sep 2017 19:43:29 -0700
+To: blendinsurance@a2plcpnl0914.prod.iad2.secureserver.net
+Subject: [Installatron] My blog update failed
+Date: Thu, 21 Sep 2017 20:43:29 -0600
+From: noreply@a2plcpnl0914.prod.iad2.secureserver.net
+Message-ID: <0e5531efb16febbae4c181dee27d6d20@a2plcpnl0914.prod.iad2.secureserver.net>
+X-Mailer: Installatron Plugin 9.1.33
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+This is an automated email from Installatron. To unsubscribe from these emails or to change notification settings, login to your web hosting control panel, navigate to the Installatron tool, and select the installed applications you wish to modify.
+
+The update process for My blog located at http://blendinsurancesolutions.com.au has failed and the details of the failure have been logged.
+
+Technical error:
+Error: field_version: The selected version, or a version between it and the installed version, does not support upgrading. Check the application's website to see if a &quot;migration&quot; tool is available.
+
+
+End of report.
+

@@ -1,0 +1,671 @@
+AWSTATS DATA FILE 7.4 (build 20140726)
+# If you remove this file, all statistics for date 201710 will be lost/reset.
+# Last config file used to build this data file was /home/blendinsurance/tmp/awstats/ssl/awstats.blendinsurancesolutions.com.au.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2037                
+POS_TIME 2720                
+POS_VISITOR 12660               
+POS_DAY 21154               
+POS_DOMAIN 3546                
+POS_LOGIN 4162                
+POS_ROBOT 4317                
+POS_WORMS 4821                
+POS_EMAILSENDER 4952                
+POS_EMAILRECEIVER 5095                
+POS_SESSION 22005               
+POS_SIDER 22214               
+POS_FILETYPES 5230                
+POS_DOWNLOADS 5527                
+POS_OS 5873                
+POS_BROWSER 6129                
+POS_SCREENSIZE 7077                
+POS_UNKNOWNREFERER 7151                
+POS_UNKNOWNREFERERBROWSER 7657                
+POS_ORIGIN 8058                
+POS_SEREFERRALS 8201                
+POS_PAGEREFS 8388                
+POS_SEARCHWORDS 8804                
+POS_KEYWORDS 8956                
+POS_MISC 2382                
+POS_ERRORS 9015                
+POS_CLUSTER 4018                
+POS_SIDER_404 9157                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20171101001833 118 28281 7356616039788
+FirstTime 20171001014450
+LastTime 20171031233350
+LastUpdate 20171101051154 118 0 117 0 0
+TotalVisits 950                 
+TotalUnique 191                 
+MonthHostsKnown 0                   
+MonthHostsUnknown 221                 
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+RealPlayerSupport 0 0 0
+FlashSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+AddToFavourites 0 167 0
+QuickTimeSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+JavaEnabled 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 41 143 2174021 11 21 199692
+1 32 97 1637357 9 44 426984
+2 25 90 1555022 9 51 1063243
+3 17 37 927279 9 26 151396
+4 23 105 1520130 5 32 926291
+5 6 31 404517 11 46 1101439
+6 10 29 421105 12 21 322054
+7 12 41 411345 1 9 43004
+8 12 29 310124 19 44 236466
+9 18 18 338180 5 24 627991
+10 5 9 687026 6 18 310607
+11 9 11 470185 9 26 231050
+12 3 20 499788 3 7 156709
+13 13 61 949773 7 15 497089
+14 65 190 3608493 11 25 257651
+15 159 286 4908462 15 143 1233580
+16 98 217 4420249 15 49 457199
+17 106 234 4202317 13 34 282801
+18 77 141 2608025 11 33 575299
+19 70 125 3155335 5 26 208630
+20 98 329 5231128 8 81 520019
+21 199 574 9722921 18 95 661727
+22 116 281 4666927 6 43 637150
+23 54 151 2541150 11 50 580813
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 28
+us 660 865 19702798
+au 311 1695 25531887
+ie 222 222 6375132
+gb 13 143 1778845
+in 8 56 640155
+nz 8 88 969034
+cn 6 6 44372
+br 4 5 80227
+ca 4 34 404338
+de 4 36 412542
+sg 2 21 203566
+mk 2 2 31070
+jp 2 2 31070
+vn 2 2 31070
+ma 2 2 30808
+ba 2 2 31070
+pl 2 2 31070
+nl 2 3 49419
+my 2 2 31070
+ve 2 2 31070
+bd 2 2 31070
+ph 1 17 190866
+ua 1 1 2410
+hk 1 17 190866
+ru 1 19 396721
+cz 0 1 108689
+sc 1 1 2293
+fr 1 1 7331
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 10
+bot[\s_+:,\.\;\/\\-] 154 2102510 20171031224719 32
+googlebot 134 1768167 20171031014421 23
+bingpreview 127 3703651 20171031025945 0
+spider 74 2312675 20171031080239 0
+robot 25 103185 20171031225230 9
+unknown 7 483 20171025225101 7
+googlebot\-image 3 0 20171020033234 0
+slurp 2 7488 20171016100949 1
+netcraft 1 28777 20171011091411 0
+no_user_agent 1 3192 20171012033337 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 12
+html 1017 24523957 0 0
+jpg 158 6340753 0 0
+pdf 44 5951008 0 0
+Unknown 11 54959 0 0
+jpeg 2 16930 0 0
+svg 8 45046 0 0
+woff2 2 143786 0 0
+css 172 2738864 0 0
+php 238 3484314 0 0
+gif 9 75342 0 0
+png 261 3537727 0 0
+js 1327 10458173 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 3
+/wp-content/uploads/2017/10/Blend-Financial-Services-Guide-BLEND-FSG-220617.pdf 31 0 3504053
+/wp-content/uploads/Steadfast%20Underwriting%20Agencies%20Privacy%20Policy%20(March%202017).pdf 19 0 3559749
+/wp-content/uploads/2017/10/Blend-Insurance-Solutions-Privacy-Policy-June-2017.pdf 11 0 1312443
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 14
+win8.1 420 56
+winnt 266 18
+Unknown 143 127
+macosx8 2 2
+linuxandroid 16 1
+macosx 706 223
+macosx9 1 0
+winlong 23 2
+linux 19 3
+ios_iphone 239 22
+bsdfreebsd 1 1
+win7 1406 808
+winxp 6 5
+java 1 0
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 45
+chrome15.0.861.0 1 1
+msie11.0 376 28
+chrome51.0.2704.79 17 1
+safari10.0.1 116 59
+chrome58.0.3029.110 2 2
+chrome56.0.2924.87 5 1
+firefox53.0 1 1
+chrome60.0.3112.113 162 34
+chrome51.0.2704.103 2 2
+firefox31.0 1 1
+chrome45.0.2454.101 20 4
+chrome41.0.2228.0 1 0
+chrome51.0.2704.106 16 1
+firefox19.0 1 1
+firefox49.0 1 1
+firefox2.0.0.11 1 0
+chrome31.0.1650.57 17 1
+safari11.0 143 12
+chrome61.0.3163.91 19 2
+chrome26.0.1410.65 1 1
+chrome30.0.1599.66 17 1
+chrome44.0.2403.107 2 0
+msie9.0 732 705
+msie8.0 14 13
+chrome61.0.3163.100 1148 204
+mozilla 1 1
+msie6.0 1 1
+Unknown 127 126
+chrome58.0.3029.81 17 1
+firefox37.0 1 1
+firefox54.0 1 0
+firefox32.0 2 2
+chrome59.0.3071.115 17 1
+firefox40.1 34 34
+chrome15.0.874.121 1 1
+safari 17 1
+firefox27.0 2 2
+chrome33.0.1750.149 3 2
+chrome62.0.3202.75 1 0
+opera11.01 1 1
+safari6.0.5 17 1
+safari10.0 133 13
+safari9.0 17 1
+chrome52.0.2743.116 39 2
+chrome23.0.1271.97 1 1
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 8
+Xenu_Link_Sleuth/1.3.8 20171002013825
+Mozilla/5.0_AppleWebKit/536.30.1_(KHTML,_like_Gecko)_Version/6.0.5_Safari/536.30.1_Installatron_(Mimicking_WebKit) 20171009014435
+Magic_Browser 20171031190521
+WordPress/4.7.5;_https://blendinsurancesolutions.com.au 20171031200434
+Go_1.1_package_http 20171007063336
+Python/3.6_aiohttp/2.2.5 20171003184312
+Pcore-HTTP/v0.44.0 20171013071659
+Installatron_Plugin/9.1.34 20171009014430
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 8
+Installatron_Plugin/9.1.34 20171009014430
+Pcore-HTTP/v0.44.0 20171013071659
+Python/3.6_aiohttp/2.2.5 20171003184312
+Java/1.8.0_101 20171011145245
+WordPress/4.7.5;_https://blendinsurancesolutions.com.au 20171031200434
+Magic_Browser 20171031190521
+Go_1.1_package_http 20171007063336
+Xenu_Link_Sleuth/1.3.8 20171002013825
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 868 905
+From1 0 0
+From2 74 84
+From3 11 11
+From4 315 2249
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 4
+yahoo 1 1
+yandex 1 2
+bing 4 7
+google 68 74
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 6
+https://www.foxweber.com 4 4
+https://www.linkedin.com 3 3
+http://www.inavigator.com.au/ftproot/inavaus/htmldocs/blend%20insurance%20solutions.html 1 1
+http://www.phoenicx.co.uk 1 1
+https://yellowstonevisitortours.com 1 1
+https://au1.jobadder.com/companies/2041643 1 1
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 6
+405 3 144
+404 240 1670613
+302 8 0
+301 15 256
+421 1 322
+206 1 7421
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 34
+/wp-content/uploads/2017/03/about-us-headshot-2-300x300.jpg 7 https://blendinsurancesolutions.com.au/wp-admin/upload.php
+/apple-touch-icon.png 2 -
+/wp-content/uploads/2017/03/about-us-1-300x248.jpg 7 https://blendinsurancesolutions.com.au/wp-admin/upload.php
+/wp-content/uploads/2017/03/portfolio-2b-300x140.jpg 7 https://blendinsurancesolutions.com.au/wp-admin/upload.php
+/wp-content/uploads/2017/03/portfolio-2a-300x113.jpg 7 https://blendinsurancesolutions.com.au/wp-admin/upload.php
+/wp-content/uploads/2017/03/services-2-300x199.jpg 7 https://blendinsurancesolutions.com.au/wp-admin/upload.php
+/wp-content/uploads/2017/03/services-1-300x195.jpg 7 https://blendinsurancesolutions.com.au/wp-admin/upload.php
+/wp-content/uploads/2017/03/gallery-1-300x200.jpg 7 https://blendinsurancesolutions.com.au/wp-admin/upload.php
+/wp-content/uploads/2017/03/portfolio-2c-300x146.jpg 7 https://blendinsurancesolutions.com.au/wp-admin/upload.php
+/blendinsurancesolutions.com.au/ 4 -
+/wp-content/uploads/2017/03/gallery-8-300x200.jpg 7 https://blendinsurancesolutions.com.au/wp-admin/upload.php
+/wp-content/uploads/2017/03/home-2-300x195.jpg 7 https://blendinsurancesolutions.com.au/wp-admin/upload.php
+/wp-content/uploads/2017/03/home-3-300x200.jpg 7 https://blendinsurancesolutions.com.au/wp-admin/upload.php
+/apple-touch-icon-120x120.png 1 -
+/apple-touch-icon-120x120-precomposed.png 1 -
+/wp-content/uploads/steadfast%20underwriting%20agencies%20privacy%20policy%20(march%202017).pdf 11 -
+/wp-content/uploads/2017/03/gallery-5-300x200.jpg 7 https://blendinsurancesolutions.com.au/wp-admin/upload.php
+/wp-content/uploads/2017/03/cropped-gallery-6-300x122.jpg 7 https://blendinsurancesolutions.com.au/wp-admin/upload.php
+/wp-content/uploads/2017/03/about-us-headshot-3-300x300.jpg 7 https://blendinsurancesolutions.com.au/wp-admin/upload.php
+/apple-app-site-association 16 -
+/wp-content/uploads/2017/03/gallery-3-300x200.jpg 7 https://blendinsurancesolutions.com.au/wp-admin/upload.php
+/.well-known/assetlinks.json 16 -
+/wp-content/uploads/2017/03/portfolio-2d-300x268.jpg 7 https://blendinsurancesolutions.com.au/wp-admin/upload.php
+/wp-content/uploads/2017/03/about-us-headshot-1-300x300.jpg 7 https://blendinsurancesolutions.com.au/wp-admin/upload.php
+/wp-content/uploads/2017/03/home-1-300x200.jpg 7 https://blendinsurancesolutions.com.au/wp-admin/upload.php
+/wp-content/uploads/2017/03/gallery-7-300x200.jpg 7 https://blendinsurancesolutions.com.au/wp-admin/upload.php
+/wp-content/uploads/2017/03/gallery-4-200x300.jpg 7 https://blendinsurancesolutions.com.au/wp-admin/upload.php
+/wp-content/uploads/2017/03/portfolio-1c-300x245.jpg 7 https://blendinsurancesolutions.com.au/wp-admin/upload.php
+/wp-content/uploads/2017/03/home-4-225x300.jpg 7 https://blendinsurancesolutions.com.au/wp-admin/upload.php
+/wp-content/uploads/2017/03/gallery-6-300x200.jpg 7 https://blendinsurancesolutions.com.au/wp-admin/upload.php
+/wp-content/uploads/2017/03/gallery-2-300x200.jpg 7 https://blendinsurancesolutions.com.au/wp-admin/upload.php
+/wp-content/uploads/2017/03/portfolio-1a-300x199.jpg 4 https://blendinsurancesolutions.com.au/wp-admin/upload.php
+/gtm.start 1 -
+/.well-known/apple-app-site-association 16 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 221
+203.219.119.54 197 456 7779974 20171008161028
+107.180.12.120 97 97 342442 20171031200434
+14.202.204.14 41 270 4820049 20171029163115
+173.205.33.23 28 28 803660 20171031010246
+173.205.33.29 28 28 805494 20171031200434
+173.205.33.21 27 27 774621 20171031170859
+173.205.33.30 24 24 689862 20171031170145
+173.205.33.22 23 23 659775 20171030223557
+173.205.33.27 23 23 660299 20171031215134
+173.205.33.17 22 22 632046 20171030232457
+173.205.33.20 21 21 602745 20171031212342
+77.67.54.8 21 21 602483 20171030161025
+173.205.33.26 20 20 573706 20171031152401
+77.67.54.11 20 20 574754 20171030220551
+77.67.54.7 19 19 545977 20171031155817
+173.205.33.18 18 18 517462 20171031201716
+173.205.33.28 18 18 517986 20171031181005
+173.205.33.19 18 18 516676 20171030144637
+173.205.33.16 18 18 517462 20171031221845
+173.205.33.24 16 16 460432 20171031053806
+77.67.54.12 16 16 459384 20171030174831
+77.67.54.3 16 16 459646 20171030165614
+4.53.111.65 16 16 460170 20171031205025
+77.67.54.14 15 15 431131 20171031210419
+4.53.111.73 15 15 430607 20171025151654
+151.227.207.16 2 20 391715 20171030141608
+54.246.219.36 1 1 7331 20171003184312
+201.209.41.228 2 2 31070 20171028102647
+1.144.97.196 4 21 321819 20171017174222
+173.63.44.237 1 16 186544 20171005040305
+187.0.169.66 0 1 18349 
+118.93.143.167 4 20 205835 20171025201229
+204.79.180.17 0 2 194241 
+208.72.125.2 1 16 186634 20171017130553
+49.255.196.86 2 18 198481 20171018212030
+77.67.54.2 12 12 344014 20171025224014
+202.161.114.34 1 17 190867 20171008172318
+112.5.243.213 1 1 7333 20171005205513
+54.213.200.109 1 1 28804 20171017145525
+54.188.94.253 1 17 212223 20171017150457
+34.253.118.141 1 1 7329 20171007063336
+77.67.54.6 11 11 315499 20171029215443
+52.41.211.72 6 6 44526 20171029183046
+112.5.248.148 1 1 7333 20171001094528
+203.217.22.35 1 17 190882 20171029174125
+210.195.188.141 2 2 31070 20171029172256
+203.45.251.228 1 17 190864 20171029202754
+69.164.111.198 0 1 197295 
+4.53.111.71 9 9 258469 20171031232031
+80.80.41.255 2 2 31070 20171020233229
+52.72.221.191 1 1 28804 20171017150437
+101.186.80.35 2 21 521649 20171026040534
+1.129.106.46 1 17 190864 20171030003357
+177.96.17.67 2 2 30808 20171001173736
+165.228.229.103 1 18 299553 20171016181551
+98.248.140.177 1 1 0 20171002013825
+210.215.78.4 2 35 490538 20171026014610
+212.47.228.39 1 1 7331 20171003221800
+84.57.116.8 2 2 30808 20171007115107
+176.119.28.146 1 1 2410 20171012033336
+104.237.243.64 1 1 28777 20171010232035
+71.49.13.195 2 2 31070 20171023162347
+54.245.54.223 1 1 0 20171021034503
+210.215.71.162 8 108 1581654 20171030222717
+210.11.177.224 1 17 190864 20171017205534
+203.161.154.42 4 34 437192 20171029175718
+108.171.134.160 1 17 190777 20171003162227
+103.5.134.74 0 1 18349 
+77.67.54.15 10 10 287770 20171031135300
+204.79.180.18 0 4 57555 
+218.189.28.194 1 17 190866 20171031155417
+112.5.248.162 1 1 7432 20171027154602
+168.140.181.4 2 34 381641 20171030223437
+77.67.54.4 14 14 402354 20171031152857
+109.63.248.32 0 1 186803 
+160.202.32.19 2 2 31070 20171018001902
+34.212.13.96 1 1 7421 20171008171724
+77.67.54.1 11 11 315761 20171030143930
+204.79.180.2 0 2 1799 
+77.67.54.0 7 7 200915 20171024142952
+107.178.194.250 0 1 108689 
+88.99.2.220 1 1 28777 20171019094538
+49.181.170.235 3 24 268849 20171011003908
+52.34.24.33 8 8 59368 20171031190521
+54.188.114.125 1 1 7421 20171019003754
+107.178.194.246 0 3 404181 
+4.53.111.78 9 9 258731 20171030225117
+112.5.248.248 1 1 7423 20171021210927
+111.65.56.219 1 4 12699 20171031223812
+103.46.201.159 2 2 31070 20171028093344
+49.195.139.220 1 17 190869 20171024183730
+4.53.111.64 6 6 172400 20171030143938
+112.5.243.231 1 1 7428 20171011181312
+4.53.111.66 11 11 316023 20171029215448
+59.167.25.9 1 17 190864 20171024144507
+204.79.180.14 0 1 4230 
+47.29.71.53 2 2 31070 20171015183439
+54.162.210.242 1 1 28804 20171017150655
+1.129.110.140 1 17 190867 20171025225101
+31.221.114.50 7 71 785847 20171030042751
+89.197.3.26 1 17 190867 20171009020906
+204.79.180.0 0 2 6611 
+93.81.5.108 0 1 18349 
+204.79.180.16 0 3 196330 
+82.17.248.228 1 17 190774 20171002232326
+204.79.180.11 0 1 33766 
+103.199.119.252 4 19 208888 20171015155301
+77.67.54.5 14 14 402092 20171030223128
+111.65.33.207 1 17 190867 20171030003553
+117.120.18.136 3 20 290198 20171001162313
+101.185.115.26 2 2 30808 20171004231830
+54.219.178.100 1 1 7418 20171020223624
+124.104.224.10 1 17 190866 20171019211838
+165.231.24.119 1 1 2293 20171025170146
+124.123.52.77 1 17 190867 20171031223327
+71.196.29.13 1 1 7418 20171029170343
+54.167.33.111 1 17 212223 20171017150716
+4.53.111.70 12 12 344800 20171029174128
+107.178.194.248 0 1 108689 
+54.205.195.31 1 1 28804 20171023162410
+1.144.96.82 1 17 190864 20171011223403
+204.79.180.10 0 2 3867 
+85.115.33.180 1 17 190865 20171031063609
+104.237.243.68 1 1 28777 20171030160923
+52.53.231.176 1 1 7418 20171012100117
+54.188.147.42 1 17 212223 20171017145548
+52.4.244.57 1 1 28777 20171011222604
+61.68.45.105 1 17 190864 20171011024624
+54.166.29.37 1 17 211961 20171002222933
+178.140.80.77 1 17 191569 20171008021029
+119.17.57.126 1 17 190982 20171015200225
+34.230.19.217 1 1 28542 20171002222910
+220.101.78.174 1 17 190864 20171015222256
+54.189.5.156 1 1 7421 20171010225717
+4.53.111.72 5 5 143623 20171027110622
+35.162.70.167 10 10 74210 20171030184240
+138.201.125.171 1 17 190867 20171009014434
+4.53.111.77 8 8 229954 20171030184635
+54.67.67.222 1 1 7418 20171019214244
+54.185.183.204 1 1 7421 20171025064342
+210.10.195.222 1 17 190864 20171016171449
+103.210.10.70 1 17 190981 20171024144035
+34.209.175.187 3 9 86151 20171017155159
+165.125.178.19 1 17 190864 20171031082244
+1.129.97.27 1 17 190864 20171010225343
+4.53.111.68 8 8 229954 20171029175015
+220.101.98.130 2 32 373094 20171005164937
+124.170.192.206 3 18 201536 20171024234513
+54.145.112.2 0 1 108689 
+165.225.98.70 1 17 190983 20171030175846
+122.107.85.137 1 17 190864 20171024235411
+49.197.230.150 1 17 190867 20171029211213
+213.34.72.158 0 1 18349 
+204.79.180.4 0 1 186803 
+77.67.54.9 15 15 430345 20171029213038
+173.205.33.25 14 14 402092 20171031143335
+46.76.26.71 2 2 31070 20171015042038
+62.45.61.178 2 2 31070 20171017090732
+110.143.242.231 1 17 190867 20171022203602
+115.70.208.169 1 17 190900 20171017170010
+4.53.111.76 11 11 315761 20171030200516
+210.11.182.53 1 21 938079 20171011195338
+4.53.111.69 7 7 200653 20171026010822
+31.148.130.207 0 1 108689 
+173.205.33.31 13 13 373577 20171026175150
+112.5.248.144 1 1 7423 20171016171945
+77.67.54.10 8 8 229954 20171031183106
+64.235.154.141 2 2 57554 20171030164150
+202.191.127.37 2 2 31070 20171016050445
+204.79.180.23 0 1 8039 
+165.117.232.82 2 3 185485 20171031233350
+121.220.57.109 1 17 190864 20171008211325
+120.152.150.112 0 1 186803 
+4.53.111.67 12 12 344538 20171026204326
+118.93.135.154 1 17 190777 20171003185916
+121.44.104.199 1 17 190864 20171024230854
+115.64.18.6 1 17 190774 20171005034037
+116.100.242.30 2 2 31070 20171024191928
+105.156.240.90 2 2 30808 20171007180315
+189.27.111.143 2 2 31070 20171020090426
+54.86.67.219 0 2 255862 
+204.79.180.13 0 1 23966 
+203.10.43.238 1 17 190864 20171010192845
+129.94.8.155 1 17 190864 20171012022617
+35.155.221.26 1 1 7331 20171004043431
+204.79.180.20 0 1 4014 
+34.216.19.186 1 1 7421 20171019173451
+4.53.111.75 9 9 258731 20171026212524
+185.80.166.10 2 2 31070 20171025132033
+101.164.85.126 2 18 198102 20171003235137
+27.99.55.191 1 17 190864 20171016042738
+64.235.153.11 2 2 57554 20171024221347
+34.209.182.200 1 3 28777 20171016223006
+156.13.71.98 1 17 190866 20171012010126
+104.198.40.5 2 2 15448 20171013071659
+61.69.82.118 2 34 381644 20171019212053
+64.235.153.8 1 1 28777 20171030172654
+122.151.194.83 0 1 108689 
+204.79.180.19 0 1 186803 
+64.235.154.104 3 3 85545 20171002224950
+24.178.188.158 1 17 190779 20171002052349
+64.235.154.106 4 4 115108 20171016222126
+34.209.175.228 1 3 28777 20171024214831
+4.53.111.79 9 9 258993 20171029182525
+204.79.180.7 0 1 4014 
+49.180.135.112 1 17 190774 20171003041852
+204.79.180.6 0 1 8039 
+204.79.180.5 2 2 14662 20171008072237
+204.79.180.21 0 2 210769 
+123.200.154.190 1 17 190867 20171012165406
+4.53.111.74 3 3 86069 20171025150551
+121.44.165.242 1 17 190784 20171005202803
+122.106.73.179 1 17 190774 20171005223310
+52.14.250.231 1 17 190867 20171011202454
+49.195.76.155 1 16 186634 20171020121231
+13.57.10.111 1 1 7421 20171012093506
+213.205.253.80 1 17 190867 20171024004400
+77.67.54.13 13 13 373053 20171031020037
+210.55.211.91 2 34 381556 20171005154616
+110.140.126.97 1 17 190867 20171012234536
+142.154.200.147 1 16 186634 20171023132412
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 31
+20171001 12 29 413884 9
+20171002 47 95 1819686 40
+20171003 46 110 1840147 43
+20171004 103 369 6244346 47
+20171005 114 308 5146963 37
+20171006 14 23 578718 14
+20171007 9 9 97460 7
+20171008 135 318 5605339 33
+20171009 27 59 1014828 25
+20171010 36 68 1223682 35
+20171011 37 145 3226225 33
+20171012 47 128 2187841 43
+20171013 9 11 393262 9
+20171014 2 9 799307 2
+20171015 45 108 1764732 38
+20171016 49 100 1856919 43
+20171017 74 236 3728215 67
+20171018 36 70 1385998 33
+20171019 30 62 994375 29
+20171020 11 26 292390 9
+20171021 9 9 79819 9
+20171022 34 66 1238651 31
+20171023 43 58 1239768 38
+20171024 39 156 2317170 35
+20171025 53 85 1574631 48
+20171026 47 116 2322350 46
+20171027 8 8 158738 8
+20171028 10 12 491982 8
+20171029 39 137 2278169 36
+20171030 56 205 3257066 50
+20171031 47 114 1798198 45
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 7
+30s-2mn 4
+15mn-30mn 9
+1h+ 3
+0s-30s 895
+2mn-5mn 6
+30mn-1h 21
+5mn-15mn 12
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 17
+/ 991 24087426 843 855
+/wp-cron.php 85 0 83 83
+/wp-admin/admin-ajax.php 80 92225 1 1
+/wp-login.php 24 49088 20 2
+/wp-admin/load-scripts.php 16 1459877 0 0
+/collection-statement/ 16 298889 1 5
+/wp-admin/load-styles.php 12 831986 0 0
+/cornerstone-endpoint 11 54959 0 1
+/wp-admin/customize.php 9 899589 0 0
+/wp-admin/ 8 122000 1 0
+/wp-admin/async-upload.php 4 2632 0 0
+/wp-admin/edit.php 4 56691 0 0
+/wp-admin/upload.php 3 54709 0 0
+/wp-content/plugins/cornerstone/assets/dist-app/fonts/fontawesome-webfont.woff2 2 143786 0 1
+/category/news/ 1 7612 0 1
+/how-many-words-are-your-pictures-worth/ 1 8030 1 1
+/wp-admin/post.php 1 37517 0 0
+END_SIDER

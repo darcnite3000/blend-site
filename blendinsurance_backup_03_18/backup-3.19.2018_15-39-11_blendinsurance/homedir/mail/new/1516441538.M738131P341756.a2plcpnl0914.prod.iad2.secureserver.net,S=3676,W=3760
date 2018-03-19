@@ -1,0 +1,84 @@
+Return-Path: <noreply@a2plcpnl0914.prod.iad2.secureserver.net>
+Delivered-To: blendinsurance@a2plcpnl0914.prod.iad2.secureserver.net
+Received: from a2plcpnl0914.prod.iad2.secureserver.net
+	by a2plcpnl0914.prod.iad2.secureserver.net (Dovecot) with LMTP id /3KjAcIPY1r8NgUAkCzJvQ
+	for <blendinsurance@a2plcpnl0914.prod.iad2.secureserver.net>; Sat, 20 Jan 2018 02:45:38 -0700
+Return-path: <noreply@a2plcpnl0914.prod.iad2.secureserver.net>
+Envelope-to: blendinsurance@a2plcpnl0914.prod.iad2.secureserver.net
+Delivery-date: Sat, 20 Jan 2018 02:45:38 -0700
+Received: from root by a2plcpnl0914.prod.iad2.secureserver.net with local (Exim 4.89)
+	(envelope-from <noreply@a2plcpnl0914.prod.iad2.secureserver.net>)
+	id 1ecpiU-001R1B-Lb
+	for blendinsurance@a2plcpnl0914.prod.iad2.secureserver.net; Sat, 20 Jan 2018 02:45:38 -0700
+To: blendinsurance@a2plcpnl0914.prod.iad2.secureserver.net
+Subject: [Installatron] WordPress 4.7.9 now available (security release)
+Date: Sat, 20 Jan 2018 02:45:38 -0700
+From: noreply@a2plcpnl0914.prod.iad2.secureserver.net
+Message-ID: <ccce69c5346179a695e81d5f222cb5a8@a2plcpnl0914.prod.iad2.secureserver.net>
+X-Mailer: Installatron Plugin 9.1.36
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+This is an automated email from Installatron. To unsubscribe from these emails or to change notification settings, login to your web hosting control panel, navigate to the Installatron tool, and select the installed applications you wish to modify.
+
+An update to WordPress 4.7.9 (security release) is now available for the WordPress installations you are managing using Installatron. The following can be updated:
+
+- http://blendinsurancesolutions.com.au
+
+
+The changes for this version are:
+
+WordPress 4.7.7 is a security and maintenance releas. We strongly encourage you to update your sites immediately.
+
+An XSS vulnerability was discovered in the Flash fallback files in MediaElement, a library that is included with WordPress. Because the Flash files are no longer needed for most use cases, they have been removed from WordPress.
+
+Customize
+* Selecting menu location changes line height
+* Features box textstrings in Feature Filter area need new linebreak
+
+Database
+* Use MySQLi when available by default
+
+Editor
+* Editor link autocomplete suggestions: no fallback title displayed for posts with no title
+* Cannot Update Post in Firefox Due to Editor and TinyMCE JavaScript TypeErrors
+
+External Libraries
+* Update random_compat external library for PHP 7 linting failure
+
+Formatting
+* PHP functions inside
+tags creates new &lt;p&gt; tag, breaking the parent tag into two.
+
+Media
+* Whitelist Flac Files
+* Mark test_remove_orientation_data_on_rotate as skipped when exif_read_data isn't available
+* Consistent suppression of `getimagesize()` errors
+* Remove unnecessary MediaElement.js files
+
+Themes
+* Twenty Seventeen -watch that language
+
+Plugins
+* Add plugins search results: the plugin details modal opens in the thickbox modal
+
+REST API
+* Hard-coded 403 status in REST response should use `rest_authorization_required_code()`
+
+Taxonomy
+* WP_Term::get_instance() regression for non-category terms queried with 'category' taxonomy
+* category_description() does not work properly since 4.9
+* get_category_link() accepting object but not id
+
+TinyMCE
+* Code assumes iframe mode, exception in inline mode
+
+Widgets
+* Widgets Warning after activating theme and on dashboard widgets page
+* Always attempt to restore widgets' previous assignment
+* HTML Widget: toggleClass() should be passed true/false as second param
+
+Login to your web hosting control panel and navigate to the Installatron tool to update your installed applications.
+
+End of report.
+

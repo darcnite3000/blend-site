@@ -1,0 +1,87 @@
+Return-Path: <noreply@a2plcpnl0914.prod.iad2.secureserver.net>
+Delivered-To: blendinsurance@a2plcpnl0914.prod.iad2.secureserver.net
+Received: from a2plcpnl0914.prod.iad2.secureserver.net
+	by a2plcpnl0914.prod.iad2.secureserver.net (Dovecot) with LMTP id OdatAi2dglmd7gUAkCzJvQ
+	for <blendinsurance@a2plcpnl0914.prod.iad2.secureserver.net>; Wed, 02 Aug 2017 20:49:01 -0700
+Return-path: <noreply@a2plcpnl0914.prod.iad2.secureserver.net>
+Envelope-to: blendinsurance@a2plcpnl0914.prod.iad2.secureserver.net
+Delivery-date: Wed, 02 Aug 2017 20:49:01 -0700
+Received: from root by a2plcpnl0914.prod.iad2.secureserver.net with local (Exim 4.88)
+	(envelope-from <noreply@a2plcpnl0914.prod.iad2.secureserver.net>)
+	id 1dd788-001dEk-UW
+	for blendinsurance@a2plcpnl0914.prod.iad2.secureserver.net; Wed, 02 Aug 2017 20:49:00 -0700
+To: blendinsurance@a2plcpnl0914.prod.iad2.secureserver.net
+Subject: [Installatron] WordPress 4.8.1 now available
+Date: Wed, 2 Aug 2017 21:49:00 -0600
+From: noreply@a2plcpnl0914.prod.iad2.secureserver.net
+Message-ID: <1428d4c92906db508ded3db96de34f70@a2plcpnl0914.prod.iad2.secureserver.net>
+X-Mailer: Installatron Plugin 9.1.32
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+This is an automated email from Installatron. To unsubscribe from these emails or to change notification settings, login to your web hosting control panel, navigate to the Installatron tool, and select the installed applications you wish to modify.
+
+An update to WordPress 4.8.1  is now available for the WordPress installations you are managing using Installatron. The following can be updated:
+
+- http://blendinsurancesolutions.com.au
+
+
+The changes for this version are:
+
+This release contains 29 maintenance fixes and enhancements, chief among them are fixes to the rich Text widget and the introduction of the Custom HTML widget.
+
+Administration
+* #40982 - Permalink Settings: custom structure field keyboard trap
+
+Build/Test Tools
+* #41327 - Bump Akismet External - 4.9 Edition
+
+Comments
+* #40975 - 'Empty Spam' and 'Empty Trash' comment buttons not displayed on mobile
+
+Customize
+* #40978 - Customizer Panel Footer border missing
+* #40981 - Customizer: Menus: it is far too easy to mistakenly delete a menu because the "Delete Menu" link and the "Add Items" button are too close together
+* #41158 - Increase tinymce panel z-index
+* #41410 - Set `'filter' =&gt; 'content'` on starter content "business info" widget
+
+Embeds
+* #41019 - oEmbed: Update VideoPress oEmbed URL
+* #41048 - `WP_oEmbed_Controller::get_proxy_item()` should remove `_wpnonce` from cached `$args`
+* #41299 - oEmbed proxy fails to forward maxwidth and maxheight params
+
+General
+* #41056 - WP-API JS Client: Settings is incorrectly registered as a collection
+
+Media
+* #41231 - media-views.js: Cannot read .length of undefined (this.controller.$uploaderToggler.length)
+
+REST API
+* #38964 - Add filter to allow modifying response *after* embedded data is added
+* #40886 - REST API: PUT requests fail on Nginx servers when fancy permalinks aren't enabled
+
+Taxonomy
+* #41010 - wp_get_object_terms() returns duplicate terms if more than one taxonomy is given in args
+
+TinyMCE
+* #41408 - TinyMCE: Images with link and caption look "broken" when selected
+
+Widgets
+* #40907 - Introduce widget dedicated for HTML code
+* #40935 - Facebook Video Works On Preview But Not On Theme
+* #40951 - New Text Widget - Switching Between Visual/Text Editor Strips Out Code
+* #40960 - Widgets: The Text widget should respect the "Disable the visual editor when writing" setting
+* #40972 - TinyMCE editor in Text widget does not have RTL contents
+* #40974 - Updated text widget do not save text (when using paste)
+* #40977 - Widgets: Query param for `loop` added for non-hosted external videos
+* #40986 - Widgets: text widget and media widgets cannot be edited in accessibility mode
+* #41021 - Text widget does not show Title field or TinyMCE editor
+* #41361 - Text widget can raise JS error if customize-base is enqueued on widgets admin screen
+* #41386 - Text Widget - Wording - Legacy Mode 4.8.1 beta
+* #41392 - Theme styles for Text widget do not apply to Custom HTML widget
+* #41394 - Text widget: Rename legacy mode to visual mode and improve back-compat for widget_text filters
+
+Login to your web hosting control panel and navigate to the Installatron tool to update your installed applications.
+
+End of report.
+
