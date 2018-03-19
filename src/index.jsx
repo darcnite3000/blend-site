@@ -173,7 +173,7 @@ new Vue({
               else altogether, we’d love to hear from you. We’re responsive,
               responsible and reliable, so sing out, and we’ll sing right back.
             </p>
-            <form action="#">
+            <form class="contact-form" action="#">
               <div class="details">
                 <div class="form-group">
                   <label>purpose of enquiry</label>
@@ -207,7 +207,9 @@ new Vue({
         </div>
         <BlendLogo class="logo-nav" linked animated />
         <transition name="slide-in" appear>
-          <ScrollTo class="sitehelp">talk to us</ScrollTo>
+          <ScrollTo href="#page-contact" class="sitehelp">
+            talk to us
+          </ScrollTo>
         </transition>
         <div class="navbar">
           {this.pages.map((page, i) => (

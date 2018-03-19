@@ -93,6 +93,15 @@ p {
   }
 }
 
+.contact-form {
+  display: flex;
+  & .form-group {
+    & label {
+      display: block;
+    }
+  }
+}
+
 .foot {
   width: 100%;
   padding: 80px;
@@ -106,6 +115,7 @@ p {
     line-height: 16px;
   }
 }
+
 #particles {
   position: fixed;
   width: 100%;
