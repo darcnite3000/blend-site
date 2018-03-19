@@ -7,7 +7,7 @@ import {
   IconJourney,
   IconBespoke,
   IconBusiness
-} from './Icons'
+} from '../Icons'
 export default {
   render() {
     return (

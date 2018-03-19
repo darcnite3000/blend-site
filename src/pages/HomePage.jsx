@@ -1,4 +1,4 @@
-import BlendLogo from './BlendLogo'
+import BlendLogo from '../BlendLogo'
 import Page from './Page'
 export default {
   render() {

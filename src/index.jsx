@@ -6,7 +6,7 @@ import Particles from './Particles'
 import Mousey from './Mousey'
 import BlendLogo from './BlendLogo'
 import { LinkedIn } from './Icons'
-import { pageList as pages } from './Pages'
+import { pageList as pages } from './pages'
 import 'particles.js'
 import './app.css'
 
