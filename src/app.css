@@ -65,6 +65,31 @@ p {
     max-width: 66.5625%;
   }
 }
+
+.sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 20px;
+  width: 1264px;
+  max-width: 66.5625%;
+
+  & .section {
+    display: flex;
+    min-width: 180px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 263px;
+  }
+  & .button {
+    font-size: 16px;
+    min-width: 160px;
+    margin: auto 0 0;
+    padding: 7px;
+  }
+}
+
 .foot {
   width: 100%;
   padding: 80px;
