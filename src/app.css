@@ -72,7 +72,7 @@ p {
   justify-content: space-around;
   font-size: 20px;
   width: 1264px;
-  max-width: 66.5625%;
+  max-width: 67.5625%;
   & .icon {
     margin: 0.5em 0;
   }
@@ -190,11 +190,12 @@ p {
   z-index: 0;
 }
 .navbar {
-  position: fixed;
+  position: absolute;
   top: 50px;
   bottom: 50px;
   right: 5.8125%;
   width: 1em;
+  height: calc(100vh - 100px);
   font-size: 15px;
   font-family: 'Montserrat', sans-serif;
   display: flex;

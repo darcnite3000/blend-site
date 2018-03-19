@@ -71,6 +71,19 @@ new Vue({
   },
   mounted() {
     document.dispatchEvent(new Event('render-event'))
+    this.$nextTick(() => {
+      const hideTalkToUs = new this.$scrollmagic.Scene({
+        triggerElement: '#page-contact'
+      }).setClassToggle('.sitehelp', 'slide-in-enter-active')
+      const pinNavBar = new this.$scrollmagic.Scene({
+        duration: () => document.getElementById('page-contact').offsetTop
+      }).setPin('.navbar')
+      this.$ksvuescr.$emit('addScene', 'hideTalkToUs', hideTalkToUs)
+      this.$ksvuescr.$emit('addScene', 'pinNavBar', pinNavBar)
+    })
   },
-  methods: {}
+  beforeDestroy() {
+    this.$ksvuescr.$emit('destroyScene', 'hideTalkToUs')
+    this.$ksvuescr.$emit('destroyScene', 'pinOverlay')
+  }
 })
