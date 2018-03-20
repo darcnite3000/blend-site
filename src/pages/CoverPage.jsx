@@ -27,7 +27,7 @@ export default {
             <div class="title">
               group personal<br />accident
             </div>
-            <a href="#" class="button">
+            <a href="#" class="button" on-click={this.findOutMore}>
               find out more
             </a>
           </div>
@@ -36,7 +36,7 @@ export default {
             <div class="title">
               individual<br />accident
             </div>
-            <a href="#" class="button">
+            <a href="#" class="button" on-click={this.findOutMore}>
               find out more
             </a>
           </div>
@@ -45,14 +45,14 @@ export default {
             <div class="title">
               voluntary<br />workers
             </div>
-            <a href="#" class="button">
+            <a href="#" class="button" on-click={this.findOutMore}>
               find out more
             </a>
           </div>
           <div class="section">
             <IconJourney />
             <div class="title">journey</div>
-            <a href="#" class="button">
+            <a href="#" class="button" on-click={this.findOutMore}>
               find out more
             </a>
           </div>
@@ -61,19 +61,28 @@ export default {
             <div class="title">
               business<br />travel
             </div>
-            <a href="#" class="button">
+            <a href="#" class="button" on-click={this.findOutMore}>
               find out more
             </a>
           </div>
           <div class="section">
             <IconBespoke />
             <div class="title">bespoke</div>
-            <a href="#" class="button">
+            <a href="#" class="button" on-click={this.findOutMore}>
               find out more
             </a>
           </div>
         </div>
       </Page>
     )
+  },
+  props: {
+    showPopUp: Function
+  },
+  methods: {
+    findOutMore(e) {
+      e.preventDefault()
+      this.showPopUp(<h1>Find Out More</h1>)
+    }
   }
 }

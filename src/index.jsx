@@ -19,7 +19,9 @@ new Vue({
   el: '#app',
   data() {
     return {
-      pages
+      pages,
+      popUp: false,
+      popUpContent: null
     }
   },
   render() {
@@ -27,7 +29,13 @@ new Vue({
       <div id="app">
         <div class="content">
           <Particles />
-          {this.pages.map(page => <page.component key={page.id} />)}
+          {this.pages.map(page => (
+            <page.component
+              key={page.id}
+              showPopUp={this.showPopUp}
+              closePopUp={this.closePopUp}
+            />
+          ))}
 
           <Mousey />
         </div>
@@ -66,6 +74,17 @@ new Vue({
             </a>
           </div>
         </div>
+
+        <transition name="pop-up" mode="in-out">
+          {this.popUp && (
+            <div class="pop-up">
+              {this.popUpContent}
+              <a href="#" on-click={this.closePopUp}>
+                close me
+              </a>
+            </div>
+          )}
+        </transition>
       </div>
     )
   },
@@ -85,5 +104,15 @@ new Vue({
   beforeDestroy() {
     this.$ksvuescr.$emit('destroyScene', 'hideTalkToUs')
     this.$ksvuescr.$emit('destroyScene', 'pinOverlay')
+  },
+  methods: {
+    showPopUp(content = null) {
+      this.popUp = true
+      this.popUpContent = content
+    },
+    closePopUp(e) {
+      e.preventDefault()
+      this.popUp = false
+    }
   }
 })

@@ -20,14 +20,27 @@ export default {
           date with all the latest blend developments.
         </p>
         <div class="button-group">
-          <a href="#" class="button">
+          <a href="#" class="button" on-click={this.showProducts}>
             see our products
           </a>
-          <a href="#" class="button">
+          <a href="#" class="button" on-click={this.showAboutUs}>
             about us
           </a>
         </div>
       </Page>
     )
+  },
+  props: {
+    showPopUp: Function
+  },
+  methods: {
+    showProducts(e) {
+      e.preventDefault()
+      this.showPopUp(<h1>Products</h1>)
+    },
+    showAboutUs(e) {
+      e.preventDefault()
+      this.showPopUp(<h1>About Us</h1>)
+    }
   }
 }

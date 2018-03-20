@@ -1,4 +1,5 @@
 import Page from './Page'
+import ScrollTo from '../ScrollTo'
 export default {
   render() {
     return (
@@ -16,14 +17,23 @@ export default {
           expectations are continually met.
         </p>
         <div class="button-group">
-          <a href="#" class="button">
+          <ScrollTo href="#page-contact" class="button">
             get in touch
-          </a>
-          <a href="#" class="button">
+          </ScrollTo>
+          <a href="#" class="button" on-click={this.showTeam}>
             meet the team
           </a>
         </div>
       </Page>
     )
+  },
+  props: {
+    showPopUp: Function
+  },
+  methods: {
+    showTeam(e) {
+      e.preventDefault()
+      this.showPopUp(<h1>The Team</h1>)
+    }
   }
 }
