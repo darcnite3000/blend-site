@@ -22,67 +22,102 @@ export default {
           the next step with us.
         </p>
         <div class="sections">
-          <div class="section">
-            <IconGroupPersonal />
-            <div class="title">
-              group personal<br />accident
+          {this.products.map(section => (
+            <div key={section.title} class="section">
+              <section.icon />
+              <div class="title">
+                {section.title
+                  .split('\n')
+                  .map((line, i) => <div key={i}>{line}</div>)}
+              </div>
+              <a
+                href="#"
+                class="button"
+                on-click={this.findOutMore(section.content)}
+              >
+                find out more
+              </a>
             </div>
-            <a href="#" class="button" on-click={this.findOutMore}>
-              find out more
-            </a>
-          </div>
-          <div class="section">
-            <IconPersonal />
-            <div class="title">
-              individual<br />accident
-            </div>
-            <a href="#" class="button" on-click={this.findOutMore}>
-              find out more
-            </a>
-          </div>
-          <div class="section">
-            <IconVoluntary />
-            <div class="title">
-              voluntary<br />workers
-            </div>
-            <a href="#" class="button" on-click={this.findOutMore}>
-              find out more
-            </a>
-          </div>
-          <div class="section">
-            <IconJourney />
-            <div class="title">journey</div>
-            <a href="#" class="button" on-click={this.findOutMore}>
-              find out more
-            </a>
-          </div>
-          <div class="section">
-            <IconBusiness />
-            <div class="title">
-              business<br />travel
-            </div>
-            <a href="#" class="button" on-click={this.findOutMore}>
-              find out more
-            </a>
-          </div>
-          <div class="section">
-            <IconBespoke />
-            <div class="title">bespoke</div>
-            <a href="#" class="button" on-click={this.findOutMore}>
-              find out more
-            </a>
-          </div>
+          ))}
         </div>
       </Page>
     )
+  },
+  data() {
+    return {
+      products: [
+        {
+          icon: IconGroupPersonal,
+          title: 'group personal\naccident',
+          content: (
+            <div class="pop-page">
+              <IconGroupPersonal invert />
+              <h1>group personal accident</h1>
+            </div>
+          )
+        },
+        {
+          icon: IconPersonal,
+          title: 'individual\naccident',
+          content: (
+            <div class="pop-page">
+              <IconPersonal invert />
+              <h1>individual accident</h1>
+            </div>
+          )
+        },
+        {
+          icon: IconVoluntary,
+          title: 'voluntary\nworkers',
+          content: (
+            <div class="pop-page">
+              <IconVoluntary invert />
+              <h1>voluntary workers</h1>
+            </div>
+          )
+        },
+        {
+          icon: IconJourney,
+          title: 'journey',
+          content: (
+            <div class="pop-page">
+              <IconJourney invert />
+              <h1>journey</h1>
+            </div>
+          )
+        },
+        {
+          icon: IconBusiness,
+          title: 'business\ntravel',
+          content: (
+            <div class="pop-page">
+              <IconBusiness invert />
+              <h1>business travel</h1>
+            </div>
+          )
+        },
+        {
+          icon: IconBespoke,
+          title: 'bespoke',
+          content: (
+            <div class="pop-page">
+              <IconBespoke invert />
+              <h1>bespoke</h1>
+            </div>
+          )
+        }
+      ]
+    }
   },
   props: {
     showPopUp: Function
   },
   methods: {
-    findOutMore(e) {
-      e.preventDefault()
-      this.showPopUp(<h1>Find Out More</h1>)
+    findOutMore(content = 'find out more') {
+      return e => {
+        e.preventDefault()
+        this.showPopUp(content)
+      }
     }
   }
 }
