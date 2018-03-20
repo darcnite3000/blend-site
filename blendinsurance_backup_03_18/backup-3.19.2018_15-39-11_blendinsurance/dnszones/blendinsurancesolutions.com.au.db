@@ -1,0 +1,41 @@
+; cPanel first:11.58.0.19 (update_time):1493249815 11.58.0.19: Cpanel::ZoneFile::VERSION:1.3 hostname:a2plcpnl0914.prod.iad2.secureserver.net latest:11.58.0.47
+; Zone file for blendinsurancesolutions.com.au
+$TTL 14400
+@      86400	IN      SOA     10.255.250.30. hostingex.godaddy.com. (
+		2017042600	; serial, todays date+todays
+		3600		; refresh, seconds
+		7200		; retry, seconds
+		1209600		; expire, seconds
+		86400 )		; minimum, seconds
+
+blendinsurancesolutions.com.au. 86400 IN NS 10.255.250.30.
+blendinsurancesolutions.com.au. 86400 IN NS 10.255.251.30.
+
+
+blendinsurancesolutions.com.au. IN A 107.180.12.120
+
+blendinsurancesolutions.com.au. IN MX 0 blendinsurancesolutions.com.au.
+
+mail IN CNAME blendinsurancesolutions.com.au.
+www IN CNAME blendinsurancesolutions.com.au.
+ftp IN A 107.180.12.120
+
+blendinsurancesolutions.com.au.  IN TXT "v=spf1 ip4:107.180.12.120 +a +mx ~all"
+cpanel IN A 107.180.12.120
+webdisk IN A 107.180.12.120
+cpcalendars IN A 107.180.12.120
+cpcontacts IN A 107.180.12.120
+whm IN A 107.180.12.120
+webmail IN A 107.180.12.120
+autoconfig IN A 107.180.12.120
+autodiscover IN A 107.180.12.120
+_autodiscover._tcp IN SRV 0 0 443 cpanelemaildiscovery.cpanel.net.
+_caldav._tcp IN SRV 0 0 2079 a2plcpnl0914.prod.iad2.secureserver.net.
+_caldavs._tcp IN SRV 0 0 2080 a2plcpnl0914.prod.iad2.secureserver.net.
+_carddav._tcp IN SRV 0 0 2079 a2plcpnl0914.prod.iad2.secureserver.net.
+_carddavs._tcp IN SRV 0 0 2080 a2plcpnl0914.prod.iad2.secureserver.net.
+_caldav._tcp IN TXT path=/
+_caldavs._tcp IN TXT path=/
+_carddav._tcp IN TXT path=/
+_carddavs._tcp IN TXT path=/
+default._domainkey IN TXT "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAouVRhB3SwRHuG2pXHyQAULGLpd1PAQpa7bqFdZ7dk623l4TM8crlV5AI00TOYic5pmFS2Nmg1G3/VS0NyuFTSIUqPYZ7R4kQl3zxoQ7UlC0DHj8x4gwGuLEpVAO0C3G7yd/EuEnELcQTCL18JRdZbeLcbF+181hbs7yq5JAGfNcTI1BXqhDWT+z4wE+dKJw/h" W0IcCemhjpz/LnzHyHu3RhlaHzRIrTl9Xp/HP4zD8xQVgPt43oeJM+rwjStn7Wkdk/ed0BVvAtOS01J+WtB9ZKD48CRDeNYy7LFBuSBdhwrqIOucmBuzptz7GzjKZpRrS6TQ+9gHin2hvBjMkW7GwIDAQAB\;

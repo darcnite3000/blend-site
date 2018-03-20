@@ -1,0 +1,67 @@
+Return-Path: <noreply@a2plcpnl0914.prod.iad2.secureserver.net>
+Delivered-To: blendinsurance@a2plcpnl0914.prod.iad2.secureserver.net
+Received: from a2plcpnl0914.prod.iad2.secureserver.net
+	by a2plcpnl0914.prod.iad2.secureserver.net (Dovecot) with LMTP id 5xUZAIEHDlqxnQcAkCzJvQ
+	for <blendinsurance@a2plcpnl0914.prod.iad2.secureserver.net>; Thu, 16 Nov 2017 14:47:45 -0700
+Return-path: <noreply@a2plcpnl0914.prod.iad2.secureserver.net>
+Envelope-to: blendinsurance@a2plcpnl0914.prod.iad2.secureserver.net
+Delivery-date: Thu, 16 Nov 2017 14:47:45 -0700
+Received: from root by a2plcpnl0914.prod.iad2.secureserver.net with local (Exim 4.88)
+	(envelope-from <noreply@a2plcpnl0914.prod.iad2.secureserver.net>)
+	id 1eFS0f-00263l-55
+	for blendinsurance@a2plcpnl0914.prod.iad2.secureserver.net; Thu, 16 Nov 2017 14:47:45 -0700
+To: blendinsurance@a2plcpnl0914.prod.iad2.secureserver.net
+Subject: [Installatron] WordPress 4.9 now available (major version)
+Date: Thu, 16 Nov 2017 14:47:45 -0700
+From: noreply@a2plcpnl0914.prod.iad2.secureserver.net
+Message-ID: <0094209bbe7e9a09c1525e9f8d2f24f5@a2plcpnl0914.prod.iad2.secureserver.net>
+X-Mailer: Installatron Plugin 9.1.35
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+This is an automated email from Installatron. To unsubscribe from these emails or to change notification settings, login to your web hosting control panel, navigate to the Installatron tool, and select the installed applications you wish to modify.
+
+An update to WordPress 4.9 (major version) is now available for the WordPress installations you are managing using Installatron. The following can be updated:
+
+- http://blendinsurancesolutions.com.au
+
+
+The changes for this version are:
+
+Version 4.9 of WordPress, named "Tipton" in honor of jazz musician and band leader Billy Tipton, is available for download or update in your WordPress dashboard. New features in 4.9 will smooth your design workflow and keep you safe from coding errors.
+
+Featuring design drafts, scheduling, and locking, along with preview links, the Customizer workflow improves collaboration for content creators. What's more, code syntax highlighting and error checking will make for a clean and smooth site building experience. Finally, if all that wasn't pretty great, we've got an awesome new Gallery widget and improvements to theme browsing and switching.
+
+Customizer Workflow Improved
+* Draft and Schedule Site Design Customizations: Yes, you read that right. Just like you can draft and revise posts and schedule them to go live on the date and time you choose, you can now tinker with your site's design and schedule those design changes to go live as you please.
+* Collaborate with Design Preview Links: Need to get some feedback on proposed site design changes? WordPress 4.9 gives you a preview link you can send to colleagues and customers so that you can collect and integrate feedback before you schedule the changes to go live. Can we say collaboration++?
+* Design Locking Guards Your Changes: Ever encounter a scenario where two designers walk into a project and designer A overrides designer B's beautiful changes? WordPress 4.9's design lock feature (similar to post locking) secures your draft design so that no one can make changes to it or erase all your hard work.
+* A Prompt to Protect Your Work: Were you lured away from your desk before you saved your new draft design? Fear not, when you return, WordPress 4.9 will politely ask whether or not you'd like to save your unsaved changes.
+
+Coding Enhancements
+* Syntax Highlighting and Error Checking? Yes, Please! You've got a display problem but can't quite figure out exactly what went wrong in the CSS you lovingly wrote. With syntax highlighting and error checking for CSS editing and the Custom HTML widget introduced in WordPress 4.8.1, you'll pinpoint coding errors quickly. Practically guaranteed to help you scan code more easily, and suss out & fix code errors quickly.
+* Sandbox for Safety: The dreaded white screen. You'll avoid it when working on themes and plugin code because WordPress 4.9 will warn you about saving an error. You'll sleep better at night.
+* Warning: Potential Danger Ahead! When you edit themes and plugins directly, WordPress 4.9 will politely warn you that this is a dangerous practice and will recommend that you draft and test changes before updating your file. Take the safe route: You'll thank you. Your team and customers will thank you.
+
+Even More Widget Updates 
+* The New Gallery Widget: An incremental improvement to the media changes hatched in WordPress 4.8, you can now add a gallery via this new widget. Yes!
+* Press a Button, Add Media: Want to add media to your text widget? Embed images, video, and audio directly into the widget along with your text, with our simple but useful Add Media button. Woo!
+
+Site Building Improvements 
+* More Reliable Theme Switching: When you switch themes, widgets sometimes think they can just move location. Improvements in WordPress 4.9 offer more persistent menu and widget placement when you decide it's time for a new theme. 
+* Find and Preview the Perfect Theme: Looking for a new theme for your site? Now, from within the Customizer, you can search, browse, and preview over 2600 themes before deploying changes to your site. What's more, you can speed your search with filters for subject, features, and layout.
+* Better Menu Instructions = Less Confusion: Were you confused by the steps to create a new menu? Perhaps no longer! We've ironed out the UX for a smoother menu creation process. Newly updated copy will guide you.
+
+Lend a Hand with Gutenberg
+* WordPress is working on a new way to create and control your content and we'd love to have your help. Interested in being an early tester or getting involved with the Gutenberg project? Contribute on GitHub. (PS: this post was written in Gutenberg!)
+
+Developer Happiness
+* Customizer JS API Improvements: We've made numerous improvements to the Customizer JS API in WordPress 4.9, eliminating many pain points. (Hello, default parameters for constructs! Goodbye repeated ID for constructs!) There are also new base control templates, a date/time control, and section/panel/global notifications to name a few. Check out the full list.
+* CodeMirror available for use in your themes and plugins: We've introduced a new code editing library, CodeMirror, for use within core. CodeMirror allows for syntax highlighting, error checking, and validation when creating code writing or editing experiences within your plugins, like CSS or JavaScript include fields.
+* MediaElement.js upgraded to 4.2.6: WordPress 4.9 includes an upgraded version of MediaElement.js, which removes dependencies on jQuery, improves accessibility, modernizes the UI, and fixes many bugs.
+* Roles and Capabilities Improvements: New capabilities have been introduced that allow granular management of plugins and translation files. In addition, the site switching process in multisite has been fine-tuned to update the available roles and capabilities in a more reliable and coherent way.
+
+Login to your web hosting control panel and navigate to the Installatron tool to update your installed applications.
+
+End of report.
+

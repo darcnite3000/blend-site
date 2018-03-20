@@ -1,0 +1,356 @@
+AWSTATS DATA FILE 7.4 (build 20140726)
+# If you remove this file, all statistics for date 201705 will be lost/reset.
+# Last config file used to build this data file was /home/blendinsurance/tmp/awstats/awstats.blendinsurancesolutions.com.au.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 2033                
+POS_TIME 2710                
+POS_VISITOR 6490                
+POS_DAY 6607                
+POS_DOMAIN 3304                
+POS_LOGIN 3533                
+POS_ROBOT 3688                
+POS_WORMS 3976                
+POS_EMAILSENDER 4107                
+POS_EMAILRECEIVER 4250                
+POS_SESSION 7319                
+POS_SIDER 7509                
+POS_FILETYPES 4385                
+POS_DOWNLOADS 4468                
+POS_OS 4623                
+POS_BROWSER 4715                
+POS_SCREENSIZE 4799                
+POS_UNKNOWNREFERER 4873                
+POS_UNKNOWNREFERERBROWSER 5144                
+POS_ORIGIN 5410                
+POS_SEREFERRALS 5544                
+POS_PAGEREFS 5688                
+POS_SEARCHWORDS 5836                
+POS_KEYWORDS 5988                
+POS_MISC 2374                
+POS_ERRORS 6047                
+POS_CLUSTER 3389                
+POS_SIDER_404 6144                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20170601014708 30 5587 5503344524017
+FirstTime 20170501014458
+LastTime 20170531191440
+LastUpdate 20170601052032 30 0 29 0 0
+TotalVisits 106                 
+TotalUnique 1                   
+MonthHostsKnown 0                   
+MonthHostsUnknown 1                   
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+WindowsMediaPlayerSupport 0 0 0
+FlashSupport 0 0 0
+JavaEnabled 0 0 0
+DirectorSupport 0 0 0
+RealPlayerSupport 0 0 0
+AddToFavourites 0 0 0
+PDFSupport 0 0 0
+QuickTimeSupport 0 0 0
+TotalMisc 0 0 0
+JavascriptDisabled 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 2 2 0 11 12 30920
+1 67 67 416396 78 81 207
+2 0 0 0 15 18 207
+3 0 0 0 13 13 0
+4 10 10 0 21 27 6127
+5 0 0 0 10 12 138
+6 5 5 0 7 10 207
+7 3 3 13744 8 8 0
+8 2 2 0 5 16 116581
+9 2 2 0 4 7 31058
+10 0 0 0 1 5 276
+11 1 1 0 2 2 7947
+12 1 1 0 6 15 29881
+13 7 7 27488 10 12 138
+14 0 0 0 3 4 69
+15 3 3 0 15 20 187077
+16 5 5 0 18 25 12800
+17 4 4 0 9 13 276
+18 7 7 0 21 33 828
+19 27 27 87166 31 33 138
+20 4 4 0 15 24 621
+21 2 2 0 22 23 69
+22 10 10 0 25 27 30989
+23 4 4 0 21 21 0
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 25 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 1
+us 166 166 544794
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 25 first Hits must be first (order not required for others)
+BEGIN_ROBOT 4
+googlebot 53 254257 20170531120010 28
+bot[\s_+:,\.\;\/\\-] 39 2689 20170530202056 39
+unknown 2 138 20170529012443 2
+msnbot\-media 2 193757 20170512155748 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 1
+php 166 544794 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 1
+/wp-content/uploads/Steadfast%20Underwriting%20Agencies%20Privacy%20Policy%20(March%202017).pdf 1 0 186803
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 2
+win7 40 40
+Unknown 126 126
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 2
+Unknown 126 126
+firefox17.0 40 40
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 3
+WordPress/4.7.4;_https://blendinsurancesolutions.com.au 20170517191612
+Installatron_Plugin/9.1.30 20170531014429
+WordPress/4.7.5;_https://blendinsurancesolutions.com.au 20170531191440
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 3
+WordPress/4.7.4;_https://blendinsurancesolutions.com.au 20170517191612
+Installatron_Plugin/9.1.30 20170531014429
+WordPress/4.7.5;_https://blendinsurancesolutions.com.au 20170531191440
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 81 81
+From1 0 0
+From2 0 0
+From3 0 0
+From4 85 85
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 25 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 25 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 2
+301 364 0
+404 1 5713
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 1
+/blendinsurancesolutions.com.au/ 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 25 first Hits must be first (order not required for others)
+BEGIN_VISITOR 1
+107.180.12.120 166 166 544794 20170531191440
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 31
+20170501 4 4 13748 3
+20170502 6 6 13748 5
+20170503 6 6 13966 4
+20170504 7 7 28046 4
+20170505 3 3 13966 2
+20170506 5 5 13966 3
+20170507 3 3 13966 2
+20170508 4 4 13966 3
+20170509 4 4 14080 3
+20170510 5 5 13966 3
+20170511 2 2 14080 1
+20170512 6 6 14080 4
+20170513 4 4 13966 3
+20170514 6 6 27932 3
+20170515 6 6 13966 4
+20170516 6 6 13966 4
+20170517 13 13 45618 4
+20170518 7 7 13744 5
+20170519 4 4 13744 3
+20170520 7 7 27488 4
+20170521 8 8 13838 6
+20170522 10 10 27488 7
+20170523 3 3 13744 2
+20170524 3 3 13744 2
+20170525 6 6 27582 3
+20170526 4 4 13838 3
+20170527 5 5 27488 2
+20170528 5 5 13838 4
+20170529 3 3 13744 2
+20170530 5 5 13744 4
+20170531 6 6 13744 4
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 5
+30mn-1h 3
+5mn-15mn 1
+15mn-30mn 1
+30s-2mn 5
+0s-30s 96
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 25 first Pages must be first (order not required for others)
+BEGIN_SIDER 82
+/wp-cron.php 85 0 76 74
+/deleteme.wpuo75.php 1 12441 0 1
+/deleteme.wpjdft.php 1 12441 0 1
+/deleteme.wpmjf4.php 1 12445 0 1
+/deleteme.cha8dgjr.php 1 1303 1 0
+/deleteme.wpapow.php 1 12445 0 1
+/deleteme.wpztto.php 1 12663 0 0
+/deleteme.chaa14in.php 1 1303 1 0
+/deleteme.chasposr.php 1 1303 1 0
+/deleteme.wp2koi.php 1 12663 0 0
+/deleteme.wplapj.php 1 12663 0 0
+/deleteme.wpc714.php 1 12663 0 1
+/deleteme.chax63aa.php 1 1303 1 0
+/deleteme.chavjxyt.php 1 1303 1 0
+/deleteme.chageejw.php 1 1303 1 0
+/deleteme.chaodprh.php 1 1303 1 0
+/deleteme.char3xfp.php 1 1303 1 0
+/deleteme.chadfr5a.php 1 1303 1 0
+/deleteme.chamyj90.php 1 1303 1 0
+/deleteme.wpkbkn.php 1 12663 0 1
+/deleteme.wpohpa.php 1 12663 0 0
+/deleteme.wp0wvy.php 1 12535 0 1
+/deleteme.wpzdjd.php 1 12663 0 1
+/deleteme.chasi6be.php 1 1303 1 0
+/deleteme.charpcdl.php 1 1303 1 0
+/deleteme.chaceg9u.php 1 1303 1 0
+/deleteme.wp4q9e.php 1 12441 0 1
+/deleteme.chaunyxy.php 1 1303 0 0
+/deleteme.cha1qixh.php 1 1303 1 0
+/deleteme.wpttgh.php 1 12777 0 1
+/deleteme.chayhjrj.php 1 1303 1 0
+/deleteme.cha6c7y0.php 1 1303 1 0
+/deleteme.cha11jvt.php 1 1303 1 0
+/deleteme.wprwxw.php 1 12441 0 1
+/deleteme.wpmoj9.php 1 12441 0 1
+/deleteme.chayuzz6.php 1 1303 0 0
+/deleteme.wpcjbu.php 1 12441 0 1
+/deleteme.chaihr57.php 1 1303 0 0
+/deleteme.chaywsfm.php 1 1303 1 0
+/deleteme.chaxdbse.php 1 1303 1 0
+/deleteme.chasptp2.php 1 1303 1 0
+/deleteme.wp2glv.php 1 12777 0 1
+/deleteme.chancerv.php 1 1303 1 0
+/deleteme.wpzjtu.php 1 12535 0 1
+/deleteme.wpfczr.php 1 12441 0 0
+/deleteme.wpcnfn.php 1 12777 0 1
+/deleteme.wpllni.php 1 12663 0 0
+/deleteme.wppv5y.php 1 12663 0 1
+/deleteme.chamjetv.php 1 1303 0 0
+/deleteme.wpoea1.php 1 12663 0 1
+/deleteme.wpvky7.php 1 12663 0 1
+/deleteme.chaeoso7.php 1 1303 0 0
+/deleteme.wp5bhi.php 1 12535 0 1
+/deleteme.wpl1zs.php 1 12441 0 1
+/deleteme.wphhag.php 1 12441 0 1
+/deleteme.charfpfm.php 1 1303 1 0
+/deleteme.chaza4j7.php 1 1303 1 0
+/deleteme.wpzro3.php 1 12663 0 1
+/deleteme.chaeifqv.php 1 1303 1 0
+/deleteme.chawp6kn.php 1 1303 1 0
+/deleteme.wplwrg.php 1 12441 0 1
+/deleteme.chax9lw5.php 1 1303 1 0
+/deleteme.wpavp7.php 1 12441 0 1
+/deleteme.cha7al3t.php 1 1303 0 0
+/deleteme.wpadia.php 1 12441 0 1
+/deleteme.wpxqu3.php 1 12535 0 0
+/deleteme.chaqsfeh.php 1 1303 0 0
+/deleteme.wpcgij.php 1 12441 0 1
+/deleteme.wpzctx.php 1 12663 0 1
+/deleteme.chagmndd.php 1 1303 1 0
+/deleteme.cha9b3lj.php 1 1303 0 0
+/deleteme.chazvzsp.php 1 1303 1 0
+/deleteme.chau8cik.php 1 1303 1 0
+/wp-admin/upgrade.php 1 1114 0 1
+/deleteme.chasebij.php 1 1303 0 0
+/deleteme.wp6dms.php 1 12663 0 1
+/deleteme.wpy7qd.php 1 12441 0 1
+/deleteme.wp9rsl.php 1 12777 0 1
+/deleteme.chawrt3p.php 1 1303 0 0
+/deleteme.chaqlzbt.php 1 1303 0 0
+/deleteme.wpqc5c.php 1 12663 0 0
+/deleteme.chayer46.php 1 1303 1 0
+END_SIDER

@@ -1,0 +1,51 @@
+Return-Path: <noreply@a2plcpnl0914.prod.iad2.secureserver.net>
+Delivered-To: blendinsurance@a2plcpnl0914.prod.iad2.secureserver.net
+Received: from a2plcpnl0914.prod.iad2.secureserver.net
+	by a2plcpnl0914.prod.iad2.secureserver.net (Dovecot) with LMTP id Ok0yAn11IVrJ+AAAkCzJvQ
+	for <blendinsurance@a2plcpnl0914.prod.iad2.secureserver.net>; Fri, 01 Dec 2017 08:30:05 -0700
+Return-path: <noreply@a2plcpnl0914.prod.iad2.secureserver.net>
+Envelope-to: blendinsurance@a2plcpnl0914.prod.iad2.secureserver.net
+Delivery-date: Fri, 01 Dec 2017 08:30:05 -0700
+Received: from root by a2plcpnl0914.prod.iad2.secureserver.net with local (Exim 4.88)
+	(envelope-from <noreply@a2plcpnl0914.prod.iad2.secureserver.net>)
+	id 1eKnGO-000GsW-Uz
+	for blendinsurance@a2plcpnl0914.prod.iad2.secureserver.net; Fri, 01 Dec 2017 08:30:05 -0700
+To: blendinsurance@a2plcpnl0914.prod.iad2.secureserver.net
+Subject: [Installatron] WordPress 4.9.1 now available (security release)
+Date: Fri, 1 Dec 2017 08:30:04 -0700
+From: noreply@a2plcpnl0914.prod.iad2.secureserver.net
+Message-ID: <965f604616d6dd03fb70060acb284179@a2plcpnl0914.prod.iad2.secureserver.net>
+X-Mailer: Installatron Plugin 9.1.35
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+This is an automated email from Installatron. To unsubscribe from these emails or to change notification settings, login to your web hosting control panel, navigate to the Installatron tool, and select the installed applications you wish to modify.
+
+An update to WordPress 4.9.1 (security release) is now available for the WordPress installations you are managing using Installatron. The following can be updated:
+
+- http://blendinsurancesolutions.com.au
+
+
+The changes for this version are:
+
+WordPress 4.9.1 is a security and maintenance release for all versions since WordPress 3.7. We strongly encourage you to update your sites immediately.
+
+Highlights
+* File caching affecting users' ability to use the plugin and theme file editors.
+* MediaElement upgrade causing JS errors when certain languages are in use.
+* Incorrect logic in extract_from_markers().
+* Unable to translate Codex URL in theme editor.
+* Theme editor cannot edit files when running on a Windows server.
+* flatten_dirlist() doesn't play nice with folders with numeric names.
+* DB_HOST socket paths with colons not parsed correctly.
+* On multisite upgrade the wp_blog_versions table doesn't get updated
+* Themes page throws console error when there is only one installed theme.
+* lang attribute in the admin area doesn't reflect a user's language setting.
+* Issues relating to the caching of theme template files.
+* A MediaElement JavaScript error preventing users of certain languages from being able to upload media files.
+* The inability to edit theme and plugin files on Windows based servers.
+
+Login to your web hosting control panel and navigate to the Installatron tool to update your installed applications.
+
+End of report.
+

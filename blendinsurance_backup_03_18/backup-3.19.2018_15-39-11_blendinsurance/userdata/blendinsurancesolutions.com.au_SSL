@@ -1,0 +1,47 @@
+--- 
+documentroot: /home/blendinsurance/public_html
+group: blendinsurance
+hascgi: 1
+homedir: /home/blendinsurance
+ifmodulealiasmodule: 
+  scriptalias: 
+    - 
+      path: /home/blendinsurance/public_html/cgi-bin/
+      url: /cgi-bin/
+ifmoduleincludemodule: 
+  directoryhomeblendinsurancepublichtml: 
+    ssilegacyexprparser: 
+      - 
+        value: " On"
+ifmodulesslmodule: 
+  directoryhomeblendinsurancepublichtmlcgibin: 
+    ssloptions: +StdEnvVars
+  setenvif: 
+    - 
+      attribute: User-Agent
+      env_variables: nokeepalive ssl-unclean-shutdown
+      regex: "\".*MSIE.*\""
+  sslcacertificatefile: /var/cpanel/ssl/installed/cabundles/GoDaddy_com_Inc__90490a5c829d2aca24f22b5820864c6e_1935558000.cabundle
+  sslcertificatefile: /var/cpanel/ssl/installed/certs/blendinsurancesolutions_com_au_a2491_2e955_1555549860_0cce207e2d576804931c85c2507e6840.crt
+  sslcertificatekeyfile: /var/cpanel/ssl/installed/keys/a2491_2e955_9c6f61a3ebe809f6895cfb7b74110c81.key
+  sslengine: 'on'
+ifmoduleuserdirmodule: 
+  ifmodulempmitkc: 
+    ifmoduleruidmodule: {}
+
+ip: 107.180.12.120
+ipv6: ~
+owner: gdresell
+phpopenbasedirprotect: 1
+port: 443
+secruleengineoff: ~
+serveradmin: webmaster@blendinsurancesolutions.com.au
+serveralias: mail.blendinsurancesolutions.com.au www.blendinsurancesolutions.com.au
+servername: blendinsurancesolutions.com.au
+ssl: 1
+sslcacertificatefile: /var/cpanel/ssl/installed/cabundles/GoDaddy_com_Inc__90490a5c829d2aca24f22b5820864c6e_1935558000.cabundle
+sslcertificatefile: /var/cpanel/ssl/installed/certs/blendinsurancesolutions_com_au_a2491_2e955_1555549860_0cce207e2d576804931c85c2507e6840.crt
+sslcertificatekeyfile: /var/cpanel/ssl/installed/keys/a2491_2e955_9c6f61a3ebe809f6895cfb7b74110c81.key
+usecanonicalname: 'Off'
+user: blendinsurance
+userdirprotect: ''

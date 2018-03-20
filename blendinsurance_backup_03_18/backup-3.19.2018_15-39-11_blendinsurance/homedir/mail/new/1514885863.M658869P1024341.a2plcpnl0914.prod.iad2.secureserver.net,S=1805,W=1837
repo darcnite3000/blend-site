@@ -1,0 +1,32 @@
+Return-Path: <noreply@a2plcpnl0914.prod.iad2.secureserver.net>
+Delivered-To: blendinsurance@a2plcpnl0914.prod.iad2.secureserver.net
+Received: from a2plcpnl0914.prod.iad2.secureserver.net
+	by a2plcpnl0914.prod.iad2.secureserver.net (Dovecot) with LMTP id mWZiJudSS1pVoQ8AkCzJvQ
+	for <blendinsurance@a2plcpnl0914.prod.iad2.secureserver.net>; Tue, 02 Jan 2018 02:37:43 -0700
+Return-path: <noreply@a2plcpnl0914.prod.iad2.secureserver.net>
+Envelope-to: blendinsurance@a2plcpnl0914.prod.iad2.secureserver.net
+Delivery-date: Tue, 02 Jan 2018 02:37:43 -0700
+Received: from root by a2plcpnl0914.prod.iad2.secureserver.net with local (Exim 4.89)
+	(envelope-from <noreply@a2plcpnl0914.prod.iad2.secureserver.net>)
+	id 1eWJ0x-004LW4-IW
+	for blendinsurance@a2plcpnl0914.prod.iad2.secureserver.net; Tue, 02 Jan 2018 02:37:43 -0700
+To: blendinsurance@a2plcpnl0914.prod.iad2.secureserver.net
+Subject: [Installatron] WordPress plugin WordPress HTTPS 3.4.1 now available
+Date: Tue, 2 Jan 2018 02:37:43 -0700
+From: noreply@a2plcpnl0914.prod.iad2.secureserver.net
+Message-ID: <f43eff58e12c9d00630b7235eee43824@a2plcpnl0914.prod.iad2.secureserver.net>
+X-Mailer: Installatron Plugin 9.1.36
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+This is an automated email from Installatron. To unsubscribe from these emails or to change notification settings, login to your web hosting control panel, navigate to the Installatron tool, and select the installed applications you wish to modify.
+
+An update to WordPress HTTPS 3.4.1 is now available for the WordPress installations you are managing using Installatron. The following can be updated:
+
+- http://blendinsurancesolutions.com.au
+
+
+Login to your web hosting control panel and navigate to the Installatron tool to update your installed applications.
+
+End of report.
+

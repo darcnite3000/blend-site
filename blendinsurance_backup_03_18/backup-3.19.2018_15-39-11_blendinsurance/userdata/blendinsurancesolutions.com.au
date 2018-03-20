@@ -1,0 +1,41 @@
+--- 
+customlog: 
+  - 
+    format: combined
+    target: /usr/local/apache/domlogs/blendinsurancesolutions.com.au
+  - 
+    format: "\"%{%s}t %I .\\n%{%s}t %O .\""
+    target: /usr/local/apache/domlogs/blendinsurancesolutions.com.au-bytes_log
+documentroot: /home/blendinsurance/public_html
+group: blendinsurance
+hascgi: 1
+homedir: /home/blendinsurance
+ifmodulealiasmodule: 
+  scriptalias: 
+    - 
+      path: /home/blendinsurance/public_html/cgi-bin/
+      url: /cgi-bin/
+ifmoduleincludemodule: 
+  directoryhomeblendinsurancepublichtml: 
+    ssilegacyexprparser: 
+      - 
+        value: " On"
+ifmoduleuserdirmodule: 
+  ifmodulempmitkc: 
+    ifmoduleruidmodule: {}
+
+ip: 107.180.12.120
+owner: gdresell
+phpopenbasedirprotect: 1
+port: 80
+scriptalias: 
+  - 
+    path: /home/blendinsurance/public_html/cgi-bin
+    url: /cgi-bin/
+serveradmin: webmaster@blendinsurancesolutions.com.au
+serveralias: mail.blendinsurancesolutions.com.au www.blendinsurancesolutions.com.au
+servername: blendinsurancesolutions.com.au
+ssl: 1
+usecanonicalname: 'Off'
+user: blendinsurance
+userdirprotect: ''
