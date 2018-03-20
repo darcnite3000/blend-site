@@ -7,6 +7,7 @@ import Mousey from './Mousey'
 import BlendLogo from './BlendLogo'
 import { LinkedIn } from './Icons'
 import { pageList as pages } from './pages'
+import TandC from './pages/TandC'
 import FooterBlurb from './FooterBlurb'
 import 'particles.js'
 import './app.css'
@@ -56,9 +57,20 @@ new Vue({
         <div class="foot" id="page-header">
           <FooterBlurb />
           <div class="bottom-links">
-            <a href="#">Collection Statement</a>|<a href="#">
+            <a href="https://blendinsurancesolutions.com.au/collection-statement/">
+              Collection Statement
+            </a>|<a
+              href="Blend-Financial-Services-Guide-Blend.FSG_.1117-final"
+              download
+            >
               Financial Services Guide
-            </a>|<a href="#">Terms and Conditions of Trade</a>
+            </a>|<a
+              on-click={this.showTandC}
+              href="Blend Terms and Conditions of Trade 1117.pdf"
+              download
+            >
+              Terms and Conditions of Trade
+            </a>
             <a href="#">
               <LinkedIn />
             </a>
@@ -105,6 +117,10 @@ new Vue({
     this.$ksvuescr.$emit('destroyScene', 'pinOverlay')
   },
   methods: {
+    showTandC(e) {
+      e.preventDefault()
+      this.showPopUp(<TandC />)
+    },
     showPopUp(content = null) {
       this.popUp = true
       this.popUpContent = content
