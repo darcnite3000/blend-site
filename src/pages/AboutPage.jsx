@@ -40,7 +40,7 @@ export default {
     showAboutUs(e) {
       e.preventDefault()
       this.showPopUp(
-        <div>
+        <div class="pop-page" id="page-aboutus">
           <h1>about us</h1>
           <p>
             Advent, our capacity provider, has over half a century of

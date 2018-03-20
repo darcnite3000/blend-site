@@ -59,9 +59,9 @@ p {
   align-items: center;
   z-index: 0;
   position: relative;
-  & h1,
-  & h2,
-  & p {
+  & > h1,
+  & > h2,
+  & > p {
     max-width: 66.5625%;
   }
 }
@@ -294,6 +294,37 @@ p {
     }
   }
 }
+
+.pop-page {
+  margin-top: 210px;
+}
+
+.team {
+  display: flex;
+  justify-content: space-around;
+  max-width: 86.875%;
+  margin: 0 auto;
+  & .member {
+    flex-basis: 325px;
+    padding: 0 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & .name {
+      font-size: 28px;
+      line-height: 26px;
+    }
+    & .title {
+      font-size: 20px;
+      line-height: 26px;
+    }
+    & .blurb p {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+}
+
 .pop-up {
   display: flex;
   position: fixed;
@@ -304,12 +335,10 @@ p {
   left: 0;
   width: 100%;
   height: 100vh;
-  padding-top: 210px;
   overflow: auto;
   z-index: 2;
   background-color: #ffffff;
   color: #333333;
-  justify-content: center;
   align-items: center;
   transition: opacity 0.3s ease;
   & h1 {
@@ -319,6 +348,7 @@ p {
   & .pop-foot {
     max-width: 66.5625%;
     margin: auto 0 14px;
+    padding-top: 14px;
     & p {
       font-size: 13px;
       line-height: 16px;
