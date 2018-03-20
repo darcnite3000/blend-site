@@ -7,6 +7,7 @@ import Mousey from './Mousey'
 import BlendLogo from './BlendLogo'
 import { LinkedIn } from './Icons'
 import { pageList as pages } from './pages'
+import FooterBlurb from './FooterBlurb'
 import 'particles.js'
 import './app.css'
 
@@ -53,18 +54,7 @@ new Vue({
           ))}
         </div>
         <div class="foot" id="page-header">
-          <p>
-            Blend Insurance Solutions Pty Ltd (ABN 47 617 346 353, AFSL 500768)
-            (&apos;blend&apos;) acts under a binding authority as agent for the
-            insurer, certain underwriters at Lloyd&apos;s.<br />
-            <br />Any general advice that may be contained in this email does
-            not take into account your client&apos;s objectives, financial
-            situation or needs. Before making a decision to purchase the product
-            we recommend your client consider<br />whether it is appropriate for
-            their circumstances and read the Product Disclosure Statement
-            (&apos;PDS&apos;). A copy of the PDS can be obtained by contacting
-            blend.
-          </p>
+          <FooterBlurb />
           <div class="bottom-links">
             <a href="#">Collection Statement</a>|<a href="#">
               Financial Services Guide
@@ -78,9 +68,18 @@ new Vue({
         <transition name="pop-up" mode="in-out">
           {this.popUp && (
             <div class="pop-up">
+              <BlendLogo class="logo-pop" />
               {this.popUpContent}
-              <a href="#" on-click={this.closePopUp}>
-                close me
+              <div class="pop-foot">
+                <FooterBlurb />
+              </div>
+              <a
+                href="#"
+                class="button button-close"
+                on-click={this.closePopUp}
+              >
+                <div>close</div>
+                <div class="cross">X</div>
               </a>
             </div>
           )}

@@ -9,18 +9,12 @@ export const LogoBorder = {
         viewBox="0 0 3 60"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
+        fill="#FFFFFF"
       >
-        <g
-          id="Home-1600w"
-          stroke="none"
-          stroke-width="1"
-          fill="none"
-          fill-rule="evenodd"
-        >
+        <g id="Home-1600w" stroke="none" stroke-width="1" fill-rule="evenodd">
           <g
             id="J4451_Blend_HomepageDK"
             transform="translate(-107.000000, -960.000000)"
-            fill="#FFFFFF"
             fill-rule="nonzero"
           >
             <g id="Group-2" transform="translate(0.000000, 900.000000)">
@@ -55,18 +49,12 @@ export const LogoText = {
         viewBox="0 0 164 75"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
+        fill="#FEFEFE"
       >
-        <g
-          id="Home-1600w"
-          stroke="none"
-          stroke-width="1"
-          fill="none"
-          fill-rule="evenodd"
-        >
+        <g id="Home-1600w" stroke="none" stroke-width="1" fill-rule="evenodd">
           <g
             id="J4451_Blend_HomepageDK"
             transform="translate(-718.000000, -305.000000)"
-            fill="#FEFEFE"
           >
             <g id="J4451_Blend_Homepage_Screen1">
               <g id="Group" transform="translate(267.000000, 197.000000)">
@@ -182,18 +170,12 @@ export const B = {
         viewBox="0 0 79 99"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
+        fill="#FEFEFE"
       >
-        <g
-          id="Home-1600w"
-          stroke="none"
-          stroke-width="1"
-          fill="none"
-          fill-rule="evenodd"
-        >
+        <g id="Home-1600w" stroke="none" stroke-width="1" fill-rule="evenodd">
           <g
             id="J4451_Blend_HomepageDK"
             transform="translate(-761.000000, -197.000000)"
-            fill="#FEFEFE"
           >
             <g id="J4451_Blend_Homepage_Screen1">
               <g id="Group" transform="translate(267.000000, 197.000000)">
