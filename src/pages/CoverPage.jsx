@@ -1,19 +1,6 @@
 import Page from './Page'
+import { productsList as products } from './products'
 
-import {
-  IconGroupPersonal,
-  IconPersonal,
-  IconVoluntary,
-  IconJourney,
-  IconBespoke,
-  IconBusiness
-} from '../Icons'
-import ProductGroupPersonal from './ProductGroupPersonal'
-import ProductPersonal from './ProductPersonal'
-import ProductVoluntary from './ProductVoluntary'
-import ProductBusiness from './ProductBusiness'
-import ProductJourney from './ProductJourney'
-import ProductBespoke from './ProductBespoke'
 export default {
   render() {
     return (
@@ -51,38 +38,7 @@ export default {
   },
   data() {
     return {
-      products: [
-        {
-          icon: IconGroupPersonal,
-          title: 'group personal\naccident',
-          content: ProductGroupPersonal
-        },
-        {
-          icon: IconPersonal,
-          title: 'individual\naccident',
-          content: ProductPersonal
-        },
-        {
-          icon: IconVoluntary,
-          title: 'voluntary\nworkers',
-          content: ProductVoluntary
-        },
-        {
-          icon: IconJourney,
-          title: 'journey',
-          content: ProductJourney
-        },
-        {
-          icon: IconBusiness,
-          title: 'business\ntravel',
-          content: ProductBusiness
-        },
-        {
-          icon: IconBespoke,
-          title: 'bespoke',
-          content: ProductBespoke
-        }
-      ]
+      products
     }
   },
   props: {
