@@ -8,6 +8,12 @@ import {
   IconBespoke,
   IconBusiness
 } from '../Icons'
+import ProductGroupPersonal from './ProductGroupPersonal'
+import ProductPersonal from './ProductPersonal'
+import ProductVoluntary from './ProductVoluntary'
+import ProductBusiness from './ProductBusiness'
+import ProductJourney from './ProductJourney'
+import ProductBespoke from './ProductBespoke'
 export default {
   render() {
     return (
@@ -33,7 +39,7 @@ export default {
               <a
                 href="#"
                 class="button"
-                on-click={this.findOutMore(section.content)}
+                on-click={this.findOutMore(<section.content />)}
               >
                 find out more
               </a>
@@ -49,62 +55,32 @@ export default {
         {
           icon: IconGroupPersonal,
           title: 'group personal\naccident',
-          content: (
-            <div class="pop-page">
-              <IconGroupPersonal invert />
-              <h1>group personal accident</h1>
-            </div>
-          )
+          content: ProductGroupPersonal
         },
         {
           icon: IconPersonal,
           title: 'individual\naccident',
-          content: (
-            <div class="pop-page">
-              <IconPersonal invert />
-              <h1>individual accident</h1>
-            </div>
-          )
+          content: ProductPersonal
         },
         {
           icon: IconVoluntary,
           title: 'voluntary\nworkers',
-          content: (
-            <div class="pop-page">
-              <IconVoluntary invert />
-              <h1>voluntary workers</h1>
-            </div>
-          )
+          content: ProductVoluntary
         },
         {
           icon: IconJourney,
           title: 'journey',
-          content: (
-            <div class="pop-page">
-              <IconJourney invert />
-              <h1>journey</h1>
-            </div>
-          )
+          content: ProductJourney
         },
         {
           icon: IconBusiness,
           title: 'business\ntravel',
-          content: (
-            <div class="pop-page">
-              <IconBusiness invert />
-              <h1>business travel</h1>
-            </div>
-          )
+          content: ProductBusiness
         },
         {
           icon: IconBespoke,
           title: 'bespoke',
-          content: (
-            <div class="pop-page">
-              <IconBespoke invert />
-              <h1>bespoke</h1>
-            </div>
-          )
+          content: ProductBespoke
         }
       ]
     }
