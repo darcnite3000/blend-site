@@ -1,19 +1,22 @@
 {
   "extends": [
     "eslint:recommended",
-    "plugin:react/recommended",
-    "prettier",
-    "prettier/react"
+    "plugin:vue/essential",
+    "plugin:prettier/recommended",
+    "prettier"
   ],
-  "plugins": ["react"],
-  "parser": "babel-eslint",
+  "plugins": ["vue", "prettier"],
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "babel-eslint",
+    "sourceType": "module",
+    "allowImportExportEverywhere": false
+  },
   "env": {
     "es6": true,
     "node": true
   },
   "rules": {
-    "react/react-in-jsx-scope": "off",
-    "react/no-unknown-property": "off",
     "no-console": "off"
   }
 }
