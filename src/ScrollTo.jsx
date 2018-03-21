@@ -1,4 +1,5 @@
 export default {
+  name: 'ScrollTo',
   props: {
     title: { type: String, default: 'Page' },
     to: { type: Number, default: 0 },

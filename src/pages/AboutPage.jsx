@@ -2,6 +2,7 @@ import Page from './Page'
 import ScrollTo from '../ScrollTo'
 import AboutUs from './AboutUs'
 export default {
+  name: 'AboutPage',
   render() {
     return (
       <Page label="about">

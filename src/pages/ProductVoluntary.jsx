@@ -1,5 +1,6 @@
 import { IconVoluntary } from '../Icons'
 export default {
+  name: 'ProductVoluntary',
   render() {
     return (
       <div class="pop-page" id="page-product-voluntary">

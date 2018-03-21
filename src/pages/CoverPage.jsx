@@ -2,6 +2,7 @@ import Page from './Page'
 import { productsList as products } from './products'
 
 export default {
+  name: 'CoverPage',
   render() {
     return (
       <Page label="cover">

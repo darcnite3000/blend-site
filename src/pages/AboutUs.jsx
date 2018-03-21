@@ -2,6 +2,7 @@ import lloyds from '../Lloyds.png'
 import advent from '../Advent.png'
 
 export default {
+  name: 'AboutUs',
   render() {
     return (
       <div class="pop-page" id="page-aboutus">

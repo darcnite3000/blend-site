@@ -4,6 +4,7 @@ const secondaryColor = '#ffffff'
 const invertMainColor = '#EE3D7F'
 const invertSecondaryColor = '#808285'
 export const IconVoluntary = {
+  name: 'IconVoluntary',
   props: {
     invert: { type: Boolean, default: false }
   },
@@ -93,6 +94,7 @@ export const IconVoluntary = {
 }
 
 export const IconJourney = {
+  name: 'IconJourney',
   props: {
     invert: { type: Boolean, default: false }
   },
@@ -173,6 +175,7 @@ export const IconJourney = {
 }
 
 export const IconPersonal = {
+  name: 'IconPersonal',
   props: {
     invert: { type: Boolean, default: false }
   },
@@ -246,6 +249,7 @@ export const IconPersonal = {
 }
 
 export const IconGroupPersonal = {
+  name: 'IconGroupPersonal',
   props: {
     invert: { type: Boolean, default: false }
   },
@@ -320,6 +324,7 @@ export const IconGroupPersonal = {
 }
 
 export const IconBusiness = {
+  name: 'IconBusiness',
   props: {
     invert: { type: Boolean, default: false }
   },
@@ -397,6 +402,7 @@ export const IconBusiness = {
 }
 
 export const IconBespoke = {
+  name: 'IconBespoke',
   props: {
     invert: { type: Boolean, default: false }
   },

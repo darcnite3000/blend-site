@@ -1,4 +1,5 @@
 export default {
+  name: 'FooterBlurb',
   render() {
     return (
       <p>

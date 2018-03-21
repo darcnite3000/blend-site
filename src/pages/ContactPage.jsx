@@ -1,5 +1,14 @@
 import Page from './Page'
 export default {
+  name: 'ContactPage',
+  data() {
+    return {
+      purpose: '',
+      name: '',
+      email: '',
+      message: ''
+    }
+  },
   render() {
     return (
       <Page label="contact">
@@ -14,7 +23,7 @@ export default {
           <div class="details">
             <div class="form-group">
               <label>purpose of enquiry</label>
-              <select>
+              <select v-model={this.purpose}>
                 <option>new broker enquiries</option>
                 <option>existing broker submissions</option>
                 <option>claims enquiries</option>
@@ -23,17 +32,28 @@ export default {
             </div>
             <div class="form-group">
               <label>your name</label>
-              <input type="text" placeholder="leonardo splinterson" />
+              <input
+                type="text"
+                placeholder="leonardo splinterson"
+                v-model={this.name}
+              />
             </div>
             <div class="form-group">
               <label>your email address</label>
-              <input type="email" placeholder="leonardo@tmntinsurance.com.au" />
+              <input
+                type="email"
+                placeholder="leonardo@tmntinsurance.com.au"
+                v-model={this.email}
+              />
             </div>
           </div>
           <div class="message">
             <div class="form-group">
               <label>your message</label>
-              <textarea placeholder="write your message here" />
+              <textarea
+                placeholder="write your message here"
+                v-model={this.message}
+              />
             </div>
           </div>
           <div class="button-group">

@@ -1,4 +1,5 @@
 export default {
+  name: 'TandC',
   render() {
     return (
       <div class="pop-page" id="page-tandc">

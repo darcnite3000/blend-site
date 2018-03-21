@@ -1,5 +1,6 @@
 import { IconGroupPersonal } from '../Icons'
 export default {
+  name: 'ProductGroupPersonal',
   render() {
     return (
       <div class="pop-page" id="page-product-group">

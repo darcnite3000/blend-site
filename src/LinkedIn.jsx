@@ -1,4 +1,5 @@
 export default {
+  name: 'LinkedIn',
   render() {
     return (
       <svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1">

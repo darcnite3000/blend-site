@@ -1,4 +1,5 @@
 export default {
+  name: 'Page',
   props: {
     label: { type: [String, Number], default: 0 }
   },

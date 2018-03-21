@@ -2,6 +2,7 @@ import Page from './Page'
 import ScrollTo from '../ScrollTo'
 import TheTeam from './TheTeam'
 export default {
+  name: 'FocusPage',
   render() {
     return (
       <Page label="focus">

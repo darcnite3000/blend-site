@@ -1,5 +1,6 @@
 import Page from './Page'
 export default {
+  name: 'TechPage',
   render() {
     return (
       <Page label="tech">

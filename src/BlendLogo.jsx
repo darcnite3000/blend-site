@@ -1,6 +1,7 @@
 import ScrollTo from './ScrollTo'
 
 export const LogoBorder = {
+  name: 'LogoBorder',
   render() {
     return (
       <svg
@@ -41,6 +42,7 @@ export const LogoBorder = {
 }
 
 export const LogoText = {
+  name: 'LogoText',
   render() {
     return (
       <svg
@@ -162,6 +164,7 @@ export const LogoText = {
 }
 
 export const B = {
+  name: 'B',
   render() {
     return (
       <svg
@@ -195,6 +198,7 @@ export const B = {
 }
 
 export default {
+  name: 'BlendLogo',
   props: {
     animated: { type: Boolean, default: false },
     linked: { type: Boolean, default: false }

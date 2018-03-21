@@ -1,6 +1,7 @@
 import ScrollTo from './ScrollTo'
 
 const ChevronDown = {
+  name: 'ChevronDown',
   render() {
     return (
       <svg
@@ -38,6 +39,7 @@ const ChevronDown = {
   }
 }
 const Mouse = {
+  name: 'Mouse',
   render() {
     return (
       <svg
@@ -84,6 +86,7 @@ const Mouse = {
 }
 
 export default {
+  name: 'Mousey',
   render() {
     return (
       <ScrollTo to={window.innerHeight} class="mousey">

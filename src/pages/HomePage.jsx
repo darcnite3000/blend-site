@@ -1,6 +1,7 @@
 import BlendLogo from '../BlendLogo'
 import Page from './Page'
 export default {
+  name: 'HomePage',
   render() {
     return (
       <Page label="home">

@@ -3,6 +3,7 @@ import hamish from '../Blend_200x200_Hamish.jpg'
 import issac from '../Blend_200x200_Isaac.jpg'
 import phil from '../Blend_200x200_Phil.jpg'
 export default {
+  name: 'TheTeam',
   data() {
     return {
       team: [

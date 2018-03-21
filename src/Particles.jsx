@@ -1,5 +1,6 @@
 import particles from './particles.json'
 export default {
+  name: 'Particles',
   render() {
     return <div id="particles" />
   },
