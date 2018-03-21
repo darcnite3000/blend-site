@@ -15,7 +15,10 @@ export default {
             <div class="form-group">
               <label>purpose of enquiry</label>
               <select>
+                <option>new broker enquiries</option>
                 <option>existing broker submissions</option>
+                <option>claims enquiries</option>
+                <option>other enquiries</option>
               </select>
             </div>
             <div class="form-group">
