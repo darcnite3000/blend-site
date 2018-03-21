@@ -1,6 +1,6 @@
 module.exports = {
   entry: './src/index.jsx',
-  homepage: '/blend-site/'
+  homepage: '/blendinsurancesolutions/'
   // presets: [
   //   require('poi-preset-prerender-spa')(
   //     {},
