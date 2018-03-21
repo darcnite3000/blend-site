@@ -2,7 +2,7 @@ import { IconVoluntary } from '../Icons'
 export default {
   render() {
     return (
-      <div class="pop-page">
+      <div class="pop-page" id="page-product-voluntary">
         <IconVoluntary invert />
         <h1>voluntary workers</h1>
         <p>
@@ -18,7 +18,7 @@ export default {
           voluntary workers policy will ensure associations meet their duty of
           care obligations to this valuable resource.
         </p>
-        <div class="list-head">hey features</div>
+        <div class="list-head">key features</div>
         <ul>
           <li>Accidental death</li>
           <li>Weekly benefits for sickness and injury</li>

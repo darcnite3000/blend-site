@@ -2,7 +2,7 @@ import { IconJourney } from '../Icons'
 export default {
   render() {
     return (
-      <div class="pop-page">
+      <div class="pop-page" id="page-product-journey">
         <IconJourney invert />
         <h1>journey</h1>
         <p>
@@ -18,7 +18,7 @@ export default {
           between capital benefits cover or weekly benefits for injury or
           illness.
         </p>
-        <div class="list-head">hey features</div>
+        <div class="list-head">key features</div>
         <ul>
           <li>Weekly loss of income benefits following an injury</li>
           <li>Rehabilitation benefit</li>

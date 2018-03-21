@@ -2,7 +2,7 @@ import { IconPersonal } from '../Icons'
 export default {
   render() {
     return (
-      <div class="pop-page">
+      <div class="pop-page" id="page-product-personal">
         <IconPersonal invert />
         <h1>personal accident</h1>
         <p>
@@ -66,7 +66,7 @@ export default {
             Provide payment guarantees and insurance verification to hospitals
           </li>
           <li>
-            Repatriation to the insured person's country of residence or a more
+            Repatriation to the insured person’s country of residence or a more
             suitable medical facility following an injury or sickness
           </li>
           <li>On-going medical monitoring</li>

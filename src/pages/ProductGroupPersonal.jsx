@@ -2,7 +2,7 @@ import { IconGroupPersonal } from '../Icons'
 export default {
   render() {
     return (
-      <div class="pop-page">
+      <div class="pop-page" id="page-product-group">
         <IconGroupPersonal invert />
         <h1>group personal accident</h1>
         <p>
