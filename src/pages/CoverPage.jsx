@@ -26,7 +26,7 @@ export default {
               <a
                 href="#"
                 class="button"
-                on-click={this.findOutMore(<section.content />)}
+                onClick:prevent={this.findOutMore(<section.content />)}
               >
                 find out more
               </a>
@@ -46,8 +46,7 @@ export default {
   },
   methods: {
     findOutMore(content = 'find out more') {
-      return e => {
-        e.preventDefault()
+      return () => {
         this.showPopUp(content)
       }
     }

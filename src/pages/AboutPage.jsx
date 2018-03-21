@@ -25,7 +25,7 @@ export default {
           <ScrollTo href="#page-cover" class="button">
             see our products
           </ScrollTo>
-          <a href="#" class="button" on-click={this.showAboutUs}>
+          <a href="#" class="button" onClick:prevent={this.showAboutUs}>
             about us
           </a>
         </div>
@@ -36,8 +36,7 @@ export default {
     showPopUp: Function
   },
   methods: {
-    showAboutUs(e) {
-      e.preventDefault()
+    showAboutUs() {
       this.showPopUp(<AboutUs />)
     }
   }

@@ -65,7 +65,7 @@ new Vue({
             >
               Financial Services Guide
             </a>|<a
-              on-click={this.showTandC}
+              onClick:prevent={this.showTandC}
               href="Blend Terms and Conditions of Trade 1117.pdf"
               download
             >
@@ -88,7 +88,7 @@ new Vue({
               <a
                 href="#"
                 class="button button-close"
-                on-click={this.closePopUp}
+                onClick:prevent={this.closePopUp}
               >
                 <div>close</div>
                 <div class="cross">X</div>
@@ -117,16 +117,14 @@ new Vue({
     this.$ksvuescr.$emit('destroyScene', 'pinOverlay')
   },
   methods: {
-    showTandC(e) {
-      e.preventDefault()
+    showTandC() {
       this.showPopUp(<TandC />)
     },
     showPopUp(content = null) {
       this.popUp = true
       this.popUpContent = content
     },
-    closePopUp(e) {
-      e.preventDefault()
+    closePopUp() {
       this.popUp = false
     }
   }

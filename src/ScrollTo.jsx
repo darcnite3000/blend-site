@@ -17,8 +17,7 @@ export default {
     }
   },
   methods: {
-    smoothScrollTo(event) {
-      event.preventDefault()
+    smoothScrollTo() {
       if (!this.linkEl || this.to) {
         window.scroll({ top: this.to, behavior: this.behavior })
       } else {
@@ -33,7 +32,11 @@ export default {
   },
   render() {
     return (
-      <a {...this.$props} href={this.href || '#'} onClick={this.smoothScrollTo}>
+      <a
+        {...this.$props}
+        href={this.href || '#'}
+        onClick:prevent={this.smoothScrollTo}
+      >
         {this.$slots.default}
       </a>
     )

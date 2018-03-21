@@ -21,7 +21,7 @@ export default {
           <ScrollTo href="#page-contact" class="button">
             get in touch
           </ScrollTo>
-          <a href="#" class="button" on-click={this.showTeam}>
+          <a href="#" class="button" onClick:prevent={this.showTeam}>
             meet the team
           </a>
         </div>
@@ -32,8 +32,7 @@ export default {
     showPopUp: Function
   },
   methods: {
-    showTeam(e) {
-      e.preventDefault()
+    showTeam() {
       this.showPopUp(<TheTeam />)
     }
   }
