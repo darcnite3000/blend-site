@@ -13,20 +13,39 @@ export default {
   },
   methods: {
     submitContact() {
-      const data = {
-        purpose: this.purpose,
-        name: this.name,
-        email: this.email,
-        message: this.message
+      let delay = 6000
+      if (this.purpose && this.name && this.message && this.email) {
+        const data = {
+          purpose: this.purpose,
+          name: this.name,
+          email: this.email,
+          message: this.message
+        }
+        console.log(data)
+        this.purpose = ''
+        this.name = ''
+        this.email = ''
+        this.message = ''
+      } else {
+        this.error = 'You must fill in all the fields.'
+        delay = 4000
       }
-      console.log(data)
+
+      this.sent = true
+      setTimeout(() => {
+        this.sent = false
+        this.error = ''
+      }, delay)
     }
   },
   render() {
+    const message =
+      this.error ||
+      'Thank you for your enquiry.\nA member of our team will be in touch with you shortly.'
+
     const contact = this.sent ? (
       <div class="contact-form sent">
-        Thank you for your enquiry.<br />A member of our team will be in touch
-        with you shortly.
+        {message.split('\n').map((line, i) => <div key={i}>{line}</div>)}
       </div>
     ) : (
       <form
