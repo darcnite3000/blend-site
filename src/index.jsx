@@ -9,6 +9,7 @@ import { LinkedIn } from './Icons'
 import { pageList as pages } from './pages'
 import TandC from './pages/TandC'
 import FooterBlurb from './FooterBlurb'
+import NavBar from './NavBar'
 import 'particles.js'
 import './app.css'
 
@@ -47,13 +48,7 @@ new Vue({
             talk to us
           </ScrollTo>
         </transition>
-        <div class="navbar">
-          {this.pages.map(({ id }, i) => (
-            <ScrollTo href={`#page-${id}`} class={`nav-page-${id}`} key={id}>
-              {i + 1}
-            </ScrollTo>
-          ))}
-        </div>
+        <NavBar class="navbar" pages={this.pages} />
         <div class="foot" id="page-header">
           <FooterBlurb />
           <div class="bottom-links">
