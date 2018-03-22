@@ -1,4 +1,5 @@
 import { IconGroupPersonal } from '../Icons'
+import FooterBlurb from '../FooterBlurb'
 export default {
   name: 'ProductGroupPersonal',
   render() {
@@ -38,6 +39,10 @@ export default {
             staff recruitment benefits.
           </li>
         </ul>
+
+        <div class="pop-foot">
+          <FooterBlurb />
+        </div>
       </div>
     )
   }

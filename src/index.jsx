@@ -23,6 +23,8 @@ new Vue({
   data() {
     return {
       pages,
+      previousScrollPosition: 0,
+      scrollLock: false,
       popUp: false,
       popUpContent: null
     }
@@ -55,14 +57,14 @@ new Vue({
             <a href="https://blendinsurancesolutions.com.au/collection-statement/">
               Collection Statement
             </a>|<a
-              href="Blend-Financial-Services-Guide-Blend.FSG_.1117-final"
-              download
+              href="Blend-Financial-Services-Guide-Blend.FSG_.1117-final.pdf"
+              download="Blend-Financial-Services-Guide-Blend.FSG_.1117-final.pdf"
             >
               Financial Services Guide
             </a>|<a
               onClick:prevent={this.showTandC}
               href="Blend Terms and Conditions of Trade 1117.pdf"
-              download
+              download="Blend Terms and Conditions of Trade 1117.pdf"
             >
               Terms and Conditions of Trade
             </a>
@@ -75,19 +77,18 @@ new Vue({
         <transition name="pop-up" mode="in-out">
           {this.popUp && (
             <div class="pop-up">
-              <BlendLogo class="logo-pop" />
-              {this.popUpContent}
-              <div class="pop-foot">
-                <FooterBlurb />
+              <div class="pop-up-inner">
+                <BlendLogo class="logo-pop" />
+                {this.popUpContent}
+                <a
+                  href="#"
+                  class="button button-close"
+                  onClick:prevent={this.closePopUp}
+                >
+                  <div>close</div>
+                  <div class="cross">X</div>
+                </a>
               </div>
-              <a
-                href="#"
-                class="button button-close"
-                onClick:prevent={this.closePopUp}
-              >
-                <div>close</div>
-                <div class="cross">X</div>
-              </a>
             </div>
           )}
         </transition>
@@ -95,6 +96,7 @@ new Vue({
     )
   },
   mounted() {
+    window.addEventListener('scroll', this.handleScroll)
     document.dispatchEvent(new Event('render-event'))
     this.$nextTick(() => {
       const hideTalkToUs = new this.$scrollmagic.Scene({
@@ -108,19 +110,28 @@ new Vue({
     })
   },
   beforeDestroy() {
+    window.removeEventListener('scroll', this.handleScroll)
     this.$ksvuescr.$emit('destroyScene', 'hideTalkToUs')
     this.$ksvuescr.$emit('destroyScene', 'pinOverlay')
   },
   methods: {
+    handleScroll() {
+      if (this.scrollLock) {
+        window.scroll(0, this.previousScrollPosition)
+      }
+      this.previousScrollPosition = window.scrollY
+    },
     showTandC() {
       this.showPopUp(<TandC />)
     },
     showPopUp(content = null) {
+      this.scrollLock = true
       this.popUp = true
       this.popUpContent = content
     },
     closePopUp() {
       this.popUp = false
+      this.scrollLock = false
     }
   }
 })

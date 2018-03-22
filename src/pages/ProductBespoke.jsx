@@ -1,4 +1,5 @@
 import { IconBespoke } from '../Icons'
+import FooterBlurb from '../FooterBlurb'
 export default {
   name: 'ProductBespoke',
   render() {
@@ -23,6 +24,10 @@ export default {
           overlapping and confusion. If it’s not designed to simplify and
           improve the user experience, it’s not blend.
         </p>
+
+        <div class="pop-foot">
+          <FooterBlurb />
+        </div>
       </div>
     )
   }

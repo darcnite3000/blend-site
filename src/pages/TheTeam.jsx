@@ -2,6 +2,7 @@ import chris from '../Blend_200x200_Chris.jpg'
 import hamish from '../Blend_200x200_Hamish.jpg'
 import issac from '../Blend_200x200_Isaac.jpg'
 import phil from '../Blend_200x200_Phil.jpg'
+import FooterBlurb from '../FooterBlurb'
 export default {
   name: 'TheTeam',
   data() {
@@ -53,6 +54,10 @@ An Underwriter who enjoys providing genuinely valuable products to his clients, 
               </div>
             </div>
           ))}
+        </div>
+
+        <div class="pop-foot">
+          <FooterBlurb />
         </div>
       </div>
     )

@@ -1,4 +1,5 @@
 import { IconJourney } from '../Icons'
+import FooterBlurb from '../FooterBlurb'
 export default {
   name: 'ProductJourney',
   render() {
@@ -36,6 +37,10 @@ export default {
           </li>
           <li>Cover for funeral expense</li>
         </ul>
+
+        <div class="pop-foot">
+          <FooterBlurb />
+        </div>
       </div>
     )
   }

@@ -1,3 +1,4 @@
+import FooterBlurb from '../FooterBlurb'
 export default {
   name: 'TandC',
   render() {
@@ -6,7 +7,10 @@ export default {
         <h1>terms & conditions of trade</h1>
         <p>
           To make working with blend easier, we have standard{' '}
-          <a href="Blend Terms and Conditions of Trade 1117.pdf" download>
+          <a
+            href="Blend Terms and Conditions of Trade 1117.pdf"
+            download="Blend Terms and Conditions of Trade 1117.pdf"
+          >
             Terms and Conditions of Trade
           </a>{' '}
           (Terms and Conditions) that apply to financial services between Blend
@@ -25,11 +29,18 @@ export default {
         </p>
         <p>
           Please{' '}
-          <a href="Blend Terms and Conditions of Trade 1117.pdf" download>
+          <a
+            href="Blend Terms and Conditions of Trade 1117.pdf"
+            download="Blend Terms and Conditions of Trade 1117.pdf"
+          >
             download
           </a>{' '}
           and read blend’s Terms and Conditions of Trade.
         </p>
+
+        <div class="pop-foot">
+          <FooterBlurb />
+        </div>
       </div>
     )
   }

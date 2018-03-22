@@ -1,4 +1,5 @@
 import { IconPersonal } from '../Icons'
+import FooterBlurb from '../FooterBlurb'
 export default {
   name: 'ProductPersonal',
   render() {
@@ -72,6 +73,10 @@ export default {
           </li>
           <li>On-going medical monitoring</li>
         </ul>
+
+        <div class="pop-foot">
+          <FooterBlurb />
+        </div>
       </div>
     )
   }

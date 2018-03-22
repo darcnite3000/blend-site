@@ -1,12 +1,13 @@
 import lloyds from '../Lloyds.png'
 import advent from '../Advent.png'
+import FooterBlurb from '../FooterBlurb'
 
 export default {
   name: 'AboutUs',
   render() {
     return (
       <div class="pop-page" id="page-aboutus">
-        <h1>about us</h1>
+        <h1>blend a lloyds syndicate service company</h1>
         <p>
           Advent, our capacity provider, has over half a century of underwriting
           and claims experience.
@@ -43,6 +44,10 @@ export default {
         <div class="logos">
           <img src={lloyds} alt="Lloyds" />
           <img src={advent} alt="Advent - a fairfax company" />
+        </div>
+
+        <div class="pop-foot">
+          <FooterBlurb />
         </div>
       </div>
     )
