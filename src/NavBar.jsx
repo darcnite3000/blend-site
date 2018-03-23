@@ -11,13 +11,29 @@ export default {
     }
   },
   mounted() {
-    const scrollProgress = new this.$scrollmagic.Scene({
-      duration: () => document.getElementById('page-contact').offsetTop
-    }).setTween('.navbar .navbar-line', { height: '98%' })
-    this.$ksvuescr.$emit('addScene', 'scrollProgress', scrollProgress)
+    this.$nextTick(() => {
+      this.pages.forEach((page, i) => {
+        const currentPage = document.getElementById(`page-${page.id}`)
+        console.log(currentPage.offsetHeight)
+        const scrollProgress = new this.$scrollmagic.Scene({
+          triggerElement: currentPage,
+          triggerHook: 0.7,
+          duration: () => currentPage.offsetHeight
+        })
+          .setTween('.navbar .navbar-line', {
+            height: `${this.spacing * (i + 1) - 0.5}%`
+          })
+          .on('start end enter leave', event =>
+            console.log(`scrollProgress-${i}`, 'event', event)
+          )
+        this.$ksvuescr.$emit('addScene', `scrollProgress-${i}`, scrollProgress)
+      })
+    })
   },
   beforeDestroy() {
-    this.$ksvuescr.$emit('destroyScene', 'scrollProgress')
+    this.pages.forEach((_, i) => {
+      this.$ksvuescr.$emit('destroyScene', `scrollProgress-${i}`)
+    })
   },
   render() {
     return (
