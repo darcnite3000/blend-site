@@ -89,7 +89,7 @@ export default {
   name: 'Mousey',
   render() {
     return (
-      <ScrollTo to={window.innerHeight} class="mousey">
+      <ScrollTo href="#page-about" class="mousey">
         <Mouse />
         <div class="chevrons">
           <ChevronDown />
