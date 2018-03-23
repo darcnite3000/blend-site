@@ -97,8 +97,12 @@ new Vue({
   },
   mounted() {
     window.addEventListener('scroll', this.handleScroll)
+    window.addEventListener('resize', this.resizeBG)
     document.dispatchEvent(new Event('render-event'))
     this.$nextTick(() => {
+      setTimeout(() => {
+        this.resizeBG()
+      }, 1)
       const hideTalkToUs = new this.$scrollmagic.Scene({
         triggerElement: '#page-contact'
       }).setClassToggle('.sitehelp', 'slide-in-enter-active')
@@ -115,6 +119,27 @@ new Vue({
     this.$ksvuescr.$emit('destroyScene', 'pinOverlay')
   },
   methods: {
+    resizeBG() {
+      document
+        .getElementById('app')
+        .setAttribute('style', `background: ${this.generateLinearGradient()};`)
+    },
+    generateLinearGradient() {
+      return `linear-gradient(${
+        this.pages.reduce(
+          ({ gradient, lastStop }, page) => {
+            if (gradient === '') gradient = `${page.bgStart}`
+            const height =
+              lastStop + document.getElementById(`page-${page.id}`).offsetHeight
+            return {
+              gradient: `${gradient}, ${page.bgEnd} ${height}px`,
+              lastStop: height
+            }
+          },
+          { lastStop: 0, gradient: '' }
+        ).gradient
+      })`
+    },
     handleScroll() {
       if (this.scrollLock) {
         window.scroll(0, this.previousScrollPosition)
