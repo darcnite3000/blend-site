@@ -14,18 +14,13 @@ export default {
     this.$nextTick(() => {
       this.pages.forEach((page, i) => {
         const currentPage = document.getElementById(`page-${page.id}`)
-        console.log(currentPage.offsetHeight)
         const scrollProgress = new this.$scrollmagic.Scene({
           triggerElement: currentPage,
           triggerHook: 0.7,
           duration: () => currentPage.offsetHeight
+        }).setTween('.navbar .navbar-line', {
+          height: `${this.spacing * (i + 1) - 0.5}%`
         })
-          .setTween('.navbar .navbar-line', {
-            height: `${this.spacing * (i + 1) - 0.5}%`
-          })
-          .on('start end enter leave', event =>
-            console.log(`scrollProgress-${i}`, 'event', event)
-          )
         this.$ksvuescr.$emit('addScene', `scrollProgress-${i}`, scrollProgress)
       })
     })
