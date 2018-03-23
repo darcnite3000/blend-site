@@ -23,6 +23,7 @@ new Vue({
   data() {
     return {
       pages,
+      showFixedLogo: false,
       previousScrollPosition: 0,
       scrollLock: false,
       popUp: false,
@@ -30,6 +31,7 @@ new Vue({
     }
   },
   render() {
+    console.log(window.innerWidth)
     return (
       <div id="app">
         <div class="content">
@@ -44,7 +46,7 @@ new Vue({
 
           <Mousey />
         </div>
-        <BlendLogo class="logo-nav" linked animated />
+        {this.showFixedLogo && <BlendLogo class="logo-nav" linked animated />}
         <transition name="slide-in" appear>
           <ScrollTo href="#page-contact" class="sitehelp">
             talk to us
@@ -97,11 +99,11 @@ new Vue({
   },
   mounted() {
     window.addEventListener('scroll', this.handleScroll)
-    window.addEventListener('resize', this.resizeBG)
+    window.addEventListener('resize', this.handleResize)
     document.dispatchEvent(new Event('render-event'))
     this.$nextTick(() => {
       setTimeout(() => {
-        this.resizeBG()
+        this.handleResize()
       }, 1)
       const hideTalkToUs = new this.$scrollmagic.Scene({
         triggerElement: '#page-contact'
@@ -119,7 +121,8 @@ new Vue({
     this.$ksvuescr.$emit('destroyScene', 'pinOverlay')
   },
   methods: {
-    resizeBG() {
+    handleResize() {
+      this.showFixedLogo = window.innerWidth > 900
       document
         .getElementById('app')
         .setAttribute('style', `background: ${this.generateLinearGradient()};`)

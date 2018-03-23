@@ -309,7 +309,13 @@ p {
   }
 }
 .button-group {
-  margin: 1em auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0.5em auto;
+  & > .button {
+    margin: 0.5em;
+  }
 }
 
 .button {
