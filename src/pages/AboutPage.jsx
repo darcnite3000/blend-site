@@ -9,7 +9,7 @@ export default {
         <h1>
           who’d have thought insurance<br />could be beautiful?
         </h1>
-        <h2>when it’s as simple as blend, it can be.</h2>
+        <h2>when it’s as simple as blend, it can be</h2>
         <p>
           We’re cutting out the complications with a suite of Accident and
           Health insurance products that answer the needs of Australian workers,

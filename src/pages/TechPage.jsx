@@ -7,7 +7,7 @@ export default {
         <h1>tech to enable</h1>
         <h2>
           an agile and highly scalable broker and partner<br />user experience
-          is on its way.
+          is on its way
         </h2>
         <p>
           We’re focused on creating best-in-class technology solutions, enabling

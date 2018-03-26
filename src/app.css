@@ -11,12 +11,13 @@ a {
 body {
   padding: 0;
   margin: 0;
+  font-size: 16px;
 }
 #app {
   position: relative;
   background-color: #ee3d7f;
   color: white;
-  font-size: 16px;
+  font-size: 1em;
   font-family: 'filson-soft', sans-serif;
   background: linear-gradient(
     #ee3d7f,
@@ -32,23 +33,23 @@ h1 {
   padding: 0;
   margin: 0.5em auto 0.5em;
   text-align: center;
-  font-size: 50px;
-  line-height: 58px;
+  font-size: 3.125em;
+  line-height: 1.16em;
   font-weight: bold;
 }
 h2 {
   padding: 0;
   margin: 0.5em auto 0.5em;
   text-align: center;
-  font-size: 30px;
-  line-height: 29px;
+  font-size: 1.875em;
+  line-height: 0.966666667em;
 }
 p {
   padding: 0;
   margin: 0.5em auto 0.5em;
   text-align: center;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.125em;
+  line-height: 1.555555556em;
   & a {
     font-weight: bold;
   }
@@ -133,26 +134,28 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  font-size: 20px;
+  font-size: 1.25em;
   width: 1264px;
   max-width: 67.5625%;
   & .icon {
+    width: 6.6em;
+    height: 6.6em;
     margin: 0.5em 0;
   }
   & .section {
     display: flex;
-    min-width: 180px;
+    min-width: 9em;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    min-height: 263px;
+    min-height: 13.15em;
     margin: 0.5em auto;
   }
   & .button {
-    font-size: 16px;
-    min-width: 160px;
+    font-size: 0.8em;
+    min-width: 10em;
     margin: auto 0 0;
-    padding: 7px;
+    padding: 0.4375em;
   }
 }
 
@@ -160,12 +163,13 @@ p {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  max-width: calc(100% - 50px);
   &.sent {
     min-height: 228px;
     width: 100%;
     max-width: 940px;
-    font-size: 20px;
-    line-height: 35px;
+    font-size: 1.25em;
+    line-height: 1.75em;
     margin-top: 30px;
     flex-direction: column;
     align-items: center;
@@ -195,16 +199,16 @@ p {
   }
   & label {
     display: block;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 800;
-    line-height: 26px;
+    line-height: 1.625em;
   }
   & select,
   & input[type='text'],
   & input[type='email'],
   & textarea {
-    font-size: 24px;
-    line-height: 26px;
+    font-size: 1.5em;
+    line-height: 1.083333333em;
     font-family: inherit;
     color: #ffffff;
     background: transparent;
@@ -223,11 +227,6 @@ p {
       width: 100%;
       padding: 10px;
     }
-    & select {
-      font-size: 24px;
-      line-height: 26px;
-      font-family: inherit;
-    }
   }
 }
 
@@ -239,13 +238,13 @@ p {
   align-items: center;
   z-index: 0;
   position: relative;
-  font-size: 13px;
-  line-height: 16px;
+  font-size: 0.8125em;
+  line-height: 1.230769231em;
   overflow: hidden;
   & p {
     max-width: 90%;
-    font-size: 13px;
-    line-height: 16px;
+    font-size: 1em;
+    line-height: 1.230769231em;
     margin: 1em auto;
   }
   & .bottom-links {
@@ -322,16 +321,16 @@ p {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: bold;
   text-decoration: none;
-  min-width: 210px;
+  min-width: 11.666666667em;
   margin: 0 15px;
-  padding: 13px 24px;
+  padding: 0.722222222em 1.333333333em;
   color: #ffffff;
   border: 2px solid;
   background-color: rgba(255, 255, 255, 0.07);
-  border-radius: 40px;
+  border-radius: 2.222222222em;
   cursor: pointer;
   transition: 0.45s;
   &:active {
@@ -340,21 +339,21 @@ p {
 }
 .sitehelp {
   position: fixed;
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: bold;
-  left: 50px;
+  left: 3.125%;
   bottom: 0;
-  padding: 13px 24px 11px;
+  padding: 0.722222222em 1.333333333em 0.611111111em;
   text-decoration: none;
   border: 2px solid;
   border-bottom: none;
   color: #ffffff;
   background-color: rgba(255, 255, 255, 0.07);
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 1.111111111em;
+  border-top-right-radius: 1.111111111em;
   transition: 0.5s;
   &:hover {
-    padding-bottom: 16px;
+    padding-bottom: 0.888888889em;
   }
   &:active {
     background-color: rgba(255, 255, 255, 0.2);
@@ -369,16 +368,20 @@ p {
   &.logo-nav,
   &.logo-pop {
     display: flex;
-    width: 210px;
-    top: 60px;
-    left: 50px;
+    width: 13.125em;
+    top: 3.75em;
+    left: 3.125%;
     & .logo-b {
-      width: 47px;
-      height: 59px;
+      width: 2.9375em;
+      height: 3.6875em;
+    }
+    & .logo-border {
+      width: 0.1875em;
+      height: 3.75em;
     }
     & .logo-text {
-      width: 134px;
-      height: 59px;
+      width: 8.375em;
+      height: 3.6875em;
     }
   }
   &.logo-pop {
@@ -469,15 +472,14 @@ p {
   }
   & .button.button-close {
     color: #000000;
-    min-width: 140px;
-    font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    min-width: 7em;
+    margin-top: 1em;
+    margin-bottom: 1em;
     flex-shrink: 0;
     & .cross {
       font-weight: normal;
-      font-size: 30px;
-      line-height: 28px;
+      font-size: 1.5em;
+      line-height: 0.933333333em;
       margin-left: 5px;
     }
   }
@@ -526,4 +528,45 @@ p {
 .fade-enter,
 .fade-leave-to {
   opacity: 0;
+}
+@media (max-width: 1420px) {
+  .logo {
+    &.logo-nav,
+    &.logo-pop {
+      font-size: 0.8em;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  body {
+    font-size: 12px;
+  }
+  .logo {
+    &.logo-nav,
+    &.logo-pop {
+      display: none;
+    }
+  }
+  .contact-form {
+    flex-direction: column;
+  }
+  .navbar-spacer {
+    right: 1em !important;
+  }
+  .sitehelp {
+    transform: rotate(90deg) translate(-50%, 100%);
+    left: 0;
+    &:hover {
+      padding-bottom: 0.611111111em;
+      transform: rotate(90deg) translate(-50%, 90%);
+    }
+    &.slide-in-enter-active {
+      transform: rotate(90deg) translate(-50%, 200%);
+    }
+  }
+}
+@media (max-width: 580px) {
+  body {
+    font-size: 10px;
+  }
 }

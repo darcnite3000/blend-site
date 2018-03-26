@@ -28,7 +28,7 @@ export const productsList = [
   },
   {
     icon: IconPersonal,
-    title: 'individual\naccident',
+    title: 'individual personal\naccident',
     content: ProductPersonal
   },
   {

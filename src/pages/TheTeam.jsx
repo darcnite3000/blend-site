@@ -18,7 +18,7 @@ Chris loves detail and design. He leads Blend’s success and ensures the team i
         {
           image: hamish,
           name: 'Hamish Elliot',
-          position: 'Head of Partnerships & Platforms',
+          position: 'Partnerships & Platforms',
           blurb: `Hamish is passionate about building meaningful and magical partnerships through our first class technology platforms.
 With a background in product design and service innovation, Hamish loves shaping user experiences, designing new product solutions and leading blend’s strategic digital direction.`
         },

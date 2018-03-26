@@ -23,7 +23,6 @@ new Vue({
   data() {
     return {
       pages,
-      showFixedLogo: false,
       previousScrollPosition: 0,
       scrollLock: false,
       popUp: false,
@@ -46,7 +45,7 @@ new Vue({
 
           <Mousey />
         </div>
-        {this.showFixedLogo && <BlendLogo class="logo-nav" linked animated />}
+        <BlendLogo class="logo-nav" linked animated />
         <transition name="slide-in" appear>
           <ScrollTo href="#page-contact" class="sitehelp">
             talk to us
@@ -110,7 +109,7 @@ new Vue({
       }).setClassToggle('.sitehelp', 'slide-in-enter-active')
       const pinNavBar = new this.$scrollmagic.Scene({
         duration: () => document.getElementById('page-contact').offsetTop
-      }).setPin('.navbar')
+      }).setPin('.navbar', { spacerClass: 'navbar-spacer' })
       this.$ksvuescr.$emit('addScene', 'hideTalkToUs', hideTalkToUs)
       this.$ksvuescr.$emit('addScene', 'pinNavBar', pinNavBar)
     })

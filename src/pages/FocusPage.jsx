@@ -9,7 +9,7 @@ export default {
         <h1>
           it’s your world,<br />we just live in it
         </h1>
-        <h2>your focus is our focus.</h2>
+        <h2>your focus is our focus</h2>
         <p>
           Sustainable businesses are built on strong relationships, and that’s
           why honesty, transparency and flexibility are so central to our

@@ -6,7 +6,7 @@ export default {
     return (
       <div class="pop-page" id="page-product-personal">
         <IconPersonal invert />
-        <h1>personal accident</h1>
+        <h1>individual personal accident</h1>
         <p>
           Our Individual Personal Accident product covers a variety of
           occupations. The product provides lump sum benefits due to death or
