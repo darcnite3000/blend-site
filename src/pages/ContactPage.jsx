@@ -1,4 +1,5 @@
 import Page from './Page'
+import axios from 'axios'
 export default {
   name: 'ContactPage',
   data() {
@@ -22,10 +23,19 @@ export default {
           message: this.message
         }
         console.log(data)
-        this.purpose = ''
-        this.name = ''
-        this.email = ''
-        this.message = ''
+        axios
+          .post('sendmail.php', data)
+          .then(() => {
+            this.purpose = ''
+            this.name = ''
+            this.email = ''
+            this.message = ''
+          })
+          .catch(() => {
+            this.error =
+              'Sorry something went wrong.\nPlease try again after a short delay.'
+            delay = 4000
+          })
       } else {
         this.error = 'You must fill in all the fields.'
         delay = 4000
