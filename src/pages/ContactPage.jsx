@@ -66,7 +66,7 @@ export default {
         <div class="details">
           <div class="form-group">
             <label>purpose of enquiry</label>
-            <select v-model={this.purpose}>
+            <select v-model={this.purpose} required>
               <option>new broker enquiries</option>
               <option>existing broker submissions</option>
               <option>claims enquiries</option>
@@ -79,6 +79,7 @@ export default {
               type="text"
               placeholder="leonardo splinterson"
               v-model={this.name}
+              required
             />
           </div>
           <div class="form-group">
@@ -87,6 +88,7 @@ export default {
               type="email"
               placeholder="leonardo@tmntinsurance.com.au"
               v-model={this.email}
+              required
             />
           </div>
         </div>
@@ -96,6 +98,7 @@ export default {
             <textarea
               placeholder="write your message here"
               v-model={this.message}
+              required
             />
           </div>
         </div>
