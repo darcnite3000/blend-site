@@ -15,8 +15,11 @@ switch ($purpose) {
   case 'claims enquiries':
     $to = 'claims@fullertonhealthcs.com.au';
     break;
-  default:
+  case 'other enquiries':
     $to = 'chris@blendinsurance.com.au';
+    break;
+  default:
+    die('invalid purpose');
 }
 $mailBody = $message. "\r\n". "\r\n"."from: $name<$email>";
 mail($to,$purpose,$mailBody,$headers);
