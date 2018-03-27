@@ -1,5 +1,3 @@
-import lloyds from '../Lloyds.png'
-import advent from '../Advent.png'
 import BlendLogo from '../BlendLogo'
 import FooterBlurb from '../FooterBlurb'
 
@@ -44,8 +42,8 @@ export default {
           </li>
         </ul>
         <div class="logos">
-          <img src={lloyds} alt="Lloyds" />
-          <img src={advent} alt="Advent - a fairfax company" />
+          <img src="Lloyds.png" alt="Lloyds" />
+          <img src="Advent.png" alt="Advent - a fairfax company" />
         </div>
 
         <div class="pop-foot">
