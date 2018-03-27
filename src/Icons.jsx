@@ -465,7 +465,7 @@ export const IconBespoke = {
   }
 }
 
-export const IconList = [
+export const iconList = [
   IconGroupPersonal,
   IconPersonal,
   IconVoluntary,
