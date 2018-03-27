@@ -1,12 +1,17 @@
 import FooterBlurb from '../FooterBlurb'
 import BlendLogo from '../BlendLogo'
-import team from './team.json'
+import axios from 'axios'
 export default {
   name: 'TheTeam',
   data() {
     return {
-      team
+      team: []
     }
+  },
+  mounted() {
+    axios.get('team.json').then(({ data }) => {
+      this.team = data
+    })
   },
   render() {
     return (
