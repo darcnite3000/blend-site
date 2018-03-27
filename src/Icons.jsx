@@ -464,3 +464,12 @@ export const IconBespoke = {
     )
   }
 }
+
+export const IconList = [
+  IconGroupPersonal,
+  IconPersonal,
+  IconVoluntary,
+  IconJourney,
+  IconBespoke,
+  IconBusiness
+]
