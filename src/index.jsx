@@ -3,6 +3,7 @@ import KsVueScrollmagic from 'ks-vue-scrollmagic'
 import smoothscroll from 'smoothscroll-polyfill'
 import ScrollTo from './ScrollTo'
 import Particles from './Particles'
+import axios from 'axios'
 import Mousey from './Mousey'
 import BlendLogo from './BlendLogo'
 import { LinkedIn } from './Icons'
@@ -18,7 +19,7 @@ smoothscroll.polyfill()
 
 Vue.use(KsVueScrollmagic)
 Vue.prototype.$particles = window.particlesJS
-
+Vue.prototype.$pageContent = axios.get('pages.json').then(({ data }) => data)
 new Vue({
   el: '#app',
   data() {
@@ -107,6 +108,7 @@ new Vue({
     window.addEventListener('scroll', this.handleScroll)
     window.addEventListener('resize', this.handleResize)
     document.dispatchEvent(new Event('render-event'))
+
     this.$nextTick(() => {
       setTimeout(() => {
         this.handleResize()

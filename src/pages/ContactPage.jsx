@@ -17,6 +17,11 @@ export default {
       }
     }
   },
+  mounted() {
+    this.$pageContent.then(({ ContactPage: content }) => {
+      this.content = content
+    })
+  },
   render() {
     const message =
       this.error ||

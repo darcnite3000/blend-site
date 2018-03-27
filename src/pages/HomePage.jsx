@@ -10,6 +10,11 @@ export default {
       }
     }
   },
+  mounted() {
+    this.$pageContent.then(({ HomePage: content }) => {
+      this.content = content
+    })
+  },
   render() {
     const { title, subtitle, blurb } = this.content
     return (

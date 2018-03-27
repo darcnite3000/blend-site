@@ -13,6 +13,11 @@ This is just the beginning for blend, and that means there’s more exciting stu
       }
     }
   },
+  mounted() {
+    this.$pageContent.then(({ AboutPage: content }) => {
+      this.content = content
+    })
+  },
   render() {
     const { title, subtitle, blurb } = this.content
     return (

@@ -13,6 +13,11 @@ export default {
       }
     }
   },
+  mounted() {
+    this.$pageContent.then(({ FocusPage: content }) => {
+      this.content = content
+    })
+  },
   render() {
     const { title, subtitle, blurb } = this.content
     return (
