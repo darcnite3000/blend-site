@@ -1,10 +1,12 @@
 import { IconVoluntary } from '../Icons'
 import FooterBlurb from '../FooterBlurb'
+import BlendLogo from '../BlendLogo'
 export default {
   name: 'ProductVoluntary',
   render() {
     return (
       <div class="pop-page" id="page-product-voluntary">
+        <BlendLogo class="logo-pop" />
         <IconVoluntary invert />
         <h1>voluntary workers</h1>
         <p>

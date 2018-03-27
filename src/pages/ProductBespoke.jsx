@@ -1,10 +1,12 @@
 import { IconBespoke } from '../Icons'
 import FooterBlurb from '../FooterBlurb'
+import BlendLogo from '../BlendLogo'
 export default {
   name: 'ProductBespoke',
   render() {
     return (
       <div class="pop-page" id="page-product-bespoke">
+        <BlendLogo class="logo-pop" />
         <IconBespoke invert />
         <h1>bespoke</h1>
         <p>

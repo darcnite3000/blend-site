@@ -1,9 +1,11 @@
 import FooterBlurb from '../FooterBlurb'
+import BlendLogo from '../BlendLogo'
 export default {
   name: 'TandC',
   render() {
     return (
       <div class="pop-page" id="page-tandc">
+        <BlendLogo class="logo-pop" />
         <h1>terms & conditions of trade</h1>
         <p>
           To make working with blend easier, we have standard{' '}

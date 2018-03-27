@@ -1,10 +1,12 @@
 import { IconBusiness } from '../Icons'
 import FooterBlurb from '../FooterBlurb'
+import BlendLogo from '../BlendLogo'
 export default {
   name: 'ProductBusiness',
   render() {
     return (
       <div class="pop-page" id="page-product-business">
+        <BlendLogo class="logo-pop" />
         <IconBusiness invert />
         <h1>business travel</h1>
         <p>
@@ -37,12 +39,7 @@ export default {
             Kidnap, Ransom, Extortion Hijack & Detention - Includes kidnap,
             ransom and extortion and a daily hijack and detention benefit
           </li>
-          <li>
-            Overseas Medical Expenses & Medical Evacuation Expenses - Overseas
-            medical expenses and emergency evacuation expenses, including a
-            daily cash benefit when confined to bed for a period greater than 24
-            hours
-          </li>
+          <li>Overseas Medical Expenses & Medical Evacuation Expenses</li>
           <li>
             Baggage, Portable Electronic Equipment & Money - Includes travel
             documents and deprivation of baggage cover
@@ -64,15 +61,6 @@ export default {
             Extra Territorial Workers Compensation - Cover for differences in
             workers compensation entitlements when employees are travelling
             inter-state within Australia
-          </li>
-          <li>
-            Political Unrest & Natural Disaster Evacuation - Evacuation to the
-            nearest place of safety in the case of political unrest and natural
-            disaster
-          </li>
-          <li>
-            Search & Rescue Expenses - Reimbursement of expenses relating to
-            search and rescue of a reported missing insured person
           </li>
           <li>
             Personal Wellbeing - A range of additional benefits including

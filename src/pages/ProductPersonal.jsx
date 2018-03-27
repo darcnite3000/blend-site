@@ -1,10 +1,12 @@
 import { IconPersonal } from '../Icons'
 import FooterBlurb from '../FooterBlurb'
+import BlendLogo from '../BlendLogo'
 export default {
   name: 'ProductPersonal',
   render() {
     return (
       <div class="pop-page" id="page-product-personal">
+        <BlendLogo class="logo-pop" />
         <IconPersonal invert />
         <h1>individual personal accident</h1>
         <p>
@@ -35,18 +37,9 @@ export default {
             Lump sum cash payment under the Serious Accident Benefit depending
             on the level of cover chosen
           </li>
-          <li>
-            Lump sum cash payment on all eligible claims. If it’s an eligible
-            serious accident claim, we’ll pay even if you choose not to return
-            to work
-          </li>
+          <li>Lump sum cash payment on all eligible claims.</li>
           <li>Use the cash payments however you like – no restrictions</li>
           <li>Pays regardless of other insurance products you may have</li>
-          <li>
-            Free 24/7 referral helpline for emergency legal and medical
-            assistance, home support services and home modification assistance
-            in Australia
-          </li>
           <li>Global cover 24/7, even if you’re overseas on holiday</li>
           <li>
             Emergency Assistance - Unlimited access to our emergency assistance

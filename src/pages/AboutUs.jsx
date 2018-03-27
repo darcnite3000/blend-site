@@ -1,5 +1,6 @@
 import lloyds from '../Lloyds.png'
 import advent from '../Advent.png'
+import BlendLogo from '../BlendLogo'
 import FooterBlurb from '../FooterBlurb'
 
 export default {
@@ -7,6 +8,7 @@ export default {
   render() {
     return (
       <div class="pop-page" id="page-aboutus">
+        <BlendLogo class="logo-pop" />
         <h1>blend a lloyds syndicate service company</h1>
         <p>
           Advent, our capacity provider, has over half a century of underwriting

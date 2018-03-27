@@ -1,10 +1,12 @@
 import { IconJourney } from '../Icons'
 import FooterBlurb from '../FooterBlurb'
+import BlendLogo from '../BlendLogo'
 export default {
   name: 'ProductJourney',
   render() {
     return (
       <div class="pop-page" id="page-product-journey">
+        <BlendLogo class="logo-pop" />
         <IconJourney invert />
         <h1>journey</h1>
         <p>

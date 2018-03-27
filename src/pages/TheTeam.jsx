@@ -3,6 +3,7 @@ import hamish from '../Blend_200x200_Hamish.jpg'
 import issac from '../Blend_200x200_Isaac.jpg'
 import phil from '../Blend_200x200_Phil.jpg'
 import FooterBlurb from '../FooterBlurb'
+import BlendLogo from '../BlendLogo'
 export default {
   name: 'TheTeam',
   data() {
@@ -12,6 +13,7 @@ export default {
           image: chris,
           name: 'Chris Newing',
           position: 'Cheif Executive Officer',
+          linkedIn: 'https://au.linkedin.com/in/chris-newing-4ba1b737',
           blurb: `With over 15 years’ experience in the industry with multinational insurers, Chris has a diverse and detailed skillset shaped by time spent in varied roles and geographies.
 Chris loves detail and design. He leads Blend’s success and ensures the team is focused on delivering innovative solutions to market.`
         },
@@ -19,6 +21,7 @@ Chris loves detail and design. He leads Blend’s success and ensures the team i
           image: hamish,
           name: 'Hamish Elliot',
           position: 'Partnerships & Platforms',
+          linkedIn: 'https://au.linkedin.com/in/hamish-elliot-76ab7657/',
           blurb: `Hamish is passionate about building meaningful and magical partnerships through our first class technology platforms.
 With a background in product design and service innovation, Hamish loves shaping user experiences, designing new product solutions and leading blend’s strategic digital direction.`
         },
@@ -42,12 +45,33 @@ An Underwriter who enjoys providing genuinely valuable products to his clients, 
   render() {
     return (
       <div class="pop-page" id="page-team">
+        <BlendLogo class="logo-pop relative" />
         <h1>meet the team</h1>
         <div class="team">
-          {this.team.map(({ image, name, position, blurb }) => (
+          {this.team.map(({ image, name, position, blurb, linkedIn }) => (
             <div key={name} class="member">
-              <img src={image} class="image" />
-              <div class="name">{name}</div>
+              {linkedIn ? (
+                <a
+                  href={linkedIn}
+                  target="_blank"
+                  title={`${name} on LinkedIn`}
+                >
+                  <img src={image} class="image" />
+                </a>
+              ) : (
+                <img src={image} class="image" />
+              )}
+              {linkedIn ? (
+                <a
+                  href={linkedIn}
+                  target="_blank"
+                  title={`${name} on LinkedIn`}
+                >
+                  <div class="name">{name}</div>
+                </a>
+              ) : (
+                <div class="name">{name}</div>
+              )}
               <div class="position">{position}</div>
               <div class="blurb">
                 {blurb.split('\n').map((p, i) => <p key={i}>{p}</p>)}

@@ -8,6 +8,7 @@ import BlendLogo from './BlendLogo'
 import { LinkedIn } from './Icons'
 import { pageList as pages } from './pages'
 import TandC from './pages/TandC'
+import CollectionStatement from './pages/CollectionStatement'
 import FooterBlurb from './FooterBlurb'
 import NavBar from './NavBar'
 import 'particles.js'
@@ -55,7 +56,11 @@ new Vue({
         <div class="foot" id="page-header">
           <FooterBlurb />
           <div class="bottom-links">
-            <a href="https://blendinsurancesolutions.com.au/collection-statement/">
+            <a
+              onClick:prevent={this.showCollection}
+              href="Blend-Insurance-Solutions-Privacy-Policy-1117.pdf"
+              download="Blend-Insurance-Solutions-Privacy-Policy-1117.pdf"
+            >
               Collection Statement
             </a>|<a
               href="Blend-Financial-Services-Guide-Blend.FSG_.1117-final.pdf"
@@ -69,7 +74,10 @@ new Vue({
             >
               Terms and Conditions of Trade
             </a>
-            <a href="#">
+            <a
+              href="https://au.linkedin.com/company/blend-insurance-solutions"
+              target="_blank"
+            >
               <LinkedIn />
             </a>
           </div>
@@ -79,7 +87,6 @@ new Vue({
           {this.popUp && (
             <div class="pop-up">
               <div class="pop-up-inner">
-                <BlendLogo class="logo-pop" />
                 {this.popUpContent}
                 <a
                   href="#"
@@ -150,6 +157,9 @@ new Vue({
     },
     showTandC() {
       this.showPopUp(<TandC />)
+    },
+    showCollection() {
+      this.showPopUp(<CollectionStatement />)
     },
     showPopUp(content = null) {
       this.scrollLock = true

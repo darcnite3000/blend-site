@@ -1,10 +1,12 @@
 import { IconGroupPersonal } from '../Icons'
 import FooterBlurb from '../FooterBlurb'
+import BlendLogo from '../BlendLogo'
 export default {
   name: 'ProductGroupPersonal',
   render() {
     return (
       <div class="pop-page" id="page-product-group">
+        <BlendLogo class="logo-pop" />
         <IconGroupPersonal invert />
         <h1>group personal accident</h1>
         <p>
