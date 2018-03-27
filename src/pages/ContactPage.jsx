@@ -1,5 +1,6 @@
 import Page from './Page'
 import axios from 'axios'
+
 export default {
   name: 'ContactPage',
   data() {
@@ -9,43 +10,11 @@ export default {
       purpose: '',
       name: '',
       email: '',
-      message: ''
-    }
-  },
-  methods: {
-    submitContact() {
-      let delay = 6000
-      if (this.purpose && this.name && this.message && this.email) {
-        const data = {
-          purpose: this.purpose,
-          name: this.name,
-          email: this.email,
-          message: this.message
-        }
-        console.log(data)
-        axios
-          .post('sendmail.php', data)
-          .then(() => {
-            this.purpose = ''
-            this.name = ''
-            this.email = ''
-            this.message = ''
-          })
-          .catch(() => {
-            this.error =
-              'Sorry something went wrong.\nPlease try again after a short delay.'
-            delay = 4000
-          })
-      } else {
-        this.error = 'You must fill in all the fields.'
-        delay = 4000
+      message: '',
+      content: {
+        title: 'we could be the perfect blend',
+        blurb: `Let’s work together. Whether you need to chat about your clients’ insurance needs, a new product or partnership idea, or something else altogether, we’d love to hear from you. We’re responsive, responsible and reliable, so sing out, and we’ll sing right back.`
       }
-
-      this.sent = true
-      setTimeout(() => {
-        this.sent = false
-        this.error = ''
-      }, delay)
     }
   },
   render() {
@@ -55,7 +24,7 @@ export default {
 
     const contact = this.sent ? (
       <div class="contact-form sent">
-        {message.split('\n').map((line, i) => <div key={i}>{line}</div>)}
+        {message.split('\n').map(line => <div>{line}</div>)}
       </div>
     ) : (
       <form
@@ -107,19 +76,55 @@ export default {
         </div>
       </form>
     )
+
+    const { title, subtitle, blurb } = this.content
     return (
       <Page label="contact">
-        <h1>we could be the perfect blend</h1>
-        <p>
-          Let’s work together. Whether you need to chat about your clients’
-          insurance needs, a new product or partnership idea, or something else
-          altogether, we’d love to hear from you. We’re responsive, responsible
-          and reliable, so sing out, and we’ll sing right back.
-        </p>
+        <h1>{title.split('\n').map(line => <div>{line}</div>)}</h1>
+        {subtitle && (
+          <h2>{subtitle.split('\n').map(line => <div>{line}</div>)}</h2>
+        )}
+        {blurb && blurb.split('\n').map(para => <p>{para}</p>)}
         <transition name="fade" mode="out-in">
           {contact}
         </transition>
       </Page>
     )
+  },
+  methods: {
+    submitContact() {
+      let delay = 6000
+      if (this.purpose && this.name && this.message && this.email) {
+        const data = {
+          purpose: this.purpose,
+          name: this.name,
+          email: this.email,
+          message: this.message
+        }
+        console.log(data)
+        axios
+          .post('sendmail.php', data)
+          .then(() => {
+            this.purpose = ''
+            this.name = ''
+            this.email = ''
+            this.message = ''
+          })
+          .catch(() => {
+            this.error =
+              'Sorry something went wrong.\nPlease try again after a short delay.'
+            delay = 4000
+          })
+      } else {
+        this.error = 'You must fill in all the fields.'
+        delay = 4000
+      }
+
+      this.sent = true
+      setTimeout(() => {
+        this.sent = false
+        this.error = ''
+      }, delay)
+    }
   }
 }
