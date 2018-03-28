@@ -5,7 +5,8 @@ export default {
   name: 'CoverPage',
   props: {
     pageId: { type: String, default: 'cover' },
-    showPopUp: Function
+    showPopUp: Function,
+    closePopUp: Function
   },
   data() {
     return {

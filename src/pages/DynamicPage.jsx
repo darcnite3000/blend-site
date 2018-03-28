@@ -7,7 +7,9 @@ export default {
     }
   },
   props: {
-    pageId: String
+    pageId: String,
+    showPopUp: Function,
+    closePopUp: Function
   },
   mounted() {
     this.$pageContent.then(pages => {

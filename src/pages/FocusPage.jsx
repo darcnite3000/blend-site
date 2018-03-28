@@ -15,7 +15,8 @@ export default {
   },
   props: {
     pageId: { type: String, default: 'focus' },
-    showPopUp: Function
+    showPopUp: Function,
+    closePopUp: Function
   },
   mounted() {
     this.$pageContent.then(pages => {

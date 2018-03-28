@@ -11,7 +11,9 @@ export default {
     }
   },
   props: {
-    pageId: { type: String, default: 'home' }
+    pageId: { type: String, default: 'home' },
+    showPopUp: Function,
+    closePopUp: Function
   },
   mounted() {
     this.$pageContent.then(pages => {

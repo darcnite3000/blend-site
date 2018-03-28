@@ -3,6 +3,11 @@ import axios from 'axios'
 
 export default {
   name: 'ContactPage',
+  props: {
+    pageId: String,
+    showPopUp: Function,
+    closePopUp: Function
+  },
   data() {
     return {
       sent: false,
@@ -18,8 +23,8 @@ export default {
     }
   },
   mounted() {
-    this.$pageContent.then(({ ContactPage: content }) => {
-      this.content = content
+    this.$pageContent.then(pages => {
+      this.content = pages[this.pageId]
     })
   },
   render() {
@@ -84,7 +89,7 @@ export default {
 
     const { title, subtitle, blurb } = this.content
     return (
-      <Page label="contact">
+      <Page label={this.pageId}>
         <h1>{title.split('\n').map(line => <div>{line}</div>)}</h1>
         {subtitle && (
           <h2>{subtitle.split('\n').map(line => <div>{line}</div>)}</h2>

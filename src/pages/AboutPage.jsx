@@ -40,6 +40,7 @@ This is just the beginning for blend, and that means there’s more exciting stu
   },
   props: {
     showPopUp: Function,
+    closePopUp: Function,
     pageId: { type: String, default: 'about' }
   },
   methods: {
