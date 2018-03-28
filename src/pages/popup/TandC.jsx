@@ -1,15 +1,13 @@
 import BlendLogo from '../../BlendLogo'
 import FooterBlurb from '../../FooterBlurb'
-import marked from 'marked'
-import axios from 'axios'
 export default {
   name: 'TandC',
   data() {
     return { content: '' }
   },
   mounted() {
-    axios.get('TermsAndConditions.md').then(({ data }) => {
-      this.content = marked(data)
+    this.$tandc.then(content => {
+      this.content = content
     })
   },
   render() {

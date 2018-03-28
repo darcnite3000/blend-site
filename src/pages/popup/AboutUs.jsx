@@ -1,7 +1,5 @@
 import BlendLogo from '../../BlendLogo'
 import FooterBlurb from '../../FooterBlurb'
-import marked from 'marked'
-import axios from 'axios'
 
 export default {
   name: 'AboutUs',
@@ -9,8 +7,8 @@ export default {
     return { content: '' }
   },
   mounted() {
-    axios.get('AboutUs.md').then(({ data }) => {
-      this.content = marked(data)
+    this.$aboutUs.then(content => {
+      this.content = content
     })
   },
   render() {
@@ -19,8 +17,8 @@ export default {
         <BlendLogo class="logo-pop" />
         <div class="md" domPropsInnerHTML={this.content} />
         <div class="logos">
-          <img src="Lloyds.png" alt="Lloyds" />
-          <img src="Advent.png" alt="Advent - a fairfax company" />
+          <img src="images/Lloyds.png" alt="Lloyds" />
+          <img src="images/Advent.png" alt="Advent - a fairfax company" />
         </div>
 
         <div class="pop-foot">

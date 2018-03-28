@@ -4,6 +4,7 @@ import smoothscroll from 'smoothscroll-polyfill'
 import ScrollTo from './ScrollTo'
 import Particles from './Particles'
 import axios from 'axios'
+import marked from 'marked'
 import Mousey from './Mousey'
 import BlendLogo from './BlendLogo'
 import LinkedIn from './LinkedIn'
@@ -18,11 +19,22 @@ smoothscroll.polyfill()
 
 Vue.use(KsVueScrollmagic)
 Vue.prototype.$particles = window.particlesJS
-Vue.prototype.$pageContent = axios.get('pages.json').then(({ data }) => data)
-Vue.prototype.$productContent = axios
-  .get('products.json')
+Vue.prototype.$aboutUs = axios
+  .get('content/AboutUs.md')
+  .then(({ data }) => marked(data))
+Vue.prototype.$tandc = axios
+  .get('content/TermsAndConditions.md')
+  .then(({ data }) => marked(data))
+Vue.prototype.$cStatement = axios
+  .get('content/TermsAndConditions.md')
+  .then(({ data }) => marked(data))
+Vue.prototype.$pageContent = axios
+  .get('content/pages.json')
   .then(({ data }) => data)
-Vue.prototype.$theTeam = axios.get('team.json').then(({ data }) => data)
+Vue.prototype.$productContent = axios
+  .get('content/products.json')
+  .then(({ data }) => data)
+Vue.prototype.$theTeam = axios.get('content/team.json').then(({ data }) => data)
 new Vue({
   el: '#app',
   data() {

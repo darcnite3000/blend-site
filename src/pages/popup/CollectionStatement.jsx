@@ -1,15 +1,13 @@
 import BlendLogo from '../../BlendLogo'
 import FooterBlurb from '../../FooterBlurb'
-import marked from 'marked'
-import axios from 'axios'
 export default {
   name: 'CollectionStatement',
   data() {
     return { content: '' }
   },
   mounted() {
-    axios.get('CollectionStatement.md').then(({ data }) => {
-      this.content = marked(data)
+    this.$cStatement.then(content => {
+      this.content = content
     })
   },
   render() {
