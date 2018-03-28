@@ -77,12 +77,27 @@ p {
   flex-direction: column;
   align-items: center;
   flex-shrink: 0;
-  & > * {
+  & .md{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &.left{
+      & > p{
+        width: 100%;
+        text-align: left;
+      }
+    }
+  }
+  & > *, & .md > * {
     flex-shrink: 0;
   }
   & > h1,
   & > h2,
-  & > p {
+  & > p,
+  & .md > h1,
+  & .md > h2,
+  & .md > p {
     max-width: 66.5625%;
   }
   & .icon {

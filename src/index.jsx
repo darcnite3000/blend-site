@@ -32,7 +32,6 @@ new Vue({
     }
   },
   render() {
-    console.log(window.innerWidth)
     return (
       <div id="app">
         <div class="content">

@@ -25,6 +25,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "ks-vue-scrollmagic": "^1.0.2",
+    "marked": "^0.3.19",
     "particles.js": "^2.0.0",
     "smoothscroll-polyfill": "^0.4.3"
   }
