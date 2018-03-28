@@ -7,7 +7,7 @@ export default {
     }
   },
   props: {
-    pageId: String,
+    pageId: { type: String, required: true },
     showPopUp: Function,
     closePopUp: Function
   },
