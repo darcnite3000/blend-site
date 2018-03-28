@@ -8,6 +8,8 @@ import HomePage from './HomePage'
 export { HomePage }
 import AboutPage from './AboutPage'
 export { AboutPage }
+import DynamicPage from './DynamicPage'
+export { DynamicPage }
 import TechPage from './TechPage'
 export { TechPage }
 
