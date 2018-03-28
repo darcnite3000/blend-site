@@ -18,7 +18,15 @@ export default {
       message: '',
       content: {
         title: 'we could be the perfect blend',
-        blurb: `Let’s work together. Whether you need to chat about your clients’ insurance needs, a new product or partnership idea, or something else altogether, we’d love to hear from you. We’re responsive, responsible and reliable, so sing out, and we’ll sing right back.`
+        blurb: `Let’s work together. Whether you need to chat about your clients’ insurance needs, a new product or partnership idea, or something else altogether, we’d love to hear from you. We’re responsive, responsible and reliable, so sing out, and we’ll sing right back.`,
+        thankYou:
+          'Thank you for your enquiry.\nA member of our team will be in touch with you shortly.',
+        purposes: [
+          'new broker enquiries',
+          'existing broker submissions',
+          'claims enquiries',
+          'other enquiries'
+        ]
       }
     }
   },
@@ -28,6 +36,7 @@ export default {
     })
   },
   render() {
+    const { title, subtitle, blurb, purposes } = this.content
     const message =
       this.error ||
       'Thank you for your enquiry.\nA member of our team will be in touch with you shortly.'
@@ -46,10 +55,7 @@ export default {
           <div class="form-group">
             <label>purpose of enquiry</label>
             <select v-model={this.purpose} required>
-              <option>new broker enquiries</option>
-              <option>existing broker submissions</option>
-              <option>claims enquiries</option>
-              <option>other enquiries</option>
+              {purposes.map(purpose => <option>{purpose}</option>)}
             </select>
           </div>
           <div class="form-group">
@@ -87,7 +93,6 @@ export default {
       </form>
     )
 
-    const { title, subtitle, blurb } = this.content
     return (
       <Page label={this.pageId}>
         <h1>{title.split('\n').map(line => <div>{line}</div>)}</h1>
