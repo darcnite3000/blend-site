@@ -1,31 +1,31 @@
 {
-  "AboutPage": {
+  "about": {
     "title": "who’d have thought insurance\ncould be beautiful?",
     "subtitle": "when it’s as simple as blend, it can be",
     "blurb":
       "We’re cutting out the complications with a suite of Accident and Health insurance products that answer the needs of Australian workers, and a bespoke tailoring option for those circumstances that call for a little more attention.\nThis is just the beginning for blend, and that means there’s more exciting stuff in the works for you and your customers, too. Read on to discover our available products, and get in touch to keep up to date with all the latest blend developments."
   },
-  "ContactPage": {
+  "contact": {
     "title": "we could be the perfect blend",
     "blurb":
       "Let’s work together. Whether you need to chat about your clients’ insurance needs, a new product or partnership idea, or something else altogether, we’d love to hear from you. We’re responsive, responsible and reliable, so sing out, and we’ll sing right back."
   },
-  "CoverPage": {
+  "cover": {
     "title": "we’ve got you covered",
     "blurb":
       "Whether your clients’ insurance cover needs are straightforward or a little curlier than usual, we’ve got the solution. As a blend broker, you can access standard Accident and Health cover, or tailor a bespoke policy that’s particular to your clients’ circumstances. Have a flick through our products below, and get in touch when you’re ready to take the next step with us."
   },
-  "FocusPage": {
+  "focus": {
     "title": "it’s your world,\nwe just live in it",
     "subtitle": "your focus is our focus",
     "blurb":
       "Sustainable businesses are built on strong relationships, and that’s why honesty, transparency and flexibility are so central to our approach. While we’re excited to guide your clients with our expertise, we’re not here to tell them what to do. We design solutions with people, for people, and our service stays nimble so your clients’ expectations are continually met."
   },
-  "HomePage": {
+  "home": {
     "title":
       "powerfully simple. simply powerful.\nwe’re making it easier to feel connected to your insurance."
   },
-  "TechPage": {
+  "tech": {
     "title": "tech to enable",
     "subtitle":
       "an agile and highly scalable broker and partner\nuser experience is on its way",
