@@ -1,17 +1,19 @@
 import ContactPage from './ContactPage'
-export { ContactPage }
 import CoverPage from './CoverPage'
-export { CoverPage }
 import FocusPage from './FocusPage'
-export { FocusPage }
 import HomePage from './HomePage'
-export { HomePage }
 import AboutPage from './AboutPage'
-export { AboutPage }
 import DynamicPage from './DynamicPage'
-export { DynamicPage }
 import TechPage from './TechPage'
-export { TechPage }
+export {
+  ContactPage,
+  CoverPage,
+  FocusPage,
+  HomePage,
+  AboutPage,
+  DynamicPage,
+  TechPage
+}
 
 export const pageList = [
   { id: 'home', component: HomePage, bgStart: '#ee3d7f', bgEnd: '#f3693d' },
