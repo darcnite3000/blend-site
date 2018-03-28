@@ -20,6 +20,7 @@ smoothscroll.polyfill()
 Vue.use(KsVueScrollmagic)
 Vue.prototype.$particles = window.particlesJS
 Vue.prototype.$pageContent = axios.get('pages.json').then(({ data }) => data)
+Vue.prototype.$theTeam = axios.get('team.json').then(({ data }) => data)
 new Vue({
   el: '#app',
   data() {

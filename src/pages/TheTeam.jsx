@@ -1,6 +1,5 @@
 import FooterBlurb from '../FooterBlurb'
 import BlendLogo from '../BlendLogo'
-import axios from 'axios'
 export default {
   name: 'TheTeam',
   data() {
@@ -9,9 +8,7 @@ export default {
     }
   },
   mounted() {
-    axios.get('team.json').then(({ data }) => {
-      this.team = data
-    })
+    this.$theTeam.then(team => (this.team = team))
   },
   render() {
     return (
