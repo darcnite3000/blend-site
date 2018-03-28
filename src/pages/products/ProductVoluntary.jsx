@@ -3,41 +3,34 @@ import FooterBlurb from '../../FooterBlurb'
 import BlendLogo from '../../BlendLogo'
 export default {
   name: 'ProductVoluntary',
+  props: {
+    productId: { type: String, default: 'voluntary' }
+  },
+  computed: {
+    pageId() {
+      return `page-product-${this.productId}`
+    }
+  },
+  data() {
+    return {
+      content: { title: '' }
+    }
+  },
+  mounted() {
+    this.$productContent.then(product => {
+      this.content = product[this.productId]
+    })
+  },
   render() {
+    const { title, blurb, keyFeatures } = this.content
     return (
-      <div class="pop-page" id="page-product-voluntary">
+      <div class="pop-page" id={this.pageId}>
         <BlendLogo class="logo-pop" />
         <IconVoluntary invert />
-        <h1>voluntary workers</h1>
-        <p>
-          Volunteers have an important role and are not eligible for Workers
-          Compensation. Our product provides protection against financial loss
-          if an injury occurs whilst conducting voluntary work.
-        </p>
-        <p>
-          While an unpaid worker is not covered by workers compensation, they
-          still face the risk of injury while performing their duties. This
-          could prevent them from participating in their usual paid employment
-          and leave them susceptible to substantial expenses. A comprehensive
-          voluntary workers policy will ensure associations meet their duty of
-          care obligations to this valuable resource.
-        </p>
-        <div class="list-head">key features</div>
-        <ul>
-          <li>Accidental death</li>
-          <li>Weekly benefits for sickness and injury</li>
-          <li>Sickness and injury resulting in surgery</li>
-          <li>Injury resulting in fractured bones</li>
-          <li>Injury resulting in loss or damage to teeth</li>
-          <li>
-            Personal wellbeing – 17 benefit categories including accidental HIV
-            infection, rehabilitation and financial advice benefits.
-          </li>
-          <li>
-            Corporate protection including corporate image, repatriation and
-            staff recruitment benefits.
-          </li>
-        </ul>
+        <h1>{title.split('\n').map(line => <div>{line}</div>)}</h1>
+        {blurb && blurb.split('\n').map(para => <p>{para}</p>)}
+        {keyFeatures && <div class="list-head">key features</div>}
+        {keyFeatures && <ul>{keyFeatures.map(key => <li>{key}</li>)}</ul>}
 
         <div class="pop-foot">
           <FooterBlurb />

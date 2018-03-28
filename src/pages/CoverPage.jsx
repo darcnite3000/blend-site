@@ -33,7 +33,7 @@ export default {
         {blurb && blurb.split('\n').map(para => <p>{para}</p>)}
         <div class="sections">
           {this.products.map(section => (
-            <div key={section.title} class="section">
+            <div key={section.id} class="section">
               <section.icon />
               <div class="title">
                 {section.title
@@ -43,7 +43,9 @@ export default {
               <a
                 href="#"
                 class="button"
-                onClick:prevent={this.findOutMore(<section.content />)}
+                onClick:prevent={this.findOutMore(
+                  <section.content productId={section.id} />
+                )}
               >
                 find out more
               </a>
