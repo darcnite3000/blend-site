@@ -36,10 +36,8 @@ export default {
     })
   },
   render() {
-    const { title, subtitle, blurb, purposes } = this.content
-    const message =
-      this.error ||
-      'Thank you for your enquiry.\nA member of our team will be in touch with you shortly.'
+    const { title, subtitle, blurb, purposes, thankYou } = this.content
+    const message = this.error || thankYou
 
     const contact = this.sent ? (
       <div class="contact-form sent">
