@@ -1,6 +1,6 @@
-import { IconJourney } from '../Icons'
-import FooterBlurb from '../FooterBlurb'
-import BlendLogo from '../BlendLogo'
+import { IconJourney } from './Icons'
+import FooterBlurb from '../../FooterBlurb'
+import BlendLogo from '../../BlendLogo'
 export default {
   name: 'ProductJourney',
   render() {

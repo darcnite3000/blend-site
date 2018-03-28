@@ -1,6 +1,6 @@
-import { IconBespoke } from '../Icons'
-import FooterBlurb from '../FooterBlurb'
-import BlendLogo from '../BlendLogo'
+import { IconBespoke } from './Icons'
+import FooterBlurb from '../../FooterBlurb'
+import BlendLogo from '../../BlendLogo'
 export default {
   name: 'ProductBespoke',
   render() {

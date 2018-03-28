@@ -1,5 +1,5 @@
-import BlendLogo from '../BlendLogo'
-import FooterBlurb from '../FooterBlurb'
+import BlendLogo from '../../BlendLogo'
+import FooterBlurb from '../../FooterBlurb'
 
 export default {
   name: 'AboutUs',

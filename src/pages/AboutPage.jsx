@@ -1,6 +1,6 @@
 import Page from './Page'
 import ScrollTo from '../ScrollTo'
-import AboutUs from './AboutUs'
+import { AboutUs } from './popup'
 export default {
   name: 'AboutPage',
   data() {

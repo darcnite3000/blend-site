@@ -1,6 +1,6 @@
 import Page from './Page'
 import ScrollTo from '../ScrollTo'
-import TheTeam from './TheTeam'
+import { TheTeam } from './popup'
 export default {
   name: 'FocusPage',
   data() {

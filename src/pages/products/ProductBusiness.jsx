@@ -1,6 +1,6 @@
-import { IconBusiness } from '../Icons'
-import FooterBlurb from '../FooterBlurb'
-import BlendLogo from '../BlendLogo'
+import { IconBusiness } from './Icons'
+import FooterBlurb from '../../FooterBlurb'
+import BlendLogo from '../../BlendLogo'
 export default {
   name: 'ProductBusiness',
   render() {

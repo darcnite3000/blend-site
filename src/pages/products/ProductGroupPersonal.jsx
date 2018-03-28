@@ -1,6 +1,6 @@
-import { IconGroupPersonal } from '../Icons'
-import FooterBlurb from '../FooterBlurb'
-import BlendLogo from '../BlendLogo'
+import { IconGroupPersonal } from './Icons'
+import FooterBlurb from '../../FooterBlurb'
+import BlendLogo from '../../BlendLogo'
 export default {
   name: 'ProductGroupPersonal',
   render() {

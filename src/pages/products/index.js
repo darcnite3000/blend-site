@@ -5,7 +5,7 @@ import {
   IconJourney,
   IconBespoke,
   IconBusiness
-} from '../Icons'
+} from './Icons'
 import ProductGroupPersonal from './ProductGroupPersonal'
 import ProductPersonal from './ProductPersonal'
 import ProductVoluntary from './ProductVoluntary'
