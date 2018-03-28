@@ -1,4 +1,3 @@
-export { default as LinkedIn } from './LinkedIn'
 const mainColor = '#ffffff'
 const secondaryColor = '#ffffff'
 const invertMainColor = '#EE3D7F'

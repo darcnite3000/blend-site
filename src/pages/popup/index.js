@@ -1,5 +1,4 @@
-import AboutUs from './AboutUs'
-import CollectionStatement from './CollectionStatement'
-import TandC from './TandC'
-import TheTeam from './TheTeam'
-export { AboutUs, CollectionStatement, TandC, TheTeam }
+export { default as AboutUs } from './AboutUs'
+export { default as CollectionStatement } from './CollectionStatement'
+export { default as TandC } from './TandC'
+export { default as TheTeam } from './TheTeam'
