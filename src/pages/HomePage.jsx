@@ -10,15 +10,18 @@ export default {
       }
     }
   },
+  props: {
+    pageId: { type: String, default: 'home' }
+  },
   mounted() {
-    this.$pageContent.then(({ HomePage: content }) => {
-      this.content = content
+    this.$pageContent.then(pages => {
+      this.content = pages[this.pageId]
     })
   },
   render() {
     const { title, subtitle, blurb } = this.content
     return (
-      <Page label="home">
+      <Page label={this.pageId}>
         <BlendLogo class="logo-main" />
         <h1>{title.split('\n').map(line => <div>{line}</div>)}</h1>
         {subtitle && (

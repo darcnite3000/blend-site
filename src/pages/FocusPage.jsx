@@ -13,15 +13,19 @@ export default {
       }
     }
   },
+  props: {
+    pageId: { type: String, default: 'focus' },
+    showPopUp: Function
+  },
   mounted() {
-    this.$pageContent.then(({ FocusPage: content }) => {
-      this.content = content
+    this.$pageContent.then(pages => {
+      this.content = pages[this.pageId]
     })
   },
   render() {
     const { title, subtitle, blurb } = this.content
     return (
-      <Page label="focus">
+      <Page label={this.pageId}>
         <h1>{title.split('\n').map(line => <div>{line}</div>)}</h1>
         {subtitle && (
           <h2>{subtitle.split('\n').map(line => <div>{line}</div>)}</h2>
@@ -37,9 +41,6 @@ export default {
         </div>
       </Page>
     )
-  },
-  props: {
-    showPopUp: Function
   },
   methods: {
     showTeam() {

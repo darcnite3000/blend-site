@@ -40,6 +40,7 @@ new Vue({
           {this.pages.map(page => (
             <page.component
               key={page.id}
+              pageId={page.id}
               showPopUp={this.showPopUp}
               closePopUp={this.closePopUp}
             />

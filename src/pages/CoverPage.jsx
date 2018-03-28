@@ -4,6 +4,7 @@ import { productsList as products } from './products'
 export default {
   name: 'CoverPage',
   props: {
+    pageId: { type: String, default: 'cover' },
     showPopUp: Function
   },
   data() {
@@ -16,14 +17,14 @@ export default {
     }
   },
   mounted() {
-    this.$pageContent.then(({ CoverPage: content }) => {
-      this.content = content
+    this.$pageContent.then(pages => {
+      this.content = pages[this.pageId]
     })
   },
   render() {
     const { title, subtitle, blurb } = this.content
     return (
-      <Page label="cover">
+      <Page label={this.pageId}>
         <h1>{title.split('\n').map(line => <div>{line}</div>)}</h1>
         {subtitle && (
           <h2>{subtitle.split('\n').map(line => <div>{line}</div>)}</h2>

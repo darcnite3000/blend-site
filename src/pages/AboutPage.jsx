@@ -14,14 +14,14 @@ This is just the beginning for blend, and that means there’s more exciting stu
     }
   },
   mounted() {
-    this.$pageContent.then(({ AboutPage: content }) => {
-      this.content = content
+    this.$pageContent.then(pages => {
+      this.content = pages[this.pageId]
     })
   },
   render() {
     const { title, subtitle, blurb } = this.content
     return (
-      <Page label="about">
+      <Page label={this.pageId}>
         <h1>{title.split('\n').map(line => <div>{line}</div>)}</h1>
         {subtitle && (
           <h2>{subtitle.split('\n').map(line => <div>{line}</div>)}</h2>
@@ -39,7 +39,8 @@ This is just the beginning for blend, and that means there’s more exciting stu
     )
   },
   props: {
-    showPopUp: Function
+    showPopUp: Function,
+    pageId: { type: String, default: 'about' }
   },
   methods: {
     showAboutUs() {
