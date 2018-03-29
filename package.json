@@ -23,6 +23,10 @@
     "vue-eslint-parser": "^2.0.3"
   },
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.5",
+    "@fortawesome/fontawesome-free-brands": "^5.0.9",
+    "@fortawesome/fontawesome-free-solid": "^5.0.9",
+    "@fortawesome/vue-fontawesome": "^0.0.22",
     "axios": "^0.18.0",
     "ks-vue-scrollmagic": "^1.0.2",
     "marked": "^0.3.19",

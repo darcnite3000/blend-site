@@ -7,7 +7,8 @@ import axios from 'axios'
 import marked from 'marked'
 import Mousey from './Mousey'
 import BlendLogo from './BlendLogo'
-import LinkedIn from './LinkedIn'
+import FontAwesomeIcon from '@fortawesome/vue-fontawesome'
+import { faLinkedin } from '@fortawesome/fontawesome-free-brands'
 import { pageList as pages } from './pages'
 import { CollectionStatement, TandC } from './pages/popup'
 import FooterBlurb from './FooterBlurb'
@@ -94,7 +95,7 @@ new Vue({
               href="https://au.linkedin.com/company/blend-insurance-solutions"
               target="_blank"
             >
-              <LinkedIn />
+              <FontAwesomeIcon icon={faLinkedin} fixed-width />
             </a>
           </div>
         </div>

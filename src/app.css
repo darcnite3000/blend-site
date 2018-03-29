@@ -77,19 +77,20 @@ p {
   flex-direction: column;
   align-items: center;
   flex-shrink: 0;
-  & .md{
+  & .md {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    &.left{
-      & > p{
+    &.left {
+      & > p {
         width: 100%;
         text-align: left;
       }
     }
   }
-  & > *, & .md > * {
+  & > *,
+  & .md > * {
     flex-shrink: 0;
   }
   & > h1,
@@ -449,6 +450,19 @@ p {
       font-size: 1.25em;
       line-height: 1.3em;
     }
+    & .contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 0.8em;
+      line-height: 1.375em;
+      & > * {
+        display: inline-flex;
+        align-items: center;
+        text-decoration: none;
+        flex-shrink: 0;
+      }
+    }
     & .blurb p {
       font-size: 1em;
       line-height: 1.375em;
@@ -480,6 +494,7 @@ p {
   & .pop-page {
     overflow: auto;
     height: calc(100% - 100px);
+    flex-grow: 1;
   }
   & p {
     font-size: 1.125em;
@@ -502,8 +517,8 @@ p {
   & .button.button-close {
     color: #000000;
     min-width: 7em;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
     flex-shrink: 0;
     & .cross {
       font-weight: normal;
@@ -522,7 +537,7 @@ p {
 
 .mousey {
   position: fixed;
-  bottom: 20px;
+  bottom: 0;
   left: calc(50% - 24px);
   display: flex;
   flex-direction: column;
