@@ -237,6 +237,54 @@ p {
       color: rgba(255, 255, 255, 0.6);
     }
   }
+  & .purpose-select {
+    position: relative;
+    font-size: 1.5em;
+    line-height: 1.083333333em;
+    font-family: inherit;
+    color: #ffffff;
+    background: transparent;
+    width: 100%;
+    & .fa-caret-down {
+      position: absolute;
+      top: 0.416666667em;
+      /*10 / 24*/
+      right: 0.416666667em;
+      &.inversed {
+        color: #0099ad;
+      }
+    }
+    & .selections {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #31a78c;
+      border: 2px solid rgba(255, 255, 255, 0.8);
+      & a {
+        text-decoration: none;
+        padding: 0.416666667em;
+        &.active,
+        &.active:hover {
+          color: #0099ad;
+          background-color: #ffffff;
+        }
+        &:hover,
+        &:focus {
+          color: #0099ad;
+          background-color: rgba(255, 255, 255, 0.2);
+        }
+      }
+    }
+    & .current {
+      display: flex;
+      text-decoration: none;
+      padding: 0.416666667em;
+      border: 2px solid rgba(255, 255, 255, 0.8);
+    }
+  }
   & .form-group {
     width: 440px;
     max-width: 100%;
@@ -245,7 +293,7 @@ p {
     & input[type='email'],
     & textarea {
       width: 100%;
-      padding: 10px;
+      padding: 0.416666667em;
     }
   }
 }

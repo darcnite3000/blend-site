@@ -1,6 +1,6 @@
 import Page from './Page'
 import axios from 'axios'
-
+import PurposeSelect from './PurposeSelect'
 export default {
   name: 'ContactPage',
   props: {
@@ -33,6 +33,7 @@ export default {
   mounted() {
     this.$pageContent.then(pages => {
       this.content = pages[this.pageId]
+      this.purpose = this.content.purposes[0]
     })
   },
   render() {
@@ -52,9 +53,11 @@ export default {
         <div class="details">
           <div class="form-group">
             <label>purpose of enquiry</label>
-            <select v-model={this.purpose} required>
-              {purposes.map(purpose => <option>{purpose}</option>)}
-            </select>
+            <PurposeSelect
+              selected={this.purpose}
+              purposes={purposes}
+              updateSelect={this.updatePurpose}
+            />
           </div>
           <div class="form-group">
             <label>your name</label>
@@ -105,6 +108,9 @@ export default {
     )
   },
   methods: {
+    updatePurpose(purpose) {
+      this.purpose = purpose
+    },
     submitContact() {
       let delay = 6000
       if (this.purpose && this.name && this.message && this.email) {
