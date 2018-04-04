@@ -17,3 +17,9 @@
 * mouse anim should now disapear on mobile size
 
 == copy amend notes
+
+* "Remove all tables from the product sub pages so they look like the bespoke product page" Remove "key features" ?
+* about page text updated
+* about us text updated
+* cover text updated
+* focus text updated
