@@ -1,3 +1,7 @@
+== my questions
+
+* hallway/blends typekit instead of ours?
+
 == amend notes
 
 * h1 font-size is exactly the same as design ie 50px
