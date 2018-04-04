@@ -4,6 +4,7 @@ $purpose=$post['purpose'];
 $name=$post['name'];
 $email=$post['email'];
 $message=$post['message'];
+$marketing=$post['marketing'] == true || $post['marketing'] == "true";
 $to = '';
 switch ($purpose) {
   case 'new broker enquiries':
@@ -15,11 +16,10 @@ switch ($purpose) {
   case 'claims enquiries':
     $to = 'claims@fullertonhealthcs.com.au';
     break;
-  case 'other enquiries':
+  default:
+    $purpose = 'other enquiries';
     $to = 'chris@blendinsurance.com.au';
     break;
-  default:
-    die('invalid purpose');
 }
-$mailBody = $message. "\r\n". "\r\n"."from: $name<$email>";
+$mailBody = $message. "\r\n". "\r\n"."from: $name<$email>"."\r\n"."Marketing: ".($marketing?"yes":"no");
 mail($to,$purpose,$mailBody,$headers);
