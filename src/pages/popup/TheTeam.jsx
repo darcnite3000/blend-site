@@ -25,6 +25,10 @@ export default {
                 <img src={image} class="image" />
                 <div class="name">{name}</div>
                 <div class="position">{position}</div>
+
+                <div class="blurb">
+                  {blurb.split('\n').map((p, i) => <p key={i}>{p}</p>)}
+                </div>
                 <div class="contact">
                   {email && (
                     <a
@@ -57,9 +61,6 @@ export default {
                       />
                     </a>
                   )}
-                </div>
-                <div class="blurb">
-                  {blurb.split('\n').map((p, i) => <p key={i}>{p}</p>)}
                 </div>
               </div>
             )
