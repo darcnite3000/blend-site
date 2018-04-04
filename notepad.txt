@@ -1,0 +1,16 @@
+h1 font-size is exactly the same as design ie 50px
+cta buttons have cursor already
+font-weights - adjusted to the noted sizes
+text area width - made max same as design... may need to look more
+form - removed dummy placeholders
+made linkedin logo bigger
+fixed product positioning for responsive
+did some mobile copy fixing
+moved contact to bottom, only images
+swapped team/touch about/product
+fixed collection statement (was grabbing wrong file)
+removed left align in footer popups
+contact form currently just sends via php sendmail script edit sendmail.php for testing
+yes google analytics tags are on the page
+mouse anim should now disapear on mobile size
+
