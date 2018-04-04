@@ -1,6 +1,7 @@
 import Page from './Page'
 import axios from 'axios'
 import PurposeSelect from './PurposeSelect'
+import ButtonBack from '../ButtonBack'
 export default {
   name: 'ContactPage',
   props: {
@@ -63,7 +64,7 @@ export default {
             <label>your name</label>
             <input
               type="text"
-              placeholder="leonardo splinterson"
+              placeholder="your name"
               v-model={this.name}
               required
             />
@@ -72,7 +73,7 @@ export default {
             <label>your email address</label>
             <input
               type="email"
-              placeholder="leonardo@tmntinsurance.com.au"
+              placeholder="your email"
               v-model={this.email}
               required
             />
@@ -89,7 +90,10 @@ export default {
           </div>
         </div>
         <div class="button-group">
-          <input type="submit" value="submit" class="button" />
+          <button class="button">
+            <ButtonBack />
+            submit
+          </button>
         </div>
       </form>
     )

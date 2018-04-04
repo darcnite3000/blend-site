@@ -1,5 +1,6 @@
 import Page from './Page'
 import { productsList as products } from './products'
+import ButtonBack from '../ButtonBack'
 
 export default {
   name: 'CoverPage',
@@ -33,7 +34,14 @@ export default {
         {blurb && blurb.split('\n').map(para => <p>{para}</p>)}
         <div class="sections">
           {this.products.map(section => (
-            <div key={section.id} class="section">
+            <a
+              href="#"
+              onClick:prevent={this.findOutMore(
+                <section.content productId={section.id} />
+              )}
+              key={section.id}
+              class="section"
+            >
               <section.icon />
               <div class="title">
                 {section.title
@@ -47,9 +55,10 @@ export default {
                   <section.content productId={section.id} />
                 )}
               >
+                <ButtonBack />
                 find out more
               </a>
-            </div>
+            </a>
           ))}
         </div>
       </Page>

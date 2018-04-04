@@ -42,6 +42,7 @@ h2 {
   margin: 0.5em auto 0.5em;
   text-align: center;
   font-size: 1.875em;
+  font-weight: 400;
   line-height: 0.966666667em;
 }
 p {
@@ -49,6 +50,7 @@ p {
   margin: 0.5em auto 0.5em;
   text-align: center;
   font-size: 1.125em;
+  font-weight: 200;
   line-height: 1.555555556em;
   & a {
     font-weight: bold;
@@ -125,6 +127,7 @@ p {
     margin: 0 0 0.625em;
     & li {
       font-size: 1.125em;
+      font-weight: 200;
       line-height: 1.555555556em;
       background-color: #f0f0f0;
       padding: 0.388888889em 1.666666667em;
@@ -170,12 +173,34 @@ p {
     text-align: center;
     min-height: 13.15em;
     margin: 0.5em auto;
+    text-decoration: none;
+    &:hover {
+      & svg {
+        & rect {
+          stroke-dasharray: 95%, 256%;
+          stroke-dashoffset: 195%;
+        }
+      }
+    }
+    &:active {
+      & svg {
+        & rect {
+          transition: all 200ms ease;
+          stroke-width: 0;
+        }
+      }
+    }
   }
   & .button {
     font-size: 0.8em;
     min-width: 10em;
     margin: auto 0 0;
     padding: 0.4375em;
+    & svg {
+      & rect {
+        rx: 1em;
+      }
+    }
   }
 }
 
@@ -397,13 +422,46 @@ p {
   margin: 0 15px;
   padding: 0.722222222em 1.333333333em;
   color: #ffffff;
-  border: 2px solid;
-  background-color: rgba(255, 255, 255, 0.07);
+  border: 0;
+  background-color: transparent;
   border-radius: 2.222222222em;
   cursor: pointer;
   transition: 0.45s;
+  position: relative;
+  & svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    stroke: #ffffff;
+    stroke-width: 2px;
+    & rect {
+      width: calc(100% - 4px);
+      height: calc(100% - 4px);
+      stroke-dasharray: 353, 0;
+      stroke-dashoffset: 0;
+      transition: all 600ms ease;
+      rx: 1.5em;
+      x: 1;
+      y: 1;
+    }
+  }
+  &:hover {
+    & svg {
+      & rect {
+        stroke-dasharray: 95%, 253%;
+        stroke-dashoffset: 195%;
+      }
+    }
+  }
   &:active {
-    background-color: rgba(255, 255, 255, 0.2);
+    & svg {
+      & rect {
+        transition: all 200ms ease;
+        stroke-width: 0;
+      }
+    }
   }
 }
 .sitehelp {
@@ -500,8 +558,8 @@ p {
     }
     & .contact {
       display: flex;
-      flex-direction: column;
       justify-content: center;
+      align-items: center;
       font-size: 0.8em;
       line-height: 1.375em;
       & > * {
@@ -564,10 +622,19 @@ p {
   }
   & .button.button-close {
     color: #000000;
+
     min-width: 7em;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     flex-shrink: 0;
+
+    & svg rect {
+      stroke: #000000;
+    }
+    &:hover svg rect {
+      stroke-dasharray: 70%, 282%;
+      stroke-dashoffset: 197%;
+    }
     & .cross {
       font-weight: normal;
       font-size: 1.5em;

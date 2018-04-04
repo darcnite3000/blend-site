@@ -1,6 +1,7 @@
 import Page from './Page'
 import ScrollTo from '../ScrollTo'
 import { AboutUs } from './popup'
+import ButtonBack from '../ButtonBack'
 export default {
   name: 'AboutPage',
   data() {
@@ -29,9 +30,11 @@ This is just the beginning for blend, and that means there’s more exciting stu
         {blurb && blurb.split('\n').map(para => <p>{para}</p>)}
         <div class="button-group">
           <ScrollTo href="#page-cover" class="button">
+            <ButtonBack />
             see our products
           </ScrollTo>
           <a href="#" class="button" onClick:prevent={this.showAboutUs}>
+            <ButtonBack />
             about us
           </a>
         </div>

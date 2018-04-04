@@ -28,8 +28,11 @@ export default {
                 <div class="contact">
                   {linkedIn && (
                     <a href={linkedIn} target="_blank" title="LinkedIn">
-                      <FontAwesomeIcon fixed-width icon={faLinkedin} />
-                      LinkedIn
+                      <FontAwesomeIcon
+                        fixed-width
+                        icon={faLinkedin}
+                        size="lg"
+                      />
                     </a>
                   )}
                   {email && (
@@ -38,8 +41,11 @@ export default {
                       target="_blank"
                       title={`Email: ${email}`}
                     >
-                      <FontAwesomeIcon fixed-width icon={faEnvelope} />
-                      {email}
+                      <FontAwesomeIcon
+                        fixed-width
+                        icon={faEnvelope}
+                        size="lg"
+                      />
                     </a>
                   )}
                   {mobile && (
@@ -48,8 +54,7 @@ export default {
                       target="_blank"
                       title={`Mobile: ${mobile}`}
                     >
-                      <FontAwesomeIcon fixed-width icon={faMobile} />
-                      {mobile}
+                      <FontAwesomeIcon fixed-width icon={faMobile} size="lg" />
                     </a>
                   )}
                 </div>

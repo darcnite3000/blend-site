@@ -11,6 +11,7 @@ import FontAwesomeIcon from '@fortawesome/vue-fontawesome'
 import { faLinkedin } from '@fortawesome/fontawesome-free-brands'
 import { pageList as pages } from './pages'
 import { CollectionStatement, TandC } from './pages/popup'
+import ButtonBack from './ButtonBack'
 import FooterBlurb from './FooterBlurb'
 import NavBar from './NavBar'
 import 'particles.js'
@@ -95,7 +96,7 @@ new Vue({
               href="https://au.linkedin.com/company/blend-insurance-solutions"
               target="_blank"
             >
-              <FontAwesomeIcon icon={faLinkedin} fixed-width />
+              <FontAwesomeIcon icon={faLinkedin} fixed-width size="lg" />
             </a>
           </div>
         </div>
@@ -110,6 +111,7 @@ new Vue({
                   class="button button-close"
                   onClick:prevent={this.closePopUp}
                 >
+                  <ButtonBack />
                   <div>close</div>
                   <div class="cross">X</div>
                 </a>
