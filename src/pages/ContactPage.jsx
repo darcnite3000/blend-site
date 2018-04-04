@@ -62,31 +62,17 @@ export default {
           </div>
           <div class="form-group">
             <label>your name</label>
-            <input
-              type="text"
-              placeholder="your name"
-              v-model={this.name}
-              required
-            />
+            <input type="text" v-model={this.name} required />
           </div>
           <div class="form-group">
             <label>your email address</label>
-            <input
-              type="email"
-              placeholder="your email"
-              v-model={this.email}
-              required
-            />
+            <input type="email" v-model={this.email} required />
           </div>
         </div>
         <div class="message">
           <div class="form-group">
             <label>your message</label>
-            <textarea
-              placeholder="write your message here"
-              v-model={this.message}
-              required
-            />
+            <textarea v-model={this.message} required />
           </div>
         </div>
         <div class="button-group">
