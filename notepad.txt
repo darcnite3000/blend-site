@@ -1,7 +1,7 @@
 h1 font-size is exactly the same as design ie 50px
 cta buttons have cursor already
 font-weights - adjusted to the noted sizes
-text area width - made max same as design... may need to look more
+text area width - did some adjusting to make it better... but according to the design max width for content is 1065
 form - removed dummy placeholders
 made linkedin logo bigger
 fixed product positioning for responsive
