@@ -744,6 +744,9 @@ p {
     font-size: 1.75em;
     margin: 0.2em auto;
   }
+  .mousey {
+    display: none;
+  }
   .button-group {
     flex-direction: column;
   }
