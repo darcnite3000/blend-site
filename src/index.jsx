@@ -28,7 +28,7 @@ Vue.prototype.$tandc = axios
   .get('content/TermsAndConditions.md')
   .then(({ data }) => marked(data))
 Vue.prototype.$cStatement = axios
-  .get('content/TermsAndConditions.md')
+  .get('content/CollectionStatement.md')
   .then(({ data }) => marked(data))
 Vue.prototype.$pageContent = axios
   .get('content/pages.json')

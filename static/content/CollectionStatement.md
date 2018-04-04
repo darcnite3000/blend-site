@@ -30,7 +30,7 @@ If you would like additional information about privacy or would like
 to obtain a copy of the Privacy Policy, please contact Blend’s Privacy
 Officer during business hours on:
 
-The Privacy Officer<br>
+**The Privacy Officer**<br>
 Phone: <a href="tel:+61 2 9307 6656">+61 2 9307 6656</a><br>
 Email: <a href="mailto:privacy@blendinsurance.com.au">privacy@blendinsurance.com.au</a><br>
 You can also download a copy of Blend’s Privacy Policy <a href="Blend-Insurance-Solutions-Privacy-Policy-1117.pdf" download="Blend-Insurance-Solutions-Privacy-Policy-1117.pdf">here</a>.
