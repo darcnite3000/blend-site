@@ -2,6 +2,7 @@ import Page from './Page'
 import axios from 'axios'
 import PurposeSelect from './PurposeSelect'
 import ButtonBack from '../ButtonBack'
+import CollectionStatement from './popup/CollectionStatement'
 export default {
   name: 'ContactPage',
   props: {
@@ -17,6 +18,7 @@ export default {
       name: '',
       email: '',
       message: '',
+      marketing: false,
       content: {
         title: 'we could be the perfect blend',
         blurb: `Let’s work together. Whether you need to chat about your clients’ insurance needs, a new product or partnership idea, or something else altogether, we’d love to hear from you. We’re responsive, responsible and reliable, so sing out, and we’ll sing right back.`,
@@ -74,6 +76,19 @@ export default {
             <label>your message</label>
             <textarea v-model={this.message} required />
           </div>
+          <div class="form-checkbox">
+            <input v-model={this.marketing} type="checkbox" id="marketing" />
+            <label for="marketing">
+              Opt in to receive marketing/newsletters{' '}
+              <a
+                onClick:prevent={this.showPrivacy}
+                href="Blend-Financial-Services-Guide-Blend.FSG_.1117-final.pdf"
+                download="Blend-Financial-Services-Guide-Blend.FSG_.1117-final.pdf"
+              >
+                (Privacy Policy)
+              </a>
+            </label>
+          </div>
         </div>
         <div class="button-group">
           <button class="button">
@@ -101,6 +116,9 @@ export default {
     updatePurpose(purpose) {
       this.purpose = purpose
     },
+    showPrivacy() {
+      this.showPopUp(<CollectionStatement />)
+    },
     submitContact() {
       let delay = 6000
       if (this.purpose && this.name && this.message && this.email) {
@@ -108,7 +126,8 @@ export default {
           purpose: this.purpose,
           name: this.name,
           email: this.email,
-          message: this.message
+          message: this.message,
+          marketing: this.marketing
         }
         console.log(data)
         axios
@@ -118,6 +137,7 @@ export default {
             this.name = ''
             this.email = ''
             this.message = ''
+            this.marketing = false
           })
           .catch(() => {
             this.error =

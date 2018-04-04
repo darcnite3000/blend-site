@@ -243,6 +243,18 @@ p {
       flex-grow: 1;
     }
   }
+  & .form-checkbox {
+    margin: 0.5em 0;
+    display: flex;
+    align-items: center;
+    & input[type='checkbox'] {
+      font-size: 1.8em;
+    }
+    & label {
+      font-weight: normal;
+      flex-shrink: 1;
+    }
+  }
   & .button-group {
     display: flex;
     justify-content: center;
