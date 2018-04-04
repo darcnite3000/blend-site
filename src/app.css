@@ -68,7 +68,8 @@ p {
   & > h1,
   & > h2,
   & > p {
-    max-width: 66.5625%;
+    max-width: 1065px;
+    width: calc(100% - 150px);
   }
 }
 .pop-page {
@@ -101,7 +102,8 @@ p {
   & .md > h1,
   & .md > h2,
   & .md > p {
-    max-width: 66.5625%;
+    width: calc(100% - 150px);
+    max-width: 1065px;
   }
   & .icon {
     width: 8.25em;
@@ -158,8 +160,8 @@ p {
   flex-wrap: wrap;
   justify-content: space-around;
   font-size: 1.25em;
-  width: 1264px;
-  max-width: 67.5625%;
+  max-width: 63.2em;
+  width: calc(100% - 8.4em);
   & .icon {
     width: 6.6em;
     height: 6.6em;
@@ -168,7 +170,7 @@ p {
   }
   & .section {
     display: flex;
-    min-width: 9em;
+    width: 10em;
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -692,6 +694,11 @@ p {
 .fade-leave-to {
   opacity: 0;
 }
+@media (max-width: 1367px) {
+  .sections {
+    max-width: 39em;
+  }
+}
 @media (max-width: 1420px) {
   .logo {
     &.logo-nav,
@@ -728,8 +735,35 @@ p {
     }
   }
 }
-@media (max-width: 580px) {
-  body {
-    font-size: 9px;
+@media (max-width: 425px) {
+  h1 {
+    font-size: 2.25em;
+  }
+  h2 {
+    font-size: 1.75em;
+    margin: 0.2em auto;
+  }
+  .button-group {
+    flex-direction: column;
+  }
+  .sections {
+    font-size: 0.95em;
+  }
+  .page {
+    & > h1,
+    & > h2,
+    & > p {
+      width: calc(100% - 115px);
+    }
+  }
+  .pop-page {
+    & > h1,
+    & > h2,
+    & > p,
+    & .md > h1,
+    & .md > h2,
+    & .md > p {
+      width: calc(100% - 40px);
+    }
   }
 }
