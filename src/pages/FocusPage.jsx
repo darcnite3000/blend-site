@@ -8,9 +8,9 @@ export default {
     return {
       content: {
         title: 'it’s your world,\nwe just live in it',
-        subtitle: 'your focus is our focus',
+        subtitle: 'a thoughtful approach to insurance solutions',
         blurb:
-          'Sustainable businesses are built on strong relationships, and that’s why honesty, transparency and flexibility are so central to our approach. While we’re excited to guide your clients with our expertise, we’re not here to tell them what to do. We design solutions with people, for people, and our service stays nimble so your clients’ expectations are continually met.'
+          'We understand the importance of being a value generator. We are inspired by technology, creating efficiency and ensuring this translates to the optimisation of your revenue, workflows and customer offering.\nSustainable businesses are built on strong relationships, and that’s why honesty, transparency and flexibility are so central to our approach. While we’re excited to guide your clients with our expertise, we’re not here to tell them what to do. We design solutions with people, for people, and our service stays nimble so your clients’ expectations are continually met.'
       }
     }
   },
