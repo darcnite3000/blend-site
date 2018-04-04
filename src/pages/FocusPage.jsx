@@ -34,14 +34,14 @@ export default {
         )}
         {blurb && blurb.split('\n').map(para => <p>{para}</p>)}
         <div class="button-group">
-          <ScrollTo href="#page-contact" class="button">
-            <ButtonBack />
-            get in touch
-          </ScrollTo>
           <a href="#" class="button" onClick:prevent={this.showTeam}>
             <ButtonBack />
             meet the team
           </a>
+          <ScrollTo href="#page-contact" class="button">
+            <ButtonBack />
+            get in touch
+          </ScrollTo>
         </div>
       </Page>
     )

@@ -164,6 +164,7 @@ p {
     width: 6.6em;
     height: 6.6em;
     margin: 0.5em 0;
+    transition: all 600ms ease;
   }
   & .section {
     display: flex;
@@ -175,7 +176,10 @@ p {
     margin: 0.5em auto;
     text-decoration: none;
     &:hover {
-      & svg {
+      & .icon {
+        transform: scale(1.12);
+      }
+      & .button svg {
         & rect {
           stroke-dasharray: 95%, 256%;
           stroke-dashoffset: 195%;
@@ -183,7 +187,7 @@ p {
       }
     }
     &:active {
-      & svg {
+      & .button svg {
         & rect {
           transition: all 200ms ease;
           stroke-width: 0;

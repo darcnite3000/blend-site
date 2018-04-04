@@ -26,15 +26,6 @@ export default {
                 <div class="name">{name}</div>
                 <div class="position">{position}</div>
                 <div class="contact">
-                  {linkedIn && (
-                    <a href={linkedIn} target="_blank" title="LinkedIn">
-                      <FontAwesomeIcon
-                        fixed-width
-                        icon={faLinkedin}
-                        size="lg"
-                      />
-                    </a>
-                  )}
                   {email && (
                     <a
                       href={`mailto:${email}`}
@@ -55,6 +46,15 @@ export default {
                       title={`Mobile: ${mobile}`}
                     >
                       <FontAwesomeIcon fixed-width icon={faMobile} size="lg" />
+                    </a>
+                  )}
+                  {linkedIn && (
+                    <a href={linkedIn} target="_blank" title="LinkedIn">
+                      <FontAwesomeIcon
+                        fixed-width
+                        icon={faLinkedin}
+                        size="lg"
+                      />
                     </a>
                   )}
                 </div>
