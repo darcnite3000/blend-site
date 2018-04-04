@@ -23,3 +23,4 @@
 * about us text updated
 * cover text updated
 * focus text updated
+* opt-in markting checkbox added
