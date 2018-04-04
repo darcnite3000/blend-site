@@ -14,7 +14,7 @@ export default {
     return (
       <div class="pop-page" id="page-tandc">
         <BlendLogo class="logo-pop" />
-        <div class="md left" domPropsInnerHTML={this.content} />
+        <div class="md" domPropsInnerHTML={this.content} />
 
         <div class="pop-foot">
           <FooterBlurb />
