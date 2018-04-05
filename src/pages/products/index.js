@@ -25,36 +25,42 @@ export const productsList = [
     icon: IconGroupPersonal,
     title: 'group personal\naccident',
     id: 'group',
-    content: ProductGroupPersonal
+    content: ProductGroupPersonal,
+    contentId: 'ProductGroupPersonal'
   },
   {
     icon: IconPersonal,
     title: 'individual personal\naccident',
     id: 'personal',
-    content: ProductPersonal
+    content: ProductPersonal,
+    contentId: 'ProductPersonal'
   },
   {
     icon: IconVoluntary,
     title: 'voluntary\nworkers',
     id: 'voluntary',
-    content: ProductVoluntary
+    content: ProductVoluntary,
+    contentId: 'ProductVoluntary'
   },
   {
     icon: IconJourney,
     title: 'journey',
     id: 'journey',
-    content: ProductJourney
+    content: ProductJourney,
+    contentId: 'ProductJourney'
   },
   {
     icon: IconBusiness,
     title: 'business\ntravel',
     id: 'business',
-    content: ProductBusiness
+    content: ProductBusiness,
+    contentId: 'ProductBusiness'
   },
   {
     icon: IconBespoke,
     title: 'bespoke',
     id: 'bespoke',
-    content: ProductBespoke
+    content: ProductBespoke,
+    contentId: 'ProductBespoke'
   }
 ]

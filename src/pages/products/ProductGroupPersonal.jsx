@@ -13,24 +13,20 @@ export default {
   },
   data() {
     return {
-      content: { title: '' }
+      content: ''
     }
   },
   mounted() {
-    this.$productContent.then(product => {
-      this.content = product[this.productId]
+    this.$productContent[this.productId].then(content => {
+      this.content = content
     })
   },
   render() {
-    const { title, blurb, keyFeatures } = this.content
     return (
       <div class="pop-page" id={this.pageId}>
         <BlendLogo class="logo-pop" />
         <IconGroupPersonal invert />
-        <h1>{title.split('\n').map(line => <div>{line}</div>)}</h1>
-        {blurb && blurb.split('\n').map(para => <p>{para}</p>)}
-        {keyFeatures && <div class="list-head">key features</div>}
-        {keyFeatures && <ul>{keyFeatures.map(key => <li>{key}</li>)}</ul>}
+        <div class="md" domPropsInnerHTML={this.content} />
 
         <div class="pop-foot">
           <FooterBlurb />

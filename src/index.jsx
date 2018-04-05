@@ -10,6 +10,7 @@ import BlendLogo from './BlendLogo'
 import FontAwesomeIcon from '@fortawesome/vue-fontawesome'
 import { faLinkedin } from '@fortawesome/fontawesome-free-brands'
 import { pageList as pages } from './pages'
+import { productsList as products } from './pages/products'
 import { CollectionStatement, TandC } from './pages/popup'
 import ButtonBack from './ButtonBack'
 import FooterBlurb from './FooterBlurb'
@@ -33,9 +34,14 @@ Vue.prototype.$cStatement = axios
 Vue.prototype.$pageContent = axios
   .get('content/pages.json')
   .then(({ data }) => data)
-Vue.prototype.$productContent = axios
-  .get('content/products.json')
-  .then(({ data }) => data)
+Vue.prototype.$productContent = products.reduce((products, product) => {
+  return {
+    ...products,
+    [`${product.id}`]: axios
+      .get(`content/${product.contentId}.md`)
+      .then(({ data }) => marked(data))
+  }
+}, {})
 Vue.prototype.$theTeam = axios.get('content/team.json').then(({ data }) => data)
 new Vue({
   el: '#app',
