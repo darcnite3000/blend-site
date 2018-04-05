@@ -183,8 +183,8 @@ p {
       }
       & .button svg {
         & rect {
-          stroke-dasharray: 95%, 256%;
-          stroke-dashoffset: 195%;
+          stroke-dasharray: 114, 710;
+          stroke-dashoffset: 640;
         }
       }
     }
@@ -204,7 +204,8 @@ p {
     padding: 0.4375em;
     & svg {
       & rect {
-        rx: 1em;
+        width: calc(100% - 4px);
+        height: calc(100% - 4px);
       }
     }
   }
@@ -466,16 +467,13 @@ p {
       stroke-dasharray: 353, 0;
       stroke-dashoffset: 0;
       transition: all 600ms ease;
-      rx: 1.5em;
-      x: 1;
-      y: 1;
     }
   }
   &:hover {
     & svg {
       & rect {
-        stroke-dasharray: 95%, 253%;
-        stroke-dashoffset: 195%;
+        stroke-dasharray: 154, 632;
+        stroke-dashoffset: 551;
       }
     }
   }
@@ -657,8 +655,8 @@ p {
       stroke: #000000;
     }
     &:hover svg rect {
-      stroke-dasharray: 70%, 282%;
-      stroke-dashoffset: 197%;
+      stroke-dasharray: 70, 905;
+      stroke-dashoffset: 830;
     }
     & .cross {
       font-weight: normal;
@@ -726,9 +724,19 @@ p {
     }
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   body {
     font-size: 12px;
+  }
+  .sections .section:hover .button svg rect {
+    stroke-dasharray: 75, 700;
+  }
+  .button:hover svg rect {
+    stroke-dasharray: 105, 618;
+  }
+  .pop-up .button.button-close:hover svg rect {
+    stroke-dasharray: 59, 124;
+    stroke-dashoffset: 447;
   }
   .logo {
     &.logo-nav,
@@ -770,6 +778,9 @@ p {
   }
   .sections {
     font-size: 0.95em;
+    & .section:hover .button svg rect {
+      stroke-dasharray: 60, 680;
+    }
   }
   .page {
     & > h1,

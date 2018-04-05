@@ -56,7 +56,7 @@ export default {
                   <section.content productId={section.id} />
                 )}
               >
-                <ButtonBack />
+                <ButtonBack width={158} height={33} rx="1em" />
                 find out more
               </a>
             </a>
