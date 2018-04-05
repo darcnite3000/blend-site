@@ -69,33 +69,36 @@ export default {
           />
         </g>
         <g class="navbar-dots">
-          {this.pages.map(({ id }, i) => (
-            <ScrollTo href={`#page-${id}`} class={`nav-page-${id}`} key={id}>
-              <rect
-                x="0"
-                y={`${(i + 1) * this.spacing - 2}%`}
-                width="100%"
-                height="4%"
-                fill="transparent"
-                stroke="none"
-              />
-              <circle
-                fill="none"
-                cx="9.5"
-                cy={`${(i + 1) * this.spacing}%`}
-                r="5"
-                class="navbar-dot"
-              />
-              <text
-                class="navbar-text"
-                x="20"
-                y={`${(i + 1) * this.spacing}%`}
-                transform="translate(0 6)"
-              >
-                {i + 1}
-              </text>
-            </ScrollTo>
-          ))}
+          {this.pages
+            .map((page, i) => ({ i, ...page }))
+            .reverse()
+            .map(({ i, id }) => (
+              <ScrollTo href={`#page-${id}`} class={`nav-page-${id}`} key={id}>
+                <rect
+                  x="0"
+                  y={`${(i + 1) * this.spacing - 2}%`}
+                  width="100%"
+                  height="4%"
+                  fill="transparent"
+                  stroke="none"
+                />
+                <circle
+                  fill="none"
+                  cx="9.5"
+                  cy={`${(i + 1) * this.spacing}%`}
+                  r="5"
+                  class="navbar-dot"
+                />
+                <text
+                  class="navbar-text"
+                  x="20"
+                  y={`${(i + 1) * this.spacing}%`}
+                  transform="translate(0 6)"
+                >
+                  {i + 1}
+                </text>
+              </ScrollTo>
+            ))}
         </g>
       </svg>
     )

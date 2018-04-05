@@ -1,4 +1,3 @@
 module.exports = {
-  entry: './src/index.jsx',
-  homepage: '/blendinsurancesolutions/'
+  entry: './src/index.jsx'
 }

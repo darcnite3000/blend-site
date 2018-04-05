@@ -396,9 +396,15 @@ p {
   }
   & .navbar-dots a {
     cursor: pointer;
-    &.active {
+    &.active ~ a {
       & .navbar-dot {
         stroke-width: 3;
+      }
+    }
+    &.active {
+      & .navbar-dot {
+        stroke-width: 4;
+        r: 6;
       }
       & .navbar-text {
         stroke: white;
