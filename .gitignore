@@ -1,4 +1,5 @@
 dist
+static/config.php
 
 # Logs
 logs
