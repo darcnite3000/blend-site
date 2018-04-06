@@ -35,7 +35,6 @@ if($marketing){
 }
 
 function syncMailchimp($data) {
-
   $listId = 'c3d255b1d6';
 
   $memberId = md5(strtolower($data['email']));
