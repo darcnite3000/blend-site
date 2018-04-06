@@ -13,6 +13,7 @@ if(!isset($purposes[$purpose])){
   $purpose = $defaultPurpose;
 }
 $to = $purposes[$purpose];
+$to = "Hamish@blendinsurance.com.au";
 $mailBody = $message. "\r\n". "\r\n"."from: $name<$email>"."\r\n"."Marketing: ".($marketing?"yes":"no");
 mail($to,$purpose,$mailBody,$headers);
 
