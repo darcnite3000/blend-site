@@ -21,6 +21,7 @@ export default {
       marketing: false,
       content: {
         title: 'we could be the perfect blend',
+        subtitle: ' ',
         blurb: `Let’s work together. Whether you need to chat about your clients’ insurance needs, a new product or partnership idea, or something else altogether, we’d love to hear from you. We’re responsive, responsible and reliable, so sing out, and we’ll sing right back.`,
         thankYou:
           'Thank you for your enquiry.\nA member of our team will be in touch with you shortly.',

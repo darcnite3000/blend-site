@@ -14,6 +14,7 @@ export default {
       products,
       content: {
         title: 'we’ve got you covered',
+        subtitle: ' ',
         blurb:
           'We have developed an extensive suite of benefits that allow us to tailor a bundled solution, aligned to the characteristics and needs of differing customer groups.\nWhether your clients’ insurance cover needs are straightforward or a little more bespoke than usual, we’ve got the solution. As a blend broker, you can access standard Accident and Health cover, or tailor a bespoke policy that’s particular to your clients’ circumstances.\nIn support of large accounts and our speciality A&H broker partners we have the following existing products.'
       }
