@@ -22,6 +22,9 @@ smoothscroll.polyfill()
 
 Vue.use(KsVueScrollmagic)
 Vue.prototype.$particles = window.particlesJS
+Vue.prototype.$footerBlurb = axios
+  .get('content/FooterBlurb.md')
+  .then(({ data }) => marked(data))
 Vue.prototype.$aboutUs = axios
   .get('content/AboutUs.md')
   .then(({ data }) => marked(data))
