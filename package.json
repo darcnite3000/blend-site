@@ -1,5 +1,7 @@
 {
   "name": "blend",
+  "description":
+    "Sustainable businesses are built on strong relationships, and that’s why honesty, transparency and flexibility are so central to our approach. While we’re excited to guide your clients with our expertise, we’re not here to tell them what to do. We design solutions with people, for people.",
   "version": "1.0.0",
   "main": "index.js",
   "author": "Tristan Smith <darcnite3000@gmail.com>",
@@ -15,6 +17,7 @@
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-vue": "^4.3.0",
+    "favicons-webpack-plugin": "^0.0.9",
     "gh-pages": "^1.1.0",
     "poi": "^9.6.13",
     "poi-preset-prerender-spa": "^0.1.1",
